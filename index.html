@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoComply - AI-Powered Video Compliance Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">VC</div>
+                <span>VideoComply</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#contact">Contact</a>
+                <a href="https://app.videocomply.com" class="btn-primary">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Video Compliance in Seconds</h1>
+            <p class="hero-subtitle">Upload any video and instantly detect compliance issues across 30+ global regulations. Our AI agents analyze visual content, audio, and accessibility requirements simultaneously.</p>
+
+            <div class="demo-video">
+                <div class="animation-container">
+                    <div class="workflow-container">
+                        <!-- Background -->
+                        <div class="grid-bg"></div>
+
+                        <!-- Central Video Always Present -->
+                        <div class="video-core" id="videoCore">
+                            <div class="video-icon">🎬</div>
+                            <div class="video-label">VIDEO</div>
+                        </div>
+
+                        <!-- Slide: Multi-Region Compliance -->
+                        <div class="slide active" id="slide1">
+                            <div class="slide-title active">
+                                Multi-Region Compliance
+                                <div class="slide-subtitle">One video, multiple markets, zero headaches</div>
+                            </div>
+
+                            <!-- Core extraction agents around video -->
+                            <div class="agent-node agent-stt" style="left: 50%; top: 15%; transform: translateX(-50%);">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🎤</div>
+                                    <div class="agent-label">STT</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-vision" style="left: 75%; top: 30%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">👁️</div>
+                                    <div class="agent-label">Vision</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-audio" style="left: 25%; top: 30%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🎵</div>
+                                    <div class="agent-label">Audio</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-ocr" style="left: 50%; bottom: 15%; transform: translateX(-50%);">
+                                <div class="agent-core">
+                                    <div class="agent-icon">📝</div>
+                                    <div class="agent-label">OCR</div>
+                                </div>
+                            </div>
+
+                            <!-- Analysis agents second layer -->
+                            <div class="agent-node agent-scene" style="left: 78%; top: 55%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🎭</div>
+                                    <div class="agent-label">Scene</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-emotion" style="left: 22%; top: 55%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">😊</div>
+                                    <div class="agent-label">Emotion</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-object" style="left: 78%; bottom: 35%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">📦</div>
+                                    <div class="agent-label">Objects</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-brand" style="left: 22%; bottom: 35%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">™️</div>
+                                    <div class="agent-label">Brands</div>
+                                </div>
+                            </div>
+
+                            <!-- Compliance agents outer ring -->
+                            <div class="agent-node agent-compliance" style="left: 10%; top: 20%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">⚖️</div>
+                                    <div class="agent-label">Compliance</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-safety" style="left: 90%; top: 20%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🛡️</div>
+                                    <div class="agent-label">Safety</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-legal" style="left: 90%; bottom: 20%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">📋</div>
+                                    <div class="agent-label">Legal</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-cultural" style="left: 10%; bottom: 20%;">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🌍</div>
+                                    <div class="agent-label">Cultural</div>
+                                </div>
+                            </div>
+
+                            <div class="agent-node agent-privacy" style="left: 50%; top: 5%; transform: translateX(-50%);">
+                                <div class="agent-core">
+                                    <div class="agent-icon">🔒</div>
+                                    <div class="agent-label">Privacy</div>
+                                </div>
+                            </div>
+
+                            <!-- Market cards in corners -->
+                            <div class="market-card" style="top: 80px; left: 40px;">
+                                <div class="market-header">
+                                    <div class="market-flag">🇺🇸</div>
+                                    <div class="market-title">US Market</div>
+                                </div>
+                                <div class="market-checks">
+                                    <div class="check-item" style="animation-delay: 0.1s">✓ COPPA</div>
+                                    <div class="check-item" style="animation-delay: 0.2s">✓ FTC</div>
+                                    <div class="check-item" style="animation-delay: 0.3s">⚠️ ESRB</div>
+                                </div>
+                            </div>
+
+                            <div class="market-card" style="top: 80px; right: 40px;">
+                                <div class="market-header">
+                                    <div class="market-flag">🇪🇺</div>
+                                    <div class="market-title">EU Market</div>
+                                </div>
+                                <div class="market-checks">
+                                    <div class="check-item" style="animation-delay: 0.1s">✓ GDPR</div>
+                                    <div class="check-item" style="animation-delay: 0.2s">✓ DSA</div>
+                                    <div class="check-item" style="animation-delay: 0.3s">✓ AI Act</div>
+                                </div>
+                            </div>
+
+                            <div class="market-card" style="bottom: 80px; left: 40px;">
+                                <div class="market-header">
+                                    <div class="market-flag">🇬🇧</div>
+                                    <div class="market-title">UK Market</div>
+                                </div>
+                                <div class="market-checks">
+                                    <div class="check-item" style="animation-delay: 0.1s">✓ UK GDPR</div>
+                                    <div class="check-item" style="animation-delay: 0.2s">⚠️ OSA</div>
+                                    <div class="check-item" style="animation-delay: 0.3s">✓ Ofcom</div>
+                                </div>
+                            </div>
+
+                            <div class="market-card" style="bottom: 80px; right: 40px;">
+                                <div class="market-header">
+                                    <div class="market-flag">🌏</div>
+                                    <div class="market-title">APAC Market</div>
+                                </div>
+                                <div class="market-checks">
+                                    <div class="check-item" style="animation-delay: 0.1s">✓ PDPA</div>
+                                    <div class="check-item" style="animation-delay: 0.2s">✓ Content</div>
+                                    <div class="check-item" style="animation-delay: 0.3s">⚠️ Cultural</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+
+                    <script>
+                        // Helper to create smooth connection line
+                        function createConnection(from, to, duration = 2000) {
+                            const fromRect = from.getBoundingClientRect();
+                            const toRect = to.getBoundingClientRect();
+                            const container = document.querySelector('.workflow-container');
+                            const containerRect = container.getBoundingClientRect();
+
+                            const fromX = fromRect.left + fromRect.width / 2 - containerRect.left;
+                            const fromY = fromRect.top + fromRect.height / 2 - containerRect.top;
+                            const toX = toRect.left + toRect.width / 2 - containerRect.left;
+                            const toY = toRect.top + toRect.height / 2 - containerRect.top;
+
+                            const distance = Math.sqrt(Math.pow(toX - fromX, 2) + Math.pow(toY - fromY, 2));
+                            const angle = Math.atan2(toY - fromY, toX - fromX) * 180 / Math.PI;
+
+                            const line = document.createElement('div');
+                            line.className = 'connection-line active';
+                            line.style.width = `${distance}px`;
+                            line.style.left = `${fromX}px`;
+                            line.style.top = `${fromY}px`;
+                            line.style.transform = `rotate(${angle}deg)`;
+                            container.appendChild(line);
+
+                            setTimeout(() => line.remove(), duration);
+                        }
+
+                        // Initialize animation
+                        function initAnimation() {
+                            const agents = document.querySelectorAll('#slide1 .agent-node');
+                            const cards = document.querySelectorAll('#slide1 .market-card');
+                            const video = document.querySelector('.video-core');
+
+                            // Activate agents in layers
+                            agents.forEach((agent, i) => {
+                                setTimeout(() => agent.classList.add('active'), i * 100);
+                            });
+
+                            // Show market cards
+                            cards.forEach((card, i) => {
+                                setTimeout(() => {
+                                    card.classList.add('active');
+                                }, 1000 + i * 200);
+                            });
+
+                            // Create connections periodically
+                            setInterval(() => {
+                                const randomAgents = Array.from(agents).sort(() => Math.random() - 0.5).slice(0, 3);
+                                randomAgents.forEach((agent, i) => {
+                                    setTimeout(() => {
+                                        createConnection(video, agent);
+                                        agent.classList.add('processing');
+                                        setTimeout(() => agent.classList.remove('processing'), 2000);
+                                    }, i * 300);
+                                });
+                            }, 3000);
+
+                            // Update progress
+                            document.getElementById('progressFill').style.width = '100%';
+                        }
+
+                        // Start animation when page loads
+                        window.addEventListener('DOMContentLoaded', initAnimation);
+                    </script>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; opacity: 0.9;">
+                    "Upload any video, and in seconds see compliance issues for multiple markets. Watch as I switch from US broadcast standards to India OTT requirements... notice how alcohol scenes are now flagged differently."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Revolutionary AI-Powered Compliance</h2>
+                <p>Multiple AI agents work in parallel to analyze every aspect of your video content - and help you avoid costly compliance fines</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Agentic AI Architecture</h3>
+                    <p>7 specialized AI agents analyze your video simultaneously - visual compliance, audio content, technical validation, accessibility, and more. Each agent is an expert in its domain.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multi-Market Compliance</h3>
+                    <p>One upload, multiple markets. Check compliance for GDPR, COPPA, UK Online Safety Act, EU DSA, FCC, GARM brand safety, and more - all at once.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Parallel Processing</h3>
+                    <p>Get comprehensive results fast. Our parallel AI processing analyzes videos efficiently with frame-level precision, processing hours of content while you focus on creativity.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>AI Compliance Assistant</h3>
+                    <p>Ask questions in plain English: "Show me all alcohol scenes" or "Why was this marked as mild severity?" Get instant answers with clickable timestamps.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Shot-Level Precision</h3>
+                    <p>Automatic shot detection and keyframe extraction. Every compliance issue is mapped to exact timestamps, making review and editing efficient.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Regulatory Profiles</h3>
+                    <p>Managing videos for different markets is now effortless. Create custom compliance profiles for each region - US broadcast, EU streaming, India OTT - and instantly see what needs editing for each market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Demo Section -->
+    <section class="ai-demo">
+        <div class="container">
+            <div class="ai-demo-content">
+                <div class="ai-demo-text">
+                    <h2>Your AI Compliance Co-Pilot</h2>
+                    <p>Stop scrolling through endless timelines. Our AI assistant understands your content and helps you navigate compliance issues instantly.</p>
+
+                    <p><strong>Try these queries:</strong></p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>✓ "Show me all violence scenes"</li>
+                        <li>✓ "Why was minute 3:45 flagged?"</li>
+                        <li>✓ "What's needed for COPPA compliance?"</li>
+                        <li>✓ "Do they mention alcohol in the dialogue?"</li>
+                        <li>✓ "Export issues for UK market only"</li>
+                    </ul>
+
+                    <p style="margin-top: 1.5rem; padding: 1rem; background: #f0f9ff; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <strong>💡 Smart Compliance Profiles:</strong> Set up different regulatory profiles for each distribution channel. Your content for Netflix US, BBC iPlayer, and Hotstar can have different compliance requirements - manage them all from one dashboard.
+                    </p>
+                </div>
+
+                <div class="chat-demo">
+                    <div class="chat-messages">
+                        <div class="chat-message user-message">
+                            Show me all alcohol scenes in this video
+                        </div>
+                        <div class="chat-message ai-message">
+                            Found 3 alcohol scenes in "Ginni_and_Georgia_S2E4.mp4":<br><br>
+                            • <span class="timestamp-link">02:14</span> - Characters drinking wine at dinner (mild)<br>
+                            • <span class="timestamp-link">05:32</span> - Beer bottles visible on table (info)<br>
+                            • <span class="timestamp-link">12:45</span> - Bar scene with cocktails (mild)<br><br>
+                            All scenes violate GARM brand safety guidelines for alcohol content. Click any timestamp to jump to that moment.
+                        </div>
+                        <div class="chat-message user-message">
+                            Why is the bar scene marked as mild?
+                        </div>
+                        <div class="chat-message ai-message">
+                            The bar scene at 12:45 is marked as 'mild' severity because:<br><br>
+                            1. Duration: 18 seconds of prominent alcohol display<br>
+                            2. Context: Social drinking without excessive consumption<br>
+                            3. No minors present in the scene<br>
+                            4. No glamorization or promotion of drinking<br><br>
+                            Under GARM guidelines, this would require age-gating but isn't severe enough for complete restriction.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Market Management Section -->
+    <section class="ai-demo" style="background: var(--light);">
+        <div class="container">
+            <div class="ai-demo-content">
+                <div class="ai-demo-text">
+                    <h2>One Video, Multiple Markets, Zero Headaches</h2>
+                    <p>Stop re-analyzing the same content for different platforms. Our Compliance Profiles let you manage all your distribution requirements from a single dashboard.</p>
+
+                    <p><strong>How it transforms your workflow:</strong></p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>✓ Create custom profiles for each distribution channel</li>
+                        <li>✓ See market-specific violations at a glance</li>
+                        <li>✓ Compare requirements across regions instantly</li>
+                        <li>✓ Export targeted compliance reports per platform</li>
+                        <li>✓ Track which edits are needed for each market</li>
+                    </ul>
+
+                    <p style="margin-top: 1.5rem; font-style: italic; color: #6b7280;">
+                        "What used to take our team days of manual review across different compliance standards now happens automatically. We upload once and instantly know what needs editing for each platform." - Content Operations Manager
+                    </p>
+                </div>
+
+                <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--dark);">Your Content Across Markets</h3>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <!-- Netflix US Profile -->
+                        <div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1rem; position: relative;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-weight: bold; color: #e50914;">Netflix US</span>
+                                <span style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">3 issues</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: #6b7280;">
+                                • Alcohol scenes require TV-14 rating<br>
+                                • Violence at 12:45 needs content warning<br>
+                                • Language at 23:10 exceeds PG guidelines
+                            </div>
+                        </div>
+
+                        <!-- BBC iPlayer Profile -->
+                        <div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-weight: bold; color: #1d3557;">BBC iPlayer</span>
+                                <span style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Compliant</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: #6b7280;">
+                                • Meets UK Ofcom standards<br>
+                                • Suitable for 9pm watershed<br>
+                                • No edits required
+                            </div>
+                        </div>
+
+                        <!-- Hotstar India Profile -->
+                        <div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-weight: bold; color: #1e40af;">Hotstar India</span>
+                                <span style="background: #fee2e2; color: #991b1b; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">5 issues</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: #6b7280;">
+                                • Smoking scenes need disclaimer overlay<br>
+                                • Alcohol requires statutory warning<br>
+                                • Religious imagery needs review
+                            </div>
+                        </div>
+
+                        <!-- EU Streaming Profile -->
+                        <div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-weight: bold; color: #4c1d95;">EU Streaming</span>
+                                <span style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">1 issue</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: #6b7280;">
+                                • GDPR: Faces visible at 08:22 need blur<br>
+                                • DSA compliant<br>
+                                • Age rating: 12+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button style="width: 100%; margin-top: 1.5rem; padding: 0.75rem; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                        View Detailed Comparison →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Frameworks -->
+    <section class="frameworks">
+        <div class="container">
+            <div class="section-header">
+                <h2>Global Compliance Coverage</h2>
+                <p>Stay compliant and avoid costly fines across all major regulations</p>
+            </div>
+
+            <div class="frameworks-grid">
+                <div class="framework-badge">
+                    <h4>GDPR</h4>
+                    <p>€20M max fine</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>COPPA</h4>
+                    <p>$51,744 per violation</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>UK OSA</h4>
+                    <p>£18M or 10% revenue</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>EU DSA</h4>
+                    <p>6% global revenue</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>FCC</h4>
+                    <p>$500K per incident</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>GARM</h4>
+                    <p>Brand Safety</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>FTC</h4>
+                    <p>$50,120 per violation</p>
+                </div>
+                <div class="framework-badge">
+                    <h4>Ofcom</h4>
+                    <p>£250K or 5% revenue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>From upload to comprehensive compliance report</p>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Upload Video</h3>
+                    <p>Drag and drop your video file or paste a URL. Support for all major formats: MP4, MOV, AVI, MKV, WebM.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our 7 AI agents analyze visual content, transcribe audio, detect shots, validate technical specs, and check accessibility.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Review Results</h3>
+                    <p>Get a comprehensive report with timestamps, severity levels, and regulatory mappings. Ask our AI any questions about the findings.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Export & Integrate</h3>
+                    <p>Export filtered reports by regulation, download CSVs, or seamlessly integrate with your workflow via our REST API. Automate compliance checks in your content pipeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your content volume</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Up to 50 videos/month</li>
+                        <li>All compliance frameworks</li>
+                        <li>AI chat assistant</li>
+                        <li>CSV exports</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="https://app.videocomply.com" class="btn-primary" style="width: 100%;">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">$399<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Up to 500 videos/month</li>
+                        <li>All compliance frameworks</li>
+                        <li>AI chat assistant</li>
+                        <li>API access</li>
+                        <li>Custom regulations</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="https://app.videocomply.com" class="btn-primary" style="width: 100%;">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul class="pricing-features">
+                        <li>Unlimited videos</li>
+                        <li>Custom AI training</li>
+                        <li>On-premise deployment</li>
+                        <li>SLA guarantees</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary" style="width: 100%;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Revolutionize Your Video Compliance?</h2>
+            <p>Join leading content creators, broadcasters, and platforms using AI to ensure compliance</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="mailto:sales@videocomply.com" class="btn-secondary" style="border-color: white; color: white;">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VideoComply. All rights reserved. | Built with AI for the future of agentic content compliance.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards and sections
+        document.querySelectorAll('.feature-card, .step, .pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
