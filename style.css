@@ -133,11 +133,64 @@ nav {
     background-size: cover;
 }
 
+/* Floating badges container */
+.floating-badges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Individual badge styling */
+.floating-badges .badge {
+    position: absolute;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: floatBadge 20s ease-in-out infinite;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+/* Subtle hover effect for nearby interaction */
+.floating-badges .badge:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+/* Floating animation */
+@keyframes floatBadge {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-15px) translateX(10px);
+    }
+    50% {
+        transform: translateY(10px) translateX(-5px);
+    }
+    75% {
+        transform: translateY(-10px) translateX(15px);
+    }
+}
+
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero h1 {
@@ -181,11 +234,39 @@ nav {
     align-items: center;
 }
 
+/* Animation area badges */
+.animation-badges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.animation-badges .badge {
+    position: absolute;
+    padding: 0.35rem 0.7rem;
+    background: rgba(102, 126, 234, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 16px;
+    color: rgba(102, 126, 234, 0.6);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+    animation: floatBadge 15s ease-in-out infinite;
+    white-space: nowrap;
+}
+
 .workflow-container {
     position: relative;
     width: 100%;
     height: 100%;
     perspective: 1200px;
+    z-index: 10;
 }
 
 /* Slide Title */
@@ -1166,6 +1247,17 @@ footer {
 
     .nav-links {
         display: none;
+    }
+    
+    /* Hide most floating badges on mobile */
+    .floating-badges .badge:nth-child(n+8) {
+        display: none;
+    }
+    
+    /* Make remaining badges smaller */
+    .floating-badges .badge {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 
