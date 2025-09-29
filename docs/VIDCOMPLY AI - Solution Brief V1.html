@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidComply - Professional Business Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        @media print {
+            .page { 
+                page-break-after: always;
+                width: 8.5in; 
+                height: 11in;
+                padding: 0.5in 0.5in;
+                margin: 0;
+            }
+            body { 
+                margin: 0;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+        
+        @media screen {
+            .page {
+                width: 8.5in;
+                min-height: 11in;
+                padding: 0.5in 0.5in;
+                margin: 0 auto 20px;
+                background: white;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            }
+            body {
+                background: #f5f5f5;
+                padding: 20px 0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.5;
+            font-size: 10.5pt;
+        }
+        
+        /* HEADER STYLING */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20pt;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 8pt;
+        }
+        
+        .logo {
+            font-size: 18pt;
+            font-weight: 900;
+            color: #000;
+            letter-spacing: 1px;
+        }
+        
+        .logo-tag {
+            font-size: 8pt;
+            color: #666;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .tag-right {
+            text-align: right;
+            font-size: 9pt;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-header {
+            position: relative;
+            padding-bottom: 20pt;
+
+        }
+        
+        .header-text {
+            font-size: 26pt;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            margin-bottom: 8pt;
+        }
+        
+        .subheader {
+            font-size: 10pt;
+            color: #666;
+            line-height: 1.4;
+            font-weight: 400;
+            max-width: 90%;
+        }
+        
+        /* SECTION HEADERS */
+        .section-header {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #000;
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-header::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: #0066FF;
+            margin-right: 10px;
+        }
+        
+        .subsection-header {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #333;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            padding: 4pt 8pt;
+            background: linear-gradient(to right, #f0f4ff 0%, transparent 100%);
+            border-left: 2px solid #0066FF;
+        }
+        
+        /* BODY TEXT */
+        .body-paragraph {
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 8pt;
+            text-align: justify;
+        }
+        
+        .body-paragraph strong {
+            color: #000;
+            font-weight: 600;
+        }
+        
+        /* USER TYPES TABLE */
+        .users-container {
+            margin: 10pt 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10pt;
+        }
+        
+        .user-card {
+            display: flex;
+            align-items: flex-start;
+            padding: 6pt;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .user-card:hover {
+            background: #fafafa;
+            border-color: #0066FF;
+        }
+        
+        .user-icon {
+            width: 8pt;
+            height: 8pt;
+            background: #0066FF;
+            border-radius: 50%;
+            margin-right: 12pt;
+            margin-top: 4pt;
+            flex-shrink: 0;
+        }
+        
+        .user-content {
+            flex: 1;
+        }
+        
+        .user-title {
+            font-weight: 800;
+            color: #000;
+            font-size: 10pt;
+            margin-bottom: 2pt;
+        }
+        
+        .user-desc {
+            color: #666;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+        
+        /* COMBINED WORKFLOW VISUALIZATION */
+        .workflow-combined {
+            margin: 12pt 0;
+        }
+        
+        .workflow-visual-compact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10pt;
+            background: #f8f9ff;
+            border-radius: 12px;
+            margin-bottom: 8pt;
+        }
+        
+        .workflow-step-new {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+        
+        .workflow-arrow-new {
+            font-size: 24pt;
+            color: #0066FF;
+            font-weight: 700;
+            padding: 0 10pt;
+        }
+        
+        .step-icon-large {
+            margin-bottom: 8pt;
+        }
+        
+        .file-icon {
+            font-size: 24pt;
+            margin-bottom: 2pt;
+        }
+        
+        .file-label {
+            font-size: 8pt;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .step-label-new {
+            font-size: 10pt;
+            font-weight: 800;
+            color: #0066FF;
+            letter-spacing: 1px;
+            margin-top: 8pt;
+        }
+        
+        .ai-process-box {
+            background: white;
+            border: 2px solid #0066FF;
+            border-radius: 8px;
+            padding: 8pt;
+            margin-bottom: 4pt;
+        }
+        
+        .ai-process-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #0066FF;
+            margin-bottom: 8pt;
+            letter-spacing: 0.5px;
+        }
+        
+        .analysis-grid {
+            display: flex;
+            flex-direction: row;
+            gap: 8pt;
+            justify-content: space-around;
+        }
+        
+        .analysis-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2pt;
+            font-size: 7.5pt;
+            color: #333;
+        }
+        
+        .analysis-icon {
+            font-size: 10pt;
+        }
+        
+        .analysis-text {
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .delivery-outputs {
+            background: white;
+            border: 2px solid #00CC88;
+            border-radius: 8px;
+            padding: 6pt;
+            margin-bottom: 4pt;
+        }
+        
+        .output-row {
+            display: flex;
+            gap: 8pt;
+            margin-bottom: 6pt;
+        }
+        
+        .output-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .output-item {
+            flex: 1;
+            font-size: 8pt;
+            color: #333;
+            font-weight: 600;
+            padding: 4pt 6pt;
+            background: #f0f9ff;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        
+        .time-badge {
+            position: absolute;
+            bottom: -20pt;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00CC88;
+            color: white;
+            padding: 3pt 10pt;
+            border-radius: 12px;
+            font-size: 8pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Workflow Descriptions */
+        .workflow-descriptions {
+            display: flex;
+            gap: 12pt;
+        }
+        
+        .workflow-desc-item {
+            flex: 1;
+            display: flex;
+            gap: 8pt;
+            align-items: flex-start;
+        }
+        
+        .desc-number {
+            width: 24pt;
+            height: 24pt;
+            background: #0066FF;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 10pt;
+            flex-shrink: 0;
+        }
+        
+        .desc-content {
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .desc-content strong {
+            color: #000;
+            font-weight: 700;
+        }
+        
+        .step-number-circle {
+            position: absolute;
+            top: -10pt;
+            right: -5pt;
+            width: 20pt;
+            height: 20pt;
+            background: #0066FF;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 9pt;
+            z-index: 2;
+        }
+        
+        /* OUTCOMES */
+        .outcomes-container {
+            background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+            border-left: 4px solid #0066FF;
+            padding: 12pt 16pt;
+            margin: 16pt 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8pt;
+        }
+        
+        .outcome {
+            display: flex;
+            align-items: center;
+            font-size: 10pt;
+            color: #333;
+        }
+        
+        .outcome-icon {
+            width: 20pt;
+            height: 20pt;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8pt;
+            font-weight: 700;
+            font-size: 12pt;
+        }
+        
+        .outcome-up .outcome-icon {
+            background: #e6f7ed;
+            color: #00CC88;
+        }
+        
+        .outcome-down .outcome-icon {
+            background: #ffe6e6;
+            color: #FF3333;
+        }
+        
+        .outcome strong {
+            font-weight: 700;
+            margin-left: 4pt;
+        }
+        
+        .outcome-up strong {
+            color: #00CC88;
+        }
+        
+        .outcome-down strong {
+            color: #FF3333;
+        }
+        
+        /* CAPABILITIES */
+        .capability-group {
+            margin-bottom: 10pt;
+        }
+        
+        .capability-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .capability-item {
+            position: relative;
+            padding-left: 20pt;
+            margin-bottom: 4pt;
+            font-size: 8.5pt;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .capability-item::before {
+            content: '→';
+            position: absolute;
+            left: 8pt;
+            color: #0066FF;
+            font-weight: 600;
+        }
+        
+        /* IO TABLE */
+        .io-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16pt;
+            margin: 20pt 0;
+        }
+        
+        .io-box {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .io-header {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f5f5f5 100%);
+            padding: 10pt 12pt;
+            border-bottom: 2px solid #0066FF;
+            font-weight: 700;
+            font-size: 11pt;
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 8pt;
+        }
+        
+        .io-icon {
+            font-size: 16pt;
+        }
+        
+        .io-content {
+            padding: 12pt;
+        }
+        
+        .io-section {
+            margin-bottom: 12pt;
+        }
+        
+        .io-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .io-category {
+            font-size: 8pt;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6pt;
+            padding-bottom: 4pt;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .io-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .io-item {
+            position: relative;
+            padding-left: 16pt;
+            margin-bottom: 4pt;
+            font-size: 8.5pt;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .io-item::before {
+            content: '→';
+            position: absolute;
+            left: 4pt;
+            color: #0066FF;
+            font-weight: 600;
+        }
+        
+        .io-item strong {
+            color: #000;
+            font-weight: 600;
+        }
+        
+        /* PACKAGES */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8pt;
+            margin: 12pt 0;
+        }
+        
+        .package {
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .package:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+        
+        .package-header {
+            padding: 10pt;
+            font-weight: 700;
+            font-size: 11pt;
+            text-align: center;
+            color: white;
+        }
+        
+        .package:nth-child(1) .package-header {
+            background: #666;
+        }
+        
+        .package:nth-child(2) .package-header {
+            background: #0066FF;
+        }
+        
+        .package:nth-child(3) .package-header {
+            background: linear-gradient(135deg, #0066FF 0%, #0044CC 100%);
+        }
+        
+        .package-features {
+            padding: 12pt;
+            list-style: none;
+        }
+        
+        .package-feature {
+            position: relative;
+            padding-left: 16pt;
+            margin-bottom: 6pt;
+            font-size: 8.5pt;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .package-feature::before {
+            content: '✓';
+            position: absolute;
+            left: 2pt;
+            color: #00CC88;
+            font-weight: 600;
+        }
+        
+        /* POSITIONING NOTES */
+        .notes-box {
+            background: #fffbf0;
+            border: 1px solid #ffcc00;
+            border-radius: 8px;
+            padding: 12pt;
+            margin: 16pt 0;
+        }
+        
+        .notes-header {
+            font-weight: 700;
+            font-size: 9pt;
+            color: #996600;
+            margin-bottom: 8pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .notes-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .note-item {
+            position: relative;
+            padding-left: 16pt;
+            margin-bottom: 4pt;
+            font-size: 8.5pt;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .note-item::before {
+            content: '⚡';
+            position: absolute;
+            left: 2pt;
+            color: #ffcc00;
+        }
+        
+        /* DISCLAIMER NOTE */
+        .disclaimer-note {
+            margin-top: 12pt;
+            margin-bottom: 20pt;
+            padding: 8pt 12pt;
+            background: #f9fafb;
+            border-left: 3px solid #6b7280;
+            font-size: 8pt;
+            color: #4b5563;
+            line-height: 1.4;
+            font-style: italic;
+        }
+        
+        .disclaimer-note strong {
+            color: #374151;
+            font-style: normal;
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, #0066FF 0%, #0044CC 100%);
+            color: white;
+            padding: 12pt;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 16pt;
+            margin-bottom: 16pt;
+        }
+        
+        .cta-header {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-bottom: 6pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-text {
+            font-size: 9pt;
+            margin-bottom: 8pt;
+            opacity: 0.95;
+            line-height: 1.4;
+        }
+        
+        .cta-email {
+            font-size: 14pt;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        
+        /* PROFESSIONAL FOOTER */
+        .professional-footer {
+            margin-top: 437px;
+            padding: 20pt 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            margin-left: -0.5in;
+            margin-right: -0.5in;
+            margin-bottom: -0.5in;
+            padding-left: 0.5in;
+            padding-right: 0.5in;
+            padding-bottom: 16pt;
+        }
+        
+        .footer-divider {
+            height: 1pt;
+            background: #d5d5d5;
+            margin-bottom: 10pt;
+            display: none; /* Hidden since we have background */
+        }
+        
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10pt;
+        }
+        
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 12pt;
+        }
+        
+        .footer-tagline {
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .footer-tagline strong {
+            color: #0066FF;
+            font-weight: 600;
+        }
+        
+        .footer-title {
+            font-size: 8pt;
+            color: #666;
+            padding-left: 12pt;
+            border-left: 1px solid #e5e5e5;
+        }
+        
+        .footer-title strong {
+            color: #000;
+            font-weight: 700;
+        }
+        
+        .footer-right {
+            text-align: right;
+        }
+        
+        .footer-email {
+            font-size: 9pt;
+            color: #0066FF;
+            font-weight: 600;
+        }
+        
+        .footer-legal {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 8pt;
+            margin-top: 8pt;
+        }
+        
+        .copyright {
+            font-size: 7pt;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 4pt;
+        }
+        
+        .legal-text {
+            font-size: 6.5pt;
+            color: #666;
+            line-height: 1.3;
+            margin-bottom: 4pt;
+        }
+        
+        .company-info {
+            font-size: 6.5pt;
+            color: #999;
+            margin-top: 6pt;
+            text-align: center;
+            padding-top: 6pt;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        /* WHY NOW VISUALIZATION */
+        .why-now-container {
+            margin-bottom: 10pt;
+        }
+        
+        .complexity-visual {
+            background: linear-gradient(to right, #f8f9ff 0%, #fff 50%, #fff8f8 100%);
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 8pt 12pt;
+            margin-bottom: 8pt;
+        }
+        
+        .multiplier-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8pt;
+        }
+        
+        .multiplier-item {
+            text-align: center;
+            padding: 8pt 12pt;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .multiplier-number {
+            font-size: 16pt;
+            font-weight: 800;
+            color: #0066FF;
+            line-height: 1;
+            margin-bottom: 2pt;
+        }
+        
+        .multiplier-label {
+            font-size: 8pt;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .multiply-symbol, .equals-symbol {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #999;
+            padding: 0 4pt;
+        }
+        
+        .multiplier-result {
+            background: #FF3333;
+            color: white;
+            padding: 8pt 16pt;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(255, 51, 51, 0.3);
+        }
+        
+        .result-text {
+            font-size: 10pt;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .highlight-critical {
+            background: #ffe6e6;
+            color: #CC0000;
+            padding: 1pt 4pt;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        /* HIGHLIGHT EFFECTS */
+        .highlight-primary {
+            background: linear-gradient(to bottom, transparent 60%, #ffeb3b 60%);
+            padding: 0 2pt;
+        }
+        
+        .text-primary {
+            color: #0066FF;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1 -->
+    <div class="page">
+        <div class="header-top">
+            <div class="logo-section">
+                <div>
+                    <div class="logo">VIDCOMPLY</div>
+                    <div class="logo-tag">AI-powered compliance and editorial platform</div>
+                </div>
+            </div>
+            <div class="tag-right">Solution Brief</div>
+        </div>
+        
+        <div class="main-header">
+            <div class="header-text">Ship <span style="color: #0066FF;">Platform-Ready</span> Content Globally in Days, Not Weeks</div>
+            <div class="subheader">
+                AI compliance and editorial platform for global distribution. Analyze scenes, map to market regulations, generate edit plans, and deliver film-grade cuts.
+            </div>
+        </div>
+        
+        <div class="section-header">What it is</div>
+        <div class="body-paragraph">
+            VIDCOMPLY AI is a <strong>scene-understanding and policy engine</strong> with film-grade editorial automation.
+            It detects risks across video, audio, and on-screen text; aligns them to platform and regional rules; 
+            then generates an edit plan with <span class="text-primary">EDL/OTIO, masks, and audio cues</span> or renders finished versions. 
+            Privacy blurs (faces, plates, signs), localization-safe edits, and ad-suitability adjustments are built in. 
+            Human review is supported at every step.
+        </div>
+        
+        <div class="section-header">Who we serve and why they use it</div>
+        <div class="users-container">
+            <div class="user-card">
+                <div class="user-content">
+                    <div class="user-title">Distributors and sales agents</div>
+                    <div class="user-desc">Fewer redeliveries, faster first-pass acceptance across markets and platforms</div>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="user-content">
+                    <div class="user-title">Labs, localization, and QC vendors</div>
+                    <div class="user-desc">Pre-QC at scale with timeline-ready edit packs and less subtitle re-work</div>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="user-content">
+                    <div class="user-title">Post houses and finishing teams</div>
+                    <div class="user-desc">Save hours on repetitive blurs, mutes, and trims with reversible, artist-controllable edits</div>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="user-content">
+                    <div class="user-title">Enterprise brands and publishers</div>
+                    <div class="user-desc">Automated policy checks and privacy edits, internal scorecards, and audit-ready reports</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-header">Why now</div>
+        <div class="why-now-container">
+            <div class="complexity-visual">
+                <div class="multiplier-row">
+                    <div class="multiplier-item">
+                        <div class="multiplier-number">5+</div>
+                        <div class="multiplier-label">Markets</div>
+                    </div>
+                    <div class="multiply-symbol">×</div>
+                    <div class="multiplier-item">
+                        <div class="multiplier-number">30+</div>
+                        <div class="multiplier-label">Platforms</div>
+                    </div>
+                    <div class="multiply-symbol">×</div>
+                    <div class="multiplier-item">
+                        <div class="multiplier-number">∞</div>
+                        <div class="multiplier-label">Shifting Rules</div>
+                    </div>
+                    <div class="equals-symbol">=</div>
+                    <div class="multiplier-result">
+                        <div class="result-text">Exponential<br/>Complexity</div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-paragraph" style="margin-top: 12pt;">
+                Each destination expects policy review, local ratings, privacy and suitability adjustments, 
+                subtitles/CC alignment, and exact tech specs. 
+                <span class="highlight-critical">Late finds create resubmits, missed windows, and lost monetization.</span> 
+                Automating the detection and proposing minimal edits early saves cycles and protects release timelines.
+            </div>
+        </div>
+        
+        <div class="section-header">How it works</div>
+        <div class="workflow-combined">
+            <div class="workflow-visual-compact">
+                <div class="workflow-step-new">
+                    <div class="step-icon-large">
+                        <div class="file-icon">📁</div>
+                        <div class="file-label">Master.mp4</div>
+                    </div>
+                    <div class="step-label-new">INGEST</div>
+                </div>
+                
+                <div class="workflow-arrow-new">→</div>
+                
+                <div class="workflow-step-new">
+                    <div class="ai-process-box">
+                        <div class="ai-process-title">AI ANALYSIS</div>
+                        <div class="analysis-grid">
+                            <div class="analysis-item">
+                                <span class="analysis-icon">⚖️</span>
+                                <span class="analysis-text">Policy mapping</span>
+                            </div>
+                            <div class="analysis-item">
+                                <span class="analysis-icon">🔒</span>
+                                <span class="analysis-text">Privacy rules</span>
+                            </div>
+                            <div class="analysis-item">
+                                <span class="analysis-icon">💰</span>
+                                <span class="analysis-text">Ad suitability</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-label-new">PLAN</div>
+                </div>
+                
+                <div class="workflow-arrow-new">→</div>
+                
+                <div class="workflow-step-new">
+                    <div class="delivery-outputs">
+                        <div class="output-row">
+                            <div class="output-item">📄 Reports</div>
+                            <div class="output-item">🎬 Final Cuts</div>
+                        </div>
+                        <div class="output-row">
+                            <div class="output-item">✂️ EDL/OTIO</div>
+                            <div class="output-item">🎯 REST API + webhooks</div>
+                        </div>
+                    </div>
+                    <div class="step-label-new">DELIVER</div>
+                    <div class="time-badge">Within days</div>
+                </div>
+            </div>
+            
+            <div class="workflow-descriptions">
+                <div class="workflow-desc-item">
+                    <div class="desc-number">1</div>
+                    <div class="desc-content">
+                        <strong>Upload</strong> a master or connect your library. Select platforms and markets, choose an outcome preset (US broadcast, EU privacy, or maximize monetization).
+                    </div>
+                </div>
+                <div class="workflow-desc-item">
+                    <div class="desc-number">2</div>
+                    <div class="desc-content">
+                        <strong>Vision agents</strong> analyze scenes across video, audio, and OCR. Map findings to rules, propose minimal edits. <strong>Review and approve per issue/scene before render.</strong>
+                    </div>
+                </div>
+                <div class="workflow-desc-item">
+                    <div class="desc-number">3</div>
+                    <div class="desc-content">
+                        <strong>Receive</strong> compliance reports and editorial packs (EDL/OTIO, masks, audio cues) or rendered platform versions. Direct handoff to Resolve/Nuke or via API.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="header-top">
+            <div class="logo-section">
+                <div>
+                    <div class="logo">VIDCOMPLY</div>
+                    <div class="logo-tag">AI-powered compliance and editorial platform</div>
+                </div>
+            </div>
+            <div class="tag-right">Solution Brief</div>
+        </div>
+        
+        <div class="section-header">Capabilities by job to be done</div>
+        
+        <div class="capability-group">
+            <div class="subsection-header">Compliance intelligence</div>
+            <ul class="capability-list">
+                <li class="capability-item">Scene-level detection across violence, sex/nudity, minors, self-harm, drugs, weapons, hate, sensitive symbols, privacy and personal data, profanity, and on-screen text</li>
+                <li class="capability-item">Mapping to platform and regional frameworks with rule references and confidence</li>
+                <li class="capability-item">Rating and ad-suitability predictions with clear rationale</li>
+            </ul>
+        </div>
+        
+        <div class="capability-group">
+            <div class="subsection-header">Editorial automation</div>
+            <ul class="capability-list">
+                <li class="capability-item">One-click apply of blur, mute, and cut on exact timecodes</li>
+                <li class="capability-item">EDL/OTIO, masks, and audio cues for Resolve and Nuke; reversible, artist-editable results</li>
+                <li class="capability-item">Scene exclude or replace workflows for sensitive shots</li>
+            </ul>
+        </div>
+        
+        <div class="capability-group">
+            <div class="subsection-header">Privacy and localization</div>
+            <ul class="capability-list">
+                <li class="capability-item">Film-quality blurs for faces, number plates, signs, and screens; crowd de-identification</li>
+                <li class="capability-item">Region-specific variants that keep subtitles and M&E in sync</li>
+                <li class="capability-item">Timed-text conformance and checks for profanity, slurs, and cultural terms</li>
+            </ul>
+        </div>
+        
+        <div class="capability-group">
+            <div class="subsection-header">Governance and integrations</div>
+            <ul class="capability-list">
+                <li class="capability-item">Role-based approvals, change logs, and signed acceptance reports</li>
+                <li class="capability-item">REST API, webhooks, and storage connectors; handoff to IMF/Backlot-style workflows</li>
+                <li class="capability-item">Tunable policies, whitelists/blacklists, consent lists, and human-review queues</li>
+            </ul>
+        </div>
+        
+        <div class="capability-group">
+            <div class="subsection-header">Accuracy and tuning</div>
+            <ul class="capability-list">
+                <li class="capability-item">Thresholds and rules are tunable; confidence scores shown; human-in-the-loop for edge cases</li>
+            </ul>
+        </div>
+        
+        <div class="io-container">
+            <div class="io-box">
+                <div class="io-header">
+                    <span class="io-icon">📥</span>
+                    <span>What Goes In</span>
+                </div>
+                <div class="io-content">
+                    <div class="io-section">
+                        <div class="io-category">Required</div>
+                        <ul class="io-list">
+                            <li class="io-item"><strong>Master video</strong> file or cloud storage link (ProRes/DNxHR mezzanines, H.264/H.265, IMF, SRT/VTT/TTML)</li>
+                            <li class="io-item"><strong>Target destinations:</strong> platforms & markets</li>
+                            <li class="io-item"><strong>Outcome preset:</strong> broadcast, privacy, or monetization</li>
+                        </ul>
+                    </div>
+                    <div class="io-section">
+                        <div class="io-category">Optional</div>
+                        <ul class="io-list">
+                            <li class="io-item">Subtitles/CC files & transcripts</li>
+                            <li class="io-item">Brand lists & consent metadata</li>
+                            <li class="io-item">Custom house style rules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="io-box">
+                <div class="io-header">
+                    <span class="io-icon">📤</span>
+                    <span>What You Get</span>
+                </div>
+                <div class="io-content">
+                    <div class="io-section">
+                        <div class="io-category">Reports & Documentation</div>
+                        <ul class="io-list">
+                            <li class="io-item"><strong>Compliance reports</strong> (PDF/CSV/JSON)</li>
+                            <li class="io-item">Frame-accurate timecodes & rule citations</li>
+                            <li class="io-item">Advisory predictions with confidence scores</li>
+                        </ul>
+                    </div>
+                    <div class="io-section">
+                        <div class="io-category">Deliverables</div>
+                        <ul class="io-list">
+                            <li class="io-item"><strong>Regional/platform variants:</strong> US Broadcast/FCC, EU privacy-forward, YouTube/AVOD</li>
+                            <li class="io-item"><strong>Sidecars:</strong> EDL/OTIO, masks, updated captions, QC report</li>
+                            <li class="io-item"><strong>API/webhooks</strong> for pipeline integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/><br/>
+        <div class="section-header">Packages and pricing model</div>
+        <div class="packages-grid">
+            <div class="package">
+                <div class="package-header">PILOT (Free)</div>
+                <ul class="package-features">
+                    <li class="package-feature">Up to 2 hours or 2 files</li>
+                    <li class="package-feature">Full analysis and acceptance report</li>
+                    <li class="package-feature">ROI readout on first-pass acceptance and manual hours saved</li>
+                </ul>
+            </div>
+            <div class="package">
+                <div class="package-header">PROFESSIONAL</div>
+                <ul class="package-features">
+                    <li class="package-feature">Usage-based per runtime hour</li>
+                    <li class="package-feature">All reports and editorial packs</li>
+                    <li class="package-feature">Multi-market editorial</li>
+                </ul>
+            </div>
+            <div class="package">
+                <div class="package-header">ENTERPRISE</div>
+                <ul class="package-features">
+                    <li class="package-feature">Monthly license with volume tiers</li>
+                    <li class="package-feature">Custom SOP and guidance for detection and reports</li>
+                    <li class="package-feature">Multi-market editorial, VPC or on-prem, data residency</li>
+                    <li class="package-feature">White-label, custom integrations, SLAs, and dedicated support</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="disclaimer-note">
+            <strong>What we don't do:</strong> We don't provide legal advice or file regulator submissions; we produce policy-aligned reports and edit packs.
+        </div>
+        
+        <div class="cta-section">
+            <div class="cta-header">Ready to ship globally?</div>
+            <div class="cta-text">Start a two-file pilot and see your agent plan.  Run a same-day analysis on one episode. Try a pilot and measure first-pass acceptance.</div>
+            <div class="cta-email">sales@vidcomply.ai</div>
+        </div>
+        
+
+        
+        <div class="professional-footer">
+            <div class="footer-divider"></div>
+            <div class="footer-main">
+                <div class="footer-left">
+                    <div class="footer-tagline">Learn more at <strong>www.vidcomply.ai</strong></div>
+                    <div class="footer-title">SOLUTION BRIEF | <strong>VIDCOMPLY</strong></div>
+                </div>
+                <div class="footer-right">
+                    
+                </div>
+            </div>
+            <div class="footer-legal">
+                <div class="copyright">© 2025 VIDCOMPLY Ltd. All rights reserved.</div>
+                <div class="legal-text">
+                    VIDCOMPLY and the VIDCOMPLY logo are trademarks of VIDCOMPLY Ltd. in the UK and/or internationally. Other company and product names may be trademarks of the respective companies with which they are associated. 
+                    This material is provided on an "AS IS" basis. Platform coverage includes Netflix, Prime Video, Disney+, and others. Not affiliated with platforms. Not legal advice.
+                </div>
+                <div class="company-info">
+                    VIDCOMPLY Ltd | Company No. [TBD] | 14 East Bay Lane, London, E15 2GW | www.vidcomply.ai
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
