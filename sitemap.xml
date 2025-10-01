@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>http://vidcomply.ai/</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>http://vidcomply.ai/img/icon_site_1024_v2.png</image:loc>
+            <image:title>VIDCOMPLY AI Logo</image:title>
+            <image:caption>AI-powered video compliance platform</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Platform Documentation Page -->
+    <url>
+        <loc>http://vidcomply.ai/our-platform.html</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        
+        <!-- Quick Start Video -->
+        <video:video>
+            <video:thumbnail_loc>http://vidcomply.ai/img/icon_site_1024_v2.png</video:thumbnail_loc>
+            <video:title>VIDCOMPLY AI Quick Start Guide</video:title>
+            <video:description>Quick overview of the VIDCOMPLY AI platform covering upload, AI analysis, compliance reports, context-aware decisions, and review workflow.</video:description>
+            <video:content_loc>http://vidcomply.ai/videos/VIDCOMPLY%20Solution%20Brief%20Short%20V1.mp4</video:content_loc>
+            <video:duration>300</video:duration>
+            <video:publication_date>2025-01-01T00:00:00+00:00</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:requires_subscription>no</video:requires_subscription>
+        </video:video>
+        
+        <!-- Full Platform Demo Video -->
+        <video:video>
+            <video:thumbnail_loc>http://vidcomply.ai/img/icon_site_1024_v2.png</video:thumbnail_loc>
+            <video:title>VIDCOMPLY AI Complete Platform Overview</video:title>
+            <video:description>Comprehensive walkthrough of the VIDCOMPLY AI platform featuring AI agent architecture, multi-region compliance automation, film-grade VFX pipeline, and platform integration.</video:description>
+            <video:content_loc>http://vidcomply.ai/videos/VIDCOMPLY%20Solution%20Brief%20V1.mp4</video:content_loc>
+            <video:duration>900</video:duration>
+            <video:publication_date>2025-01-01T00:00:00+00:00</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:requires_subscription>no</video:requires_subscription>
+        </video:video>
+    </url>
+    
+</urlset>
+
