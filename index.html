@@ -1038,6 +1038,187 @@
         </div>
     </section>
 
+    <!-- Agentic Editorial Examples -->
+    <section class="features" style="background: var(--dark); padding: 5rem 2rem;">
+        <div class="container" style="max-width: 1400px;">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <h2 style="color: white;">Agentic editorial for studios and GenAI video.</h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem;">VFX-grade tools. Automatic. Fidelity preserved.</p>
+            </div>
+
+            <!-- Carousel Container -->
+            <div style="position: relative;">
+                <!-- Navigation Buttons -->
+                <button onclick="changeEditorialSlide(-1)" style="position: absolute; left: -50px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.3s;"
+                        onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                    ‹
+                </button>
+                <button onclick="changeEditorialSlide(1)" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.3s;"
+                        onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                    ›
+                </button>
+
+                <!-- Slides Container -->
+                <div style="overflow: hidden; border-radius: 16px;">
+                    <div id="editorialSlidesContainer" style="display: flex; transition: transform 0.5s ease;">
+                        <!-- Alcohol Removal -->
+                        <div class="editorial-slide" style="min-width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center; padding: 1.5rem;">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                                    <video 
+                                        class="editorial-video"
+                                        autoplay 
+                                        loop 
+                                        muted 
+                                        playsinline
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23111827' width='1920' height='1080'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='32' fill='%23667eea'%3EAlcohol Removal%3C/text%3E%3C/svg%3E">
+                                        <source src="videos/Shot_2_short.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;">Content Compliance</h3>
+                                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.6;">Seamless alcohol removal for broadcast standards. Scene integrity maintained, lighting matched, motion preserved.</p>
+                                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Object Tracking</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Shadow Integration</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Occlusion Handling</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Reflection Matching</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Parallax-Aware Inpainting</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Motion-Blur Continuity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Logo Removal -->
+                        <div class="editorial-slide" style="min-width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center; padding: 1.5rem;">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                                    <video 
+                                        class="editorial-video"
+                                        autoplay 
+                                        loop 
+                                        muted 
+                                        playsinline
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23111827' width='1920' height='1080'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='32' fill='%23667eea'%3EBrand Detection%3C/text%3E%3C/svg%3E">
+                                        <source src="videos/Shot_3_short.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;">Brand Appearance</h3>
+                                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.6;">AI-generated logos detected and removed. Full scene preserved, only problematic elements edited.</p>
+                                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Content-Aware Fill</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Texture Synthesis</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Edge Blending</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Lighting Consistency</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Grain Matching</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text Correction -->
+                        <div class="editorial-slide" style="min-width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center; padding: 1.5rem;">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                                    <video 
+                                        class="editorial-video"
+                                        autoplay 
+                                        loop 
+                                        muted 
+                                        playsinline
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23111827' width='1920' height='1080'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='32' fill='%23667eea'%3EText Localization%3C/text%3E%3C/svg%3E">
+                                        <source src="videos/Shot_6_short.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;">GenAI Text Intelligibility</h3>
+                                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.6;">GenAI text errors corrected in-scene. Typography matched, perspective preserved, surface textures maintained.</p>
+                                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">3D Camera Solve</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Surface Tracking</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Typography and Kerning Match</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Ambient Occlusion</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Perspective and Lens Match</span>
+                                            <span style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.5); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.9);">Grain and Texture Continuity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots Indicator -->
+                <div style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
+                    <span class="editorial-dot" onclick="goToEditorialSlide(0)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer; transition: all 0.3s;"></span>
+                    <span class="editorial-dot" onclick="goToEditorialSlide(1)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: all 0.3s;"></span>
+                    <span class="editorial-dot" onclick="goToEditorialSlide(2)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: all 0.3s;"></span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; max-width: 800px; margin: 0 auto;">
+                    Not another AI model producing synthetic outputs. Real VFX-grade edits with motion tracking, light matching, and seamless compositing—the same techniques used by Hollywood studios, now automated through AI agents.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            let currentEditorialSlide = 0;
+            const totalEditorialSlides = 3;
+
+            function updateEditorialSlide() {
+                const container = document.getElementById('editorialSlidesContainer');
+                container.style.transform = `translateX(-${currentEditorialSlide * 100}%)`;
+                
+                // Update dots
+                const dots = document.querySelectorAll('.editorial-dot');
+                dots.forEach((dot, index) => {
+                    dot.style.background = index === currentEditorialSlide ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.3)';
+                });
+
+                // Restart video on current slide
+                const slides = document.querySelectorAll('.editorial-slide');
+                slides.forEach((slide, index) => {
+                    const video = slide.querySelector('video');
+                    if (video) {
+                        if (index === currentEditorialSlide) {
+                            video.currentTime = 0;
+                            video.play();
+                        }
+                    }
+                });
+            }
+
+            function changeEditorialSlide(direction) {
+                currentEditorialSlide += direction;
+                if (currentEditorialSlide < 0) currentEditorialSlide = totalEditorialSlides - 1;
+                if (currentEditorialSlide >= totalEditorialSlides) currentEditorialSlide = 0;
+                updateEditorialSlide();
+            }
+
+            function goToEditorialSlide(index) {
+                currentEditorialSlide = index;
+                updateEditorialSlide();
+            }
+
+            // Auto-advance slides every 8 seconds
+            setInterval(() => {
+                changeEditorialSlide(1);
+            }, 8000);
+        </script>
+    </section>
+
     <!-- Problem Statement -->
     <section class="features" style="background: white; padding: 6rem 2rem;">
         <div class="container" style="max-width: 900px;">
