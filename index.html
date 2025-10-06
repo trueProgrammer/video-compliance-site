@@ -114,6 +114,18 @@
                 <a href="#contact">Contact</a>
                 <a href="https://app.vidcomply.ai/" class="btn-primary">Login</a>
             </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="our-platform.html">Our Platform</a>
+            <a href="#contact">Contact</a>
+            <a href="https://app.vidcomply.ai/" class="btn-primary">Login</a>
         </div>
     </nav>
 
@@ -1216,6 +1228,33 @@
             setInterval(() => {
                 changeEditorialSlide(1);
             }, 8000);
+
+            // Mobile swipe support for editorial carousel
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            const editorialContainer = document.getElementById('editorialSlidesContainer');
+            if (editorialContainer) {
+                editorialContainer.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, false);
+                
+                editorialContainer.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, false);
+                
+                function handleSwipe() {
+                    if (touchEndX < touchStartX - 50) {
+                        // Swipe left
+                        changeEditorialSlide(1);
+                    }
+                    if (touchEndX > touchStartX + 50) {
+                        // Swipe right
+                        changeEditorialSlide(-1);
+                    }
+                }
+            }
         </script>
     </section>
 
@@ -1532,6 +1571,27 @@
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+            
+            // Close menu when clicking a link
+            mobileNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
     </script>
 </body>
 </html>

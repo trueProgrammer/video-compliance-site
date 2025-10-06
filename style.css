@@ -1235,29 +1235,735 @@ footer {
     color: #9ca3af;
 }
 
-/* Responsive */
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Navigation - Hidden by default */
+.mobile-nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 80px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.mobile-nav.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.mobile-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.3s;
+}
+
+.mobile-nav a:hover {
+    color: var(--primary);
+    padding-left: 1.5rem;
+}
+
+.mobile-nav .btn-primary {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    border-bottom: none;
+    margin-top: 1rem;
+}
+
+/* Responsive - Mobile First */
 @media (max-width: 768px) {
+    /* Typography - Optimized for mobile readability */
     .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .ai-demo-content {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        display: none;
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
     }
     
-    /* Hide most floating badges on mobile */
+    .hero-subtitle {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .section-header p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Body text */
+    p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Feature card text */
+    .feature-card h3 {
+        font-size: 1.15rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Reduce padding across sections */
+    .hero {
+        padding: 2rem 0.75rem !important;
+    }
+    
+    .features, .how-it-works, .pricing, .cta {
+        padding: 2.5rem 0.75rem !important;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Navigation */
+    .nav-container {
+        padding: 0.5rem 1rem;
+    }
+    
+    .nav-links {
+        display: none !important;
+    }
+    
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    
+    .mobile-nav {
+        display: none !important;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon-img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    
+    /* Hero Section - Simplify and shrink floating badges by 3x */
     .floating-badges .badge:nth-child(n+8) {
         display: none;
     }
     
-    /* Make remaining badges smaller */
     .floating-badges .badge {
-        font-size: 0.65rem;
-        padding: 0.3rem 0.6rem;
+        font-size: 0.25rem !important;
+        padding: 0.1rem 0.2rem !important;
+        border-radius: 6px !important;
+        opacity: 0.4 !important;
+        letter-spacing: 0.2px !important;
+    }
+    
+    /* Animation Container - Full width edge-to-edge on mobile */
+    .hero {
+        padding: 2rem 0 !important;
+    }
+    
+    .hero-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .hero h1, .hero-subtitle {
+        padding: 0 0.75rem !important;
+    }
+    
+    .demo-video {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        border: none !important;
+    }
+    
+    .animation-container {
+        height: 180px !important;
+        border-radius: 0 !important;
+        width: 100vw !important;
+        margin-left: calc(-50vw + 50%) !important;
+    }
+    
+    /* Badges INSIDE animation area - reduce by 3x */
+    .animation-badges .badge {
+        font-size: 0.23rem !important;
+        padding: 0.12rem 0.23rem !important;
+        border-radius: 5px !important;
+        opacity: 0.4 !important;
+    }
+    
+    /* Animation elements - increased by 2x from previous */
+    .video-core {
+        width: 29px !important;
+        height: 23px !important;
+    }
+    
+    .video-icon {
+        font-size: 10px !important;
+    }
+    
+    .video-label {
+        font-size: 5px !important;
+    }
+    
+    .slide-title {
+        font-size: 8px !important;
+        max-width: 180px;
+        top: 3px;
+    }
+    
+    .slide-subtitle {
+        font-size: 6px !important;
+    }
+    
+    /* Agent nodes - 2x larger */
+    .agent-node {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    
+    .agent-icon {
+        font-size: 7px !important;
+    }
+    
+    .agent-label {
+        font-size: 3px !important;
+    }
+    
+    /* Market cards - 2x larger */
+    .market-card {
+        width: 46px !important;
+        padding: 3px !important;
+    }
+    
+    .market-flag {
+        font-size: 6px !important;
+    }
+    
+    .market-title {
+        font-size: 5px !important;
+    }
+    
+    .market-checks {
+        font-size: 4px !important;
+    }
+    
+    .check-item {
+        margin: 0.5px 0 !important;
+    }
+    
+    /* Distribution cards - 2x larger */
+    .dist-card {
+        padding: 4px !important;
+        width: auto !important;
+    }
+    
+    .dist-title {
+        font-size: 5px !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .dist-item {
+        font-size: 5px !important;
+        padding: 2px 3px !important;
+        gap: 4px !important;
+    }
+    
+    /* Slide 0 - Layer decomposition elements - 2x larger */
+    #slide0 .shot-grid {
+        grid-template-columns: repeat(2, 36px) !important;
+        gap: 4px !important;
+        font-size: 0.5rem !important;
+    }
+    
+    #slide0 .shot-frame {
+        padding: 0.2rem !important;
+        font-size: 0.4rem !important;
+    }
+    
+    #slide0 .layer-stack {
+        transform: scale(0.4) !important;
+    }
+    
+    #slide0 .layer {
+        width: 58px !important;
+        height: 34px !important;
+        font-size: 0.5rem !important;
+    }
+    
+    #slide0 .vfx-agents {
+        transform: scale(0.4) !important;
+    }
+    
+    #slide0 .vfx-agent {
+        font-size: 0.36rem !important;
+    }
+    
+    #slide0 .final-master {
+        transform: translateX(-50%) scale(0.46) !important;
+    }
+    
+    #slide0 .final-master div {
+        font-size: 0.46rem !important;
+    }
+    
+    /* Progress bar - 2x larger */
+    .progress-bar {
+        width: 86px !important;
+        bottom: 4px !important;
+        height: 2px !important;
+    }
+    
+    /* Editorial Carousel - Mobile optimized with ZERO padding */
+    section.features[style*="background: var(--dark)"] {
+        padding: 2rem 0 !important;
+    }
+    
+    section.features[style*="background: var(--dark)"] .container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    section.features[style*="background: var(--dark)"] .section-header {
+        padding: 0 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    section.features[style*="background: var(--dark)"] .section-header h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    section.features[style*="background: var(--dark)"] .section-header p {
+        font-size: 0.95rem !important;
+    }
+    
+    /* Bottom text - add padding */
+    section.features[style*="background: var(--dark)"] > div > div:last-child {
+        padding: 0 1rem !important;
+    }
+    
+    .editorial-slide {
+        border: none !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+    }
+    
+    .editorial-slide > div {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Video container - True full width edge-to-edge on mobile */
+    .editorial-slide > div > div:first-child {
+        padding-bottom: 56.25% !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .editorial-slide video {
+        border-radius: 0 !important;
+    }
+    
+    /* Text content with padding */
+    .editorial-slide > div > div:last-child {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    /* Hide VFX tags on mobile */
+    .editorial-slide > div > div:last-child > div:last-child {
+        display: none !important;
+    }
+    
+    .editorial-slide h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .editorial-slide p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Navigation buttons for carousel */
+    section button[onclick*="changeEditorialSlide"] {
+        display: none !important;
+    }
+    
+    /* Problem Statement Section */
+    section[style*="background: white"] {
+        padding: 2.5rem 0.75rem !important;
+    }
+    
+    section[style*="background: white"] .container {
+        padding: 0 !important;
+    }
+    
+    .features h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .features p {
+        font-size: 1rem !important;
+    }
+    
+    .features h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Reduce margin on stat boxes */
+    section .container > div[style*="margin-bottom: 2rem"] {
+        margin-bottom: 1.5rem !important;
+        padding: 1.5rem 0.75rem !important;
+    }
+    
+    section .container > div[style*="padding: 2rem"] {
+        padding: 1.5rem 0.75rem !important;
+    }
+    
+    /* Feature cards - Stack properly */
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* How It Works Section */
+    .how-it-works > div > div:not(.section-header) {
+        padding: 1.5rem 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .how-it-works h3 {
+        font-size: 1.3rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .how-it-works p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .how-it-works > div > div > div {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Step numbers */
+    .step-number {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.3rem !important;
+    }
+    
+    .step h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .step p {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Results section - stat cards */
+    .features > div > div[style*="grid-template-columns"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    .features > div > div[style*="grid-template-columns"] > div {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    .features > div > div[style*="grid-template-columns"] > div > div:first-child {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    /* Testimonial quote */
+    .features > div > div[style*="background: white"] p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Author attribution */
+    .features > div > div[style*="background: white"] p[style*="font-weight: bold"] {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Built for Scale section */
+    .features > div > div[style*="minmax(300px"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .features > div > div[style*="minmax(300px"] h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .features > div > div[style*="minmax(300px"] p {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    .features > div > div[style*="minmax(300px"] ul li {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Problem Statement Section */
+    section[style*="background: white"] h2 {
+        font-size: 1.4rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    section[style*="background: white"] h3 {
+        font-size: 1.1rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    section[style*="background: white"] div[style*="font-size: 2rem"] {
+        font-size: 1.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    section[style*="background: white"] div[style*="color: #7f1d1d"] {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    /* CTA Section - Mobile optimized */
+    .cta {
+        padding: 2.5rem 0.75rem !important;
+    }
+    
+    .cta h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta p {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .cta > div > div {
+        padding: 1.5rem 1rem !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    .cta h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Make button full-width and touch-friendly on mobile */
+    .cta .btn-secondary {
+        font-size: 1.1rem !important;
+        padding: 1rem 1.5rem !important;
+        width: 100% !important;
+        min-height: 48px !important;
+        display: block !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Simplify contact text */
+    .cta p[style*="font-size: 0.9rem"] {
+        font-size: 0.85rem !important;
+        margin-top: 0.75rem !important;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    footer h4 {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    footer a, footer p {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    .footer-bottom {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Small print / disclaimers */
+    section p[style*="font-size: 0.9rem"],
+    section p[style*="font-size: 0.85rem"],
+    section em {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* AI Demo */
+    .ai-demo-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Pricing cards */
+    .pricing-cards {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1) !important;
+    }
+    
+    /* Steps */
+    .steps {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    /* Re-enable connection lines on mobile */
+    .connection-line {
+        display: block !important;
+        height: 1px !important;
+    }
+    
+    /* Simplify floating animations */
+    .floating-badges .badge {
+        animation-duration: 25s !important;
+    }
+    
+    .grid-bg {
+        animation: none;
+        opacity: 0.3;
+    }
+    
+    /* Touch-friendly buttons */
+    .btn-primary, .btn-secondary {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Editorial dots */
+    .editorial-dot {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    
+    /* Carousel dots container */
+    section.features[style*="background: var(--dark)"] > div > div > div[style*="display: flex"][style*="justify-content: center"] {
+        padding: 0 1rem !important;
+        margin-top: 1rem !important;
+    }
+    
+    /* "How It Works" - Hide visual elements on mobile */
+    
+    /* Section 1: Hide agent analysis code block */
+    .how-it-works div[style*="font-family: monospace"] {
+        display: none !important;
+    }
+    
+    /* Section 2: Hide edit plan boxes */
+    .how-it-works div[style*="display: grid"][style*="gap: 0.75rem"] > div[style*="display: flex"][style*="justify-content: space-between"] {
+        display: none !important;
+    }
+    
+    .how-it-works h4[style*="color: var(--primary)"] {
+        display: none !important;
+    }
+    
+    /* Section 3: Hide output file boxes */
+    .how-it-works div[style*="display: grid"][style*="grid-template-columns: repeat(2"] {
+        display: none !important;
+    }
+    
+    /* Hide all emoji icons in How It Works section on mobile */
+    .how-it-works div[style*="font-size: 2rem"] {
+        display: none !important;
     }
 }
 
