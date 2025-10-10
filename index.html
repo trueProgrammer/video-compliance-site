@@ -1188,6 +1188,7 @@
         <script>
             let currentEditorialSlide = 0;
             const totalEditorialSlides = 3;
+            let isCarouselPaused = false;
 
             function updateEditorialSlide() {
                 const container = document.getElementById('editorialSlidesContainer');
@@ -1207,6 +1208,7 @@
                         if (index === currentEditorialSlide) {
                             video.currentTime = 0;
                             video.play();
+                            isCarouselPaused = false;
                         }
                     }
                 });
@@ -1216,18 +1218,38 @@
                 currentEditorialSlide += direction;
                 if (currentEditorialSlide < 0) currentEditorialSlide = totalEditorialSlides - 1;
                 if (currentEditorialSlide >= totalEditorialSlides) currentEditorialSlide = 0;
+                isCarouselPaused = false;
                 updateEditorialSlide();
             }
 
             function goToEditorialSlide(index) {
                 currentEditorialSlide = index;
+                isCarouselPaused = false;
                 updateEditorialSlide();
             }
 
-            // Auto-advance slides every 8 seconds
+            // Auto-advance slides every 8 seconds (only if not paused)
             setInterval(() => {
-                changeEditorialSlide(1);
+                if (!isCarouselPaused) {
+                    changeEditorialSlide(1);
+                }
             }, 8000);
+
+            // Make videos clickable to pause/play
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.editorial-video').forEach(video => {
+                    video.style.cursor = 'pointer';
+                    video.addEventListener('click', function() {
+                        if (this.paused) {
+                            this.play();
+                            isCarouselPaused = false;
+                        } else {
+                            this.pause();
+                            isCarouselPaused = true;
+                        }
+                    });
+                });
+            });
 
             // Mobile swipe support for editorial carousel
             let touchStartX = 0;
