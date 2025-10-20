@@ -133,6 +133,15 @@ nav {
     background-size: cover;
 }
 
+/* Hero video container */
+.hero video {
+    transition: transform 0.3s ease;
+}
+
+.hero video:hover {
+    transform: scale(1.01);
+}
+
 /* Floating badges container */
 .floating-badges {
     position: absolute;
@@ -1415,6 +1424,25 @@ footer {
         border-radius: 6px !important;
         opacity: 0.4 !important;
         letter-spacing: 0.2px !important;
+    }
+    
+    /* Hero video on mobile */
+    .hero video {
+        border-radius: 8px !important;
+    }
+    
+    /* Social proof on mobile */
+    .hero > div > div:last-child {
+        margin-top: 3rem !important;
+    }
+    
+    .hero > div > div:last-child > div {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+    
+    .hero > div > div:last-child > div > div {
+        font-size: 0.9rem !important;
     }
     
     /* Animation Container - Full width edge-to-edge on mobile */
