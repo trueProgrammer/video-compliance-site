@@ -248,6 +248,64 @@
       border-top: 1px dashed rgba(70, 76, 112, 0.9);
       padding-top: 10px;
     }
+
+    /* Simple, clean market table styling */
+    .market-table-wrapper {
+      margin-top: 10px;
+      background: rgba(7, 10, 24, 0.96);
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+      padding: 12px 14px;
+      overflow-x: auto;
+      width: 1000px;
+    }
+
+    .market-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .market-table thead th {
+      text-align: left;
+      padding: 8px 10px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(32, 36, 63, 0.9);
+      white-space: nowrap;
+    }
+
+    .market-table tbody td {
+      padding: 9px 10px;
+      border-bottom: 1px solid rgba(21, 26, 49, 0.9);
+      color: var(--text-main);
+    }
+
+    .market-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .market-table tbody tr:nth-child(even) {
+      background: rgba(12, 16, 32, 0.7);
+    }
+
+    .market-table tbody td:nth-child(2),
+    .market-table tbody td:nth-child(3) {
+      white-space: nowrap;
+    }
+
+    .market-table tbody td:last-child {
+      color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      .market-table thead th,
+      .market-table tbody td {
+        padding: 8px 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -275,14 +333,64 @@
       </div>
 
       <div>
-          <h3>SUMMARY</h3>
+        <h3>SUMMARY</h3>
+        <p>
+          Vidcomply AI is a model-agnostic global release enablement platform for streaming and studios. It takes a title or campaign brief plus reference assets, plans what is needed for each platform and territory, orchestrates creative tools and AI models to generate, localize or reuse content, and enforces compliance before packaging everything for delivery.
+        </p>
           <p>
-            Vidcomply AI is a model-agnostic global release enablement platform for streaming and studios. It takes a title or campaign brief plus reference assets, plans what is needed for each platform and territory, orchestrates creative tools and AI models to generate, localize or reuse content, and enforces compliance before packaging everything for delivery.
-          </p>
-            <p>
-            Teams generate and manage final release versions of full episodes, trailers, shorts and posters through one system that sits on top of their existing tools rather than replacing them. Vidcomplay AI lets teams focus on creativity and increases velocity for experimentation and adapting for new formats by reducing operational work and without breaking current workflows.
-          </p>
+          Teams generate and manage final release versions of full episodes, trailers, shorts and posters through one system that sits on top of their existing tools rather than replacing them. Vidcomplay AI lets teams focus on creativity and increases velocity for experimentation and adapting for new formats by reducing operational work and without breaking current workflows.
+        </p>
         </div>
+      <div>
+        <h2>Market Opportunity</h2>
+          <div class="market-table-wrapper">
+          <table class="market-table">
+            <thead>
+          <tr>
+            <th>Market</th>
+            <th>2025 Size</th>
+            <th>2030 Projection</th>
+            <th>Vidcomply Opportunity (Bottom-Up)</th>
+            <th>Vidcomply Projection (By 2030)</th>
+          </tr>
+          </thead>
+             <tbody>
+          <tr>
+            <td>Streaming</td>
+            <td>$244B</td>
+            <td>$513B</td>
+            <td>2,000 titles x $1-5M spend x 10-20% capture = $200M-2B</td>
+            <td>$2-5B (1% share via enterprise adoption)</td>
+          </tr>
+          <tr>
+            <td>AI Video Gen</td>
+            <td>$0.72B</td>
+            <td>$2.6B</td>
+            <td>10-20% layer spend = $72-144M</td>
+            <td>$0.3-0.5B (15% orchestration market)</td>
+          </tr>
+          <tr>
+            <td>AI in Media & Ent</td>
+            <td>$30B</td>
+            <td>$99B</td>
+            <td>Global release share: $500M-2B</td>
+            <td>$1-3B (governance flywheel at scale)</td>
+          </tr>
+          <tr>
+            <td><b>Totals</b></td>
+            <td>$275B</td>
+            <td>$615B</td>
+            <td>$772M-4B (annual potential)</td>
+            <td>$3.3-8.5B (cumulative by 2030)</td>
+          </tr>
+             </tbody>
+        </table>
+        </div>
+<p class="highlight">
+      Based on Statista/PwC reports; bottom-up from Netflix/PV per-title spends (~$2-5M promo/localization)
+       </p>
+      </div>
+
     </section>
 
     <section class="section">
@@ -329,6 +437,7 @@
             <li>Checks full episodes, promos, shorts and key art against regional and platform rules.</li>
             <li>Flags risky moments and missing elements (ratings bugs, logos, disclaimers, sensitive scenes).</li>
             <li>Outputs editor timelines and legal-ready summaries that plug into existing review workflows.</li>
+            <li>Outcome: reduces rejections by 40% and delays by 20%.</li>
           </ul>
         </div>
 
@@ -363,7 +472,7 @@
       <div class="grid-2">
         <div>
           <p>
-            Vidcomply sits above storage, MAM, DAM, NLE, VFX and AI services as the
+            Vidcomply sits above storage, MAM/DAM (Media/Digital Asset Management), NLE/VFX (Non-Linear Editing/Visual Effects) and AI services as the
             release and governance layer. It pulls in what already exists, plans what
             is missing, and routes work to the right tools and teams.
           </p>
@@ -443,8 +552,7 @@
       <p>
         Creative tools and models are not the bottleneck. The bottleneck is
         orchestration, governance and packaging for global release. Vidcomply
-        focuses on that layer rather than competing with the tools that artists
-        already love.
+        focuses on that layer rather than competing with the tools. Unlike point tools (e.g., Adobe Sensei for edits, or standalone compliance like Frame.io), Vidcomply orchestrates the full stack—creating a proprietary 'release map' dataset as our moat.
       </p>
     </section>
 
