@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vidcomply – Media Release Brain for Streaming and Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #141b30;
+      --accent: #4f8bff;
+      --accent-soft: rgba(79,139,255,0.2);
+      --text-main: #f5f7ff;
+      --text-muted: #a6b0d8;
+      --border-subtle: #27304a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1a2742, #050713 55%);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #11182b, #060817);
+      border-radius: 18px;
+      padding: 26px 24px 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.7);
+      border: 1px solid #1f2941;
+    }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 20% 20%, #6ea3ff, #1b2f5c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f5f7ff;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 10px 25px rgba(36,88,255,0.5);
+    }
+    .header-text h1 { font-size: 22px; margin-bottom: 2px; }
+    .header-text .tagline { font-size: 13px; color: var(--text-muted); }
+    .header-text .linkline { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+    .pill-row {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;
+    }
+    .pill {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      color: var(--text-muted);
+      background: rgba(10,19,49,0.7);
+    }
+    .section {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .section:first-of-type { border-top: none; padding-top: 0; margin-top: 10px; }
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .section p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.5fr 1.2fr;
+      gap: 12px;
+      margin-top: 6px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+    @media (max-width: 800px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .page { padding: 20px 16px 24px; }
+    }
+    .card {
+      background: radial-gradient(circle at top left, #1c2340, #0b0f1f);
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+      padding: 10px 11px;
+      position: relative;
+      overflow: hidden;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(79,139,255,0.18), transparent 55%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .card-title { font-size: 12px; font-weight: 500; margin-bottom: 3px; }
+    .card-sub { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+    .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .badge-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: rgba(10,21,60,0.8);
+      border: 1px solid #1e335e;
+      color: var(--text-muted);
+    }
+    .footnote {
+      margin-top: 18px;
+      font-size: 11px;
+      color: var(--text-muted);
+      opacity: 0.8;
+    }
+    a { color: #a6b0d8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-badge">VC</div>
+      <div class="header-text">
+        <h1>Vidcomply</h1>
+        <div class="tagline">
+          Global release platform for streaming and studious. From full episodes and seasons to trailers, shorts and posters. Vidcomply AI plans, creates, localizes and signs off every asset for every platform and territory in one place.
+        </div>
+        <div class="linkline">
+          Product: <a href="https://www.vidcomply.ai" target="_blank" rel="noreferrer">www.vidcomply.ai</a>
+        </div>
+        <div class="pill-row">
+          <div class="pill">Global enablement</div>
+          <div class="pill">Creative and localization</div>
+          <div class="pill">Compliance and governance</div>
+          <div class="pill">Data orchestration</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section class="section">
+      <div class="section-title">Summary</div>
+      <p>
+        Vidcomply AI is a model-agnostic global release enablement platform for streaming and studios. It takes a title or campaign brief plus reference assets, plans what is needed for each platform and territory, orchestrates creative tools and AI models to generate, localize or reuse content, and enforces compliance before packaging everything for delivery.
+      </p>
+      <p>
+        Teams generate and manage final release versions of full episodes, trailers, shorts and posters through one system that sits on top of their existing tools rather than replacing them. Vidcomplay AI lets teams focus on creativity and increases velocity for experimentation and adapting for new formats by reducing operational work and without breaking current workflows.
+      </p>
+    </section>
+
+    <!-- Problem -->
+    <section class="section">
+      <div class="section-title">Problem</div>
+      <div class="grid-2">
+        <div>
+          <p>
+            Video content is global by default. A single season or campaign can require many trailers, cutdowns, shorts, social promos and hundreds of image variants across platforms and territories. Each asset needs localized text, ratings, logos and legal elements and must follow regional and platform rules. Today this is managed with a patchwork of tools, agencies and spreadsheets.
+          </p>
+          <p>
+            Generative AI is already mainstream: around two thirds of companies use gen AI in production
+            <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024" target="_blank" rel="noreferrer">McKinsey</a>,
+            and most marketers report using AI weekly
+            <a href="https://www.ama.org/marketing-news/generative-ai-takes-off-with-marketers/" target="_blank" rel="noreferrer">AMA</a>.
+            New video generators lower production cost and increase asset volume but introduce additional risk around compliance, rights, provenance and consistency. Enterprises are now talking about AI orchestration as the missing link between many tools and real workflows
+            <a href="https://cacm.acm.org/blogcacm/orchestration-the-missing-link-in-enterprise-ai/" target="_blank" rel="noreferrer">CACM</a>.
+          </p>
+          <p>
+            There is no shared release platform that understands the end-to-end title graph, covers episodes and marketing assets together, decides when to reuse or generate, and guarantees that final asset packs are safe, on brand and platform-ready for global release.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">Today’s pipeline</div>
+          <div class="card-sub">Typical global title or CTV-heavy campaign</div>
+          Master trailers and posters created manually → local agencies and in-house teams create variants → legal and standards review links by email → last minute blurs and edits → tech ops discover issues close to delivery.
+          New AI tools add more experiments and versions but no central control, governance or audit trail. Global distribution still depends on people chasing files and spreadsheets.
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution and product layers -->
+    <section class="section">
+      <div class="section-title">Solution</div>
+      <div class="grid-2">
+        <div>
+          <h2 style="font-size:16px; margin-bottom:4px;">Media release brain above tools and models</h2>
+          <p>
+            Vidcomply is the global release platform that plans and executes campaigns across human shot and AI generated content. It translates a brief and references into an asset plan by platform and territory, decides where to reuse or edit and where to generate from scratch, orchestrates tools like Runway, Sora, NLE and VFX, and enforces compliance before packaging for delivery. Think of it as a release graph for each title: assets, prompts, lineage, rules and statuses in one place.
+          </p>
+          <p>
+            Execution can mean reusing existing footage or generating new shots and short clips from text and reference images or video through connected generators. Every asset is tracked with lineage, prompts, tools used and compliance status, so marketing, legal and operations share one view of “global readiness” instead of separate spreadsheets and links.
+          </p>
+        </div>
+        <div class="card">
+          <div class="label">One control plane with three layers</div>
+          <div class="card-sub">Compliance engine</div>
+          Checks human and AI-generated content against regional and platform rules, flags risky moments and can block risky prompts and storyboards before production. Outputs editor timelines and legal-ready summaries for long form, promos and shorts.
+          <br /><br />
+          <div class="card-sub">Marketing asset studio</div>
+          Takes a brief and references and either repurposes existing material or, via integrated generators, creates new shots, short clips and key art. Produces localized and format-adapted variants per territory and platform, tightly linked to compliance and lineage.
+          <br /><br />
+          <div class="card-sub">Release planner</div>
+          Takes a campaign brief and reference assets, derives the required asset list by platform and territory, and breaks it into concrete operations: reuse, edit or generate. Chooses which tools and models to call for each shot and tracks readiness and approvals for global launch.
+        </div>
+      </div>
+    </section>
+
+    <!-- Customers -->
+    <section class="section">
+      <div class="section-title">Who it is for</div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">Streamers and D2C platforms</div>
+          Global and regional marketing, title marketing, creative services, standards, legal and tech ops. They already deliver globally but rely on people and agencies to manage hundreds of assets per title. With more platforms and formats, legacy processes no longer scale. Vidcomply acts as their release control plane and global enablement layer.
+          <div class="badge-strip">
+            <div class="badge">Title marketing</div>
+            <div class="badge">Localization</div>
+            <div class="badge">Delivery ops</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Studios and content owners</div>
+          Theatrical and home entertainment marketing, international sales and post supervisors. They need consistent, compliant asset packs for many buyers across windows and territories. Vidcomply helps design and manage global-ready packs from human-shot and AI-native sources, with one system of record for what exists and what passed which checks.
+          <div class="badge-strip">
+            <div class="badge">Theatrical</div>
+            <div class="badge">Home entertainment</div>
+            <div class="badge">Sell-through</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">FAST, AVOD and indies</div>
+          Channel operators, aggregators, creative agencies and independent producers. AI video makes CTV and social promos dramatically cheaper yet increases the need for automation and governance. Vidcomply offers a self-serve tier on the same brain that powers larger customers, so smaller teams can also ship consistent, compliant packs across platforms.
+          <div class="badge-strip">
+            <div class="badge">FAST</div>
+            <div class="badge">Agencies</div>
+            <div class="badge">Indies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why now & position vs creative tools -->
+    <section class="section">
+      <div class="section-title">Why now and position vs creative tools</div>
+      <p>
+        Generative AI use in media and marketing is now mainstream: most large brand owners already use gen AI in their marketing and a large majority of professional marketers and creators use it weekly for editing, enhancement and asset generation. At the same time, the number of platforms and territories is growing and rules around AI-generated and sensitive content are tightening.
+      </p>
+      <p>
+        Tools like Runway, Sora and Veo are becoming powerful creative environments that can generate almost any shot or video. They lower production cost and raise content volume but do not address orchestration, compliance, provenance or global packaging. Existing creative automation platforms focus on ad-level variants, and traditional compliance tools stop at checks on finished files. Neither provides an end-to-end, AI-aware release control plane for titles and campaigns.
+      </p>
+      <p>
+        Vidcomply does not try to win on raw model quality. It assumes creative teams will continue to use Runway, Sora, in-house models and traditional NLE and VFX tools. Vidcomply sits above them as the release and governance layer for streaming and film. It knows which assets are needed where, which model or tool produced each one, which rules they passed and when they are truly ready for global launch.
+      </p>
+    </section>
+
+    <!-- Traction, stage and model -->
+    <section class="section">
+      <div class="section-title">Traction, stage and model</div>
+      <p>
+        Vidcomply already has a working compliance engine for long form content, adaptable to shorter clips, and a marketing module for poster versioning with an early trailer localization pipeline. These capabilities are being exercised with real Prime Video marketing workflows as a design partnership, validating the problem and approach.
+      </p>
+      <p>
+        Business model: platform fee plus usage-based pricing at the high end, tied to titles and campaigns, with a lighter SaaS tier for smaller teams as AI video makes global distribution accessible to them as well.
+      </p>
+      <p>
+        Why us: the founder previously led technical and AI-heavy initiatives in Prime Video ads and virtual product placement, has shipped large-scale video and compliance systems for S&P 100 companies and bootstrapped a prior AI startup to millions in revenue. Vidcomply is currently founder-led and pre-revenue, focused on deep product fit with flagship design partners before scaling sales.
+      </p>
+    </section>
+
+    <div class="footnote">
+      Internal one-page investor memo. © 2025 VIDCOMPLY AI. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
