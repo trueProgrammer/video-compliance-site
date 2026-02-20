@@ -2124,15 +2124,15 @@ section#cultural-compliance .modern-card:hover {
 .hero-nvidia-watermark {
     position: absolute;
     right: 3.5%;
-    top: 130px;
+    top: 160px;
     display: inline-flex;
     align-items: center;
     gap: 0.96rem;
-    opacity: 0.29;
+    opacity: 0.59;
     pointer-events: none;
     user-select: none;
     z-index: 1;
-    animation: nvidiaWatermarkDrift 18s ease-in-out infinite;
+    animation: nvidiaWatermarkDrift 5s ease-in-out infinite;
 }
 
 .hero-nvidia-partner-mark {
@@ -2143,22 +2143,22 @@ section#cultural-compliance .modern-card:hover {
 }
 
 .hero-nvidia-partner-p {
-    width: 22px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
     background: #4078d0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 0.84rem;
+    font-size: 1.84rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .hero-nvidia-partner-label {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 0.38rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -2167,13 +2167,13 @@ section#cultural-compliance .modern-card:hover {
 
 .hero-nvidia-pipe {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.56rem;
+    font-size: 3.2rem;
     font-weight: 300;
     line-height: 1;
 }
 
 .hero-nvidia-badge-img {
-    height: 62px;
+    height: 82px;
     width: auto;
     display: block;
 }
