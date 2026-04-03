@@ -90,6 +90,116 @@
     }
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "VidComply AI Platform",
+    "serviceType": "Post-Production AI Automation",
+    "provider": {
+      "@type": "Organization",
+      "name": "VIDCOMPLY AI",
+      "url": "https://vidcomply.ai"
+    },
+    "description": "VidComply AI automates the most expensive non-creative bottlenecks in media operations: multi-track audio prep for unscripted TV, multi-market compliance review, back-catalog remediation, and post-production QC.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Platform Capabilities",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Agentic Audio Automix",
+            "description": "Automated multi-track dialogue prep for unscripted TV. Ingests Avid Pro Tools AAF exports, computes mic bleed and phase alignment across 30+ tracks using VAD, and roundtrips a prepped AAF non-destructively. Reduces audio prep from 14 hours to approximately 2 minutes per episode."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dynamic Global Compliance Platform",
+            "description": "Multi-territory compliance review with profile-based rule logic. Scales to new markets without rebuilding the workflow per territory. Produces evidence-backed issue queues with playback context, severity, and category for human sign-off."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Post-Production Video & QC",
+            "description": "Timeline intelligence, remediation planning, and QC automation for editorial and finishing teams. Generates timeline-ready outputs compatible with AAF, XML, and EDL workflows."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Back-Catalog Remediation",
+            "description": "Batch compliance and QC triage across archived libraries. Three-tier output routing (clean / minor / significant changes required) makes stranded archive titles economically viable for re-release."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is VidComply AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VidComply AI is enterprise infrastructure for post-production operations teams. It automates four costly non-creative workflows: multi-track audio prep (agentic automix), multi-market compliance review, post-production video QC, and back-catalog remediation — without replacing the tools teams already use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the agentic audio automix work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VidComply ingests a raw Avid Pro Tools AAF export from an unscripted TV production. It computes microsecond phase arrival across 30+ simultaneous mic tracks, applies Voice Activity Detection (VAD) to isolate primary speaker segments, removes mic bleed and phase conflicts, and writes clip gain automation non-destructively. The prepped AAF roundtrips back to Pro Tools with zero new software required for the engineer. Manual Stage 1–8 audio prep that previously took up to 14 hours per episode completes in approximately 2 minutes of GPU compute."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does 'non-destructive' mean in VidComply's workflow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every output VidComply produces — AAF roundtrips, compliance reports, QC sidecars, timeline instructions — is reviewable and reversible before commit. Engineers and compliance operators retain full authority. The platform makes decisions visible, not opaque."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which systems does VidComply integrate with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VidComply integrates with Adobe Creative Cloud, Frame.io, Avid Pro Tools (via AAF), and AWS storage infrastructure. Outputs are designed for existing post-production environments without requiring new DAWs or review tools."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does VidComply handle multi-territory compliance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VidComply uses profile-based rule logic so the same platform applies different territory rulesets — without rebuilding the workflow for each market. Compliance review queues include playback context, issue severity, and category so human operators can sign off efficiently at scale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of ROI does VidComply deliver?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For unscripted TV audio post, VidComply reduces Stage 1–8 manual prep from up to 14 hours per episode to approximately 2 minutes of compute — freeing senior mixer time for creative work. For compliance, the platform scales review to additional territories without proportional headcount increases. For back-catalog, batch triage across archived libraries changes the economics of archive re-release."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="homepage-body">
   <nav role="navigation" aria-label="Main navigation" class="homepage-nav">
@@ -99,8 +209,8 @@
         <span>VIDCOMPLY AI</span>
       </div>
       <div class="nav-links" role="menubar">
-        <a href="product-tour.html">Platform</a>
-        <a href="case-studies.html">Case Studies</a>
+        <a href="platform/">Platform</a>
+        <a href="cases/">Case Studies</a>
         <a href="#book-demo" class="btn-primary">Book Demo</a>
       </div>
     </div>
@@ -118,7 +228,7 @@
 
           <div class="homepage-hero-cta">
             <a href="#book-demo" class="btn-primary">Book Demo</a>
-            <a href="product-tour.html" class="btn-primary homepage-btn-secondary">Explore Solutions</a>
+            <a href="platform/" class="btn-primary homepage-btn-secondary">Explore Solutions</a>
           </div>
 
           <div class="homepage-integrations-inline">
@@ -200,7 +310,7 @@
                 <li>Human-in-the-loop sign-off instead of black-box moderation</li>
                 <li>Built for enterprise release checks and operational QC pipelines</li>
               </ul>
-              <a class="homepage-pillar-link" href="product-tour.html#compliance-tour">See the product tour</a>
+              <a class="homepage-pillar-link" href="platform/#compliance-tour">See the product tour</a>
             </div>
           </article>
 
@@ -225,7 +335,7 @@
                 <li>Video-only, audio-only, and transcript-led review paths</li>
                 <li>Designed for operational clarity, not vague reporting</li>
               </ul>
-              <a class="homepage-pillar-link" href="product-tour.html#platform-tour">See the product tour</a>
+              <a class="homepage-pillar-link" href="platform/#platform-tour">See the product tour</a>
             </div>
           </article>
 
@@ -253,7 +363,7 @@
                 <li>Timeline-ready outputs instead of disconnected alerts</li>
                 <li>Supports catalog remediation and high-volume series work</li>
               </ul>
-              <a class="homepage-pillar-link" href="product-tour.html#video-tour">See the product tour</a>
+              <a class="homepage-pillar-link" href="platform/#video-tour">See the product tour</a>
             </div>
           </article>
 
@@ -279,7 +389,7 @@
                 <li>Built to shorten Stage 1-8 style prep before final mix and editorial handoff</li>
                 <li>Supports timeline-ready outputs for existing post and audio environments</li>
               </ul>
-              <a class="homepage-pillar-link" href="product-tour.html#audio-tour">See the product tour</a>
+              <a class="homepage-pillar-link" href="platform/#audio-tour">See the product tour</a>
             </div>
           </article>
         </div>
@@ -358,6 +468,7 @@
               <li>Clear operator-facing issue context</li>
               <li>Evidence-backed handoff for approvals</li>
             </ul>
+            <a href="integrations/frameio.html" style="display:inline-flex;align-items:center;gap:0.35rem;margin-top:0.85rem;font-size:0.88rem;color:#818cf8;text-decoration:none;font-weight:500;opacity:0.9;transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">Frame.io integration in action →</a>
           </article>
 
           <article class="homepage-capability-card homepage-surface animate-on-scroll animate-delay-1">
@@ -460,23 +571,23 @@
         <div class="homepage-footer-card">
           <h3>Shopfront</h3>
           <ul>
-            <li><a href="product-tour.html">Platform</a></li>
-            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="platform/">Platform</a></li>
+            <li><a href="cases/">Case Studies</a></li>
           </ul>
         </div>
         <div class="homepage-footer-card">
           <h3>Resources</h3>
           <ul>
-            <li><a href="product-tour.html">Platform</a></li>
-            <li><a href="gdpr-compliance.html">GDPR Compliance</a></li>
+            <li><a href="platform/">Platform</a></li>
+            <li><a href="legal/gdpr-compliance.html">GDPR Compliance</a></li>
           </ul>
         </div>
         <div class="homepage-footer-card">
           <h3>Contact</h3>
           <ul>
             <li><a href="mailto:sales@vidcomply.ai">sales@vidcomply.ai</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
           </ul>
         </div>
       </div>

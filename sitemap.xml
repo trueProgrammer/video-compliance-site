@@ -2,49 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>http://vidcomply.ai/</loc>
+        <loc>https://vidcomply.ai/</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>http://vidcomply.ai/img/icon_site_1024_v2.png</image:loc>
+            <image:loc>https://vidcomply.ai/img/icon_site_1024_v2.png</image:loc>
             <image:title>VIDCOMPLY AI Logo</image:title>
             <image:caption>VIDCOMPLY AI enterprise media platform</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>http://vidcomply.ai/product-tour.html</loc>
+        <loc>https://vidcomply.ai/platform/</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>http://vidcomply.ai/case-studies.html</loc>
+        <loc>https://vidcomply.ai/cases/</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>http://vidcomply.ai/privacy-policy.html</loc>
+        <loc>https://vidcomply.ai/cases/audio-unscripted.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/cases/compliance-multimarket.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/cases/catalog-remediation.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/learn/audio-automix-solution.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/learn/audio-agentic-workflow.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/integrations/frameio.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/legal/privacy-policy.html</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>http://vidcomply.ai/terms-of-service.html</loc>
+        <loc>https://vidcomply.ai/legal/terms-of-service.html</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>http://vidcomply.ai/gdpr-compliance.html</loc>
+        <loc>https://vidcomply.ai/legal/gdpr-compliance.html</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
- </urlset>
+</urlset>

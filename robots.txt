@@ -38,11 +38,18 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+# OpenAI real-time ChatGPT search
+User-agent: OAI-SearchBot
+Allow: /
+
 # ChatGPT User for browsing
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic Claude bot
+# Anthropic Claude bots
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
