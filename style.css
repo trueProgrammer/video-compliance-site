@@ -3848,6 +3848,93 @@ section#cultural-compliance .modern-card:hover {
     margin-top: 0.5rem;
 }
 
+.cs-story-feature-img {
+    margin-top: 3rem;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.55);
+}
+
+.cs-story-feature-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cs-story-logo-strip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+}
+
+.cs-story-logo-strip-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #4d6070;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.cs-story-logo-strip img {
+    height: 26px;
+    width: auto;
+    opacity: 0.55;
+    filter: grayscale(1) brightness(1.8);
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+}
+
+.cs-story-logo-strip img:hover {
+    opacity: 0.9;
+}
+
+.cs-story-locale-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    margin: 2rem 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.cs-story-locale-item {
+    position: relative;
+}
+
+.cs-story-locale-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.cs-story-locale-label {
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0.4rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.15rem 0.45rem;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+}
+
 @media (max-width: 768px) {
     .cs-story-hero h1 {
         font-size: 2.2rem;
@@ -3864,5 +3951,13 @@ section#cultural-compliance .modern-card:hover {
 
     .cs-story-hero {
         padding: 4rem 1rem 2.5rem;
+    }
+
+    .cs-story-locale-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cs-story-locale-item:nth-child(n+4) {
+        display: none;
     }
 }
