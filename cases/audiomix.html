@@ -118,7 +118,7 @@
           <h1>Agentic automix for post-production dialogue.</h1>
           <p>Crosstalk rejection, ISO track organisation, and broadcast loudness — automated inside your Avid session. No round-trip. No external app.</p>
           <div class="hero-btns">
-            <a href="YOUR_DOWNLOAD_URL" class="btn-fill">Try VidComply &darr;</a>
+            <a href="https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download" class="btn-fill">Try VidComply &darr;</a>
             <button class="trial-key-btn" onclick="document.getElementById('trial-form').classList.toggle('open');this.style.display='none'">Get trial key</button>
             <a href="mailto:sales@vidcomply.ai" class="btn-link">Talk to sales →</a>
           </div>
@@ -804,7 +804,7 @@
   </footer>
 
   <script>
-    const LICENSE_API = 'YOUR_REQUEST_URL'; // replace after cdk deploy
+    const LICENSE_API = 'https://0op17ziqec.execute-api.eu-west-1.amazonaws.com/license/request';
 
     async function submitTrialKey(e) {
       e.preventDefault();
