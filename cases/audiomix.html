@@ -11,6 +11,8 @@
   <style>
     body { background: #050d1a; color: #c4d4e4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     .subpage-nav { position: relative; background: rgba(5,13,26,.97); border-bottom: 1px solid rgba(255,255,255,.08); backdrop-filter: none; }
+    /* global .hero::before is an absolute overlay from style.css — disable it here */
+    .hero::before { display: none; }
 
     .w { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
