@@ -126,7 +126,7 @@
           </div>
           <form id="trial-form" class="trial-form" onsubmit="submitTrialKey(event)">
             <input type="email" id="trial-email" placeholder="your@email.com" required autocomplete="email">
-            <button type="submit" id="trial-submit">Send key →</button>
+            <button type="submit" id="trial-submit">Request key</button>
             <span id="trial-msg" class="trial-msg"></span>
           </form>
         </div>
@@ -833,13 +833,13 @@
           msg.textContent = data.error || 'Something went wrong. Try again.';
           msg.className = 'trial-msg err';
           btn.disabled = false;
-          btn.textContent = 'Send key →';
+          btn.textContent = 'Request key';
         }
       } catch {
         msg.textContent = 'Could not connect. Check your connection and try again.';
         msg.className = 'trial-msg err';
         btn.disabled = false;
-        btn.textContent = 'Send key →';
+        btn.textContent = 'Request key';
       }
     }
   </script>
