@@ -8,6 +8,7 @@ Allow: /videos/
 Allow: /docs/
 Allow: /img/
 Allow: /style.css
+Disallow: /db-subdomain/
 
 # Allow all search engines and AI bots
 User-agent: Googlebot
@@ -71,8 +72,7 @@ User-agent: YouBot
 Allow: /
 
 # Sitemap location
-Sitemap: http://vidcomply.ai/sitemap.xml
+Sitemap: https://vidcomply.ai/sitemap.xml
 
 # Crawl-delay (be nice to small servers)
 Crawl-delay: 1
-

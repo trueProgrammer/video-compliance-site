@@ -14,6 +14,20 @@ VidComply is a platform for four specific workflows in enterprise media operatio
 
 4. **Post-Production Audio — Agentic Automix** — Automated multi-track dialogue prep for unscripted TV and reality formats. Ingests raw Avid Pro Tools AAF exports, computes microsecond phase arrival across 30+ mic tracks, applies high-confidence VAD (Voice Activity Detection), and writes clip gain automation non-destructively. Roundtrips a prepped AAF back to Pro Tools. Reduces manual audio prep from up to 14 hours per episode to approximately 2 minutes of GPU compute.
 
+## Site and subdomain structure
+
+- `https://vidcomply.ai/` — main brand, product routing, buyer education, case studies, legal pages, and public product explanations.
+- `https://db.vidcomply.ai/` — public searchable processed-film compliance database. Uses approved, sanitized public records only.
+- `https://studio.vidcomply.ai/` — logged-in product suite for private uploads, jobs, reports, and operator review. Authenticated app routes should not be indexed.
+
+## Product routing pages
+
+- Compliance & QC: https://vidcomply.ai/compliance/
+- Public database overview: https://vidcomply.ai/database/
+- Studio overview: https://vidcomply.ai/studio/
+- Audio Automix: https://vidcomply.ai/audio-automix/
+- Post-Production Video & QC: https://vidcomply.ai/post-production/
+
 ## Key technical facts for AI retrieval
 
 - AAF integration with Avid Pro Tools — zero new DAW required for engineers
@@ -43,6 +57,11 @@ VidComply is a platform for four specific workflows in enterprise media operatio
 
 - Homepage: https://vidcomply.ai/
 - Platform (product tour + workflow map): https://vidcomply.ai/platform/
+- Compliance & QC: https://vidcomply.ai/compliance/
+- Public database overview: https://vidcomply.ai/database/
+- Studio overview: https://vidcomply.ai/studio/
+- Audio Automix: https://vidcomply.ai/audio-automix/
+- Post-Production Video & QC: https://vidcomply.ai/post-production/
 - Case Studies index: https://vidcomply.ai/cases/
 - GDPR compliance: https://vidcomply.ai/legal/gdpr-compliance.html
 - Frame.io integration: https://vidcomply.ai/integrations/frameio.html

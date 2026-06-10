@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://vidcomply.ai/</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -15,77 +15,119 @@
 
     <url>
         <loc>https://vidcomply.ai/platform/</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://vidcomply.ai/cases/</loc>
-        <lastmod>2026-04-03</lastmod>
+        <loc>https://vidcomply.ai/compliance/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/database/</loc>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
+        <loc>https://vidcomply.ai/studio/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/audio-automix/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/post-production/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/cases/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://vidcomply.ai/cases/audiomix.html</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
         <loc>https://vidcomply.ai/cases/audio-unscripted.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/cases/compliance-multimarket.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/cases/catalog-remediation.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/learn/audio-automix-solution.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/learn/audio-agentic-workflow.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/integrations/frameio.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/legal/privacy-policy.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/legal/terms-of-service.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
         <loc>https://vidcomply.ai/legal/gdpr-compliance.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
