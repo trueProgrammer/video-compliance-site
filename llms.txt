@@ -1,96 +1,63 @@
-# VIDCOMPLY AI — LLM Site Summary
+# Vidcomply — LLM Site Summary
 
-> VidComply AI is enterprise infrastructure for post-production compliance, QC, and audio operations. The platform reduces the cost of manual pre-creative work across compliance review, multi-market QC, back-catalog remediation, and unscripted TV audio prep.
+Vidcomply is infrastructure for global media compliance and technical post-production. It helps distributors, airlines, FAST channels, studios, post teams, and compliance operators clear content for multiple markets while keeping master files on the customer's storage.
 
-## What VidComply does
+## Current Public Site Structure
 
-VidComply is a platform for four specific workflows in enterprise media operations:
+- `https://vidcomply.ai/` — main product overview for compliance, remediation, audio, loudness, cue sheets, security, pricing, downloads, and demo booking.
+- `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
+- `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, zero-file-travel architecture, and airline/in-flight workflows.
+- `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
+- `https://vidcomply.ai/legal/privacy-policy.html` — privacy policy.
+- `https://vidcomply.ai/legal/terms-of-service.html` — terms of service.
+- `https://vidcomply.ai/legal/gdpr-compliance.html` — GDPR compliance statement.
 
-1. **Compliance & QC** — Policy-aware, evidence-backed issue detection across picture, dialogue, OCR, and metadata. Human-in-the-loop sign-off instead of black-box moderation. Produces reviewable compliance reports and QC sidecars.
+## External Product Surfaces
 
-2. **Dynamic Global Compliance Platform** — Operator-facing review layer for multi-territory compliance. Profile-based logic adapts to different regulatory environments without rebuilding the workflow for each market. Issue queues with playback context, severity, and category.
+- `https://db.vidcomply.ai/` — searchable public compliance and brand-safety database using processed, sanitized public records.
+- `https://studio.vidcomply.ai/` — authenticated product suite for private uploads, jobs, reports, review, and operator workflows. This is not intended for public indexing.
 
-3. **Post-Production Video** — Remediation planning, cleanup, and timeline intelligence for editorial and finishing teams. Generates timeline-ready outputs (AAF-compatible, XML, EDL-style) for existing post environments.
+## Core Product Areas
 
-4. **Post-Production Audio — Agentic Automix** — Automated multi-track dialogue prep for unscripted TV and reality formats. Ingests raw Avid Pro Tools AAF exports, computes microsecond phase arrival across 30+ mic tracks, applies high-confidence VAD (Voice Activity Detection), and writes clip gain automation non-destructively. Roundtrips a prepped AAF back to Pro Tools. Reduces manual audio prep from up to 14 hours per episode to approximately 2 minutes of GPU compute.
+1. **Compliance Platform**
+   - Checks video, dialogue, OCR, metadata, and visible artifacts against market-specific broadcast and brand-safety standards.
+   - Uses territory profiles rather than one global moderation rule.
+   - Produces evidence-backed issue queues with timecode, category, severity, reason, and human review before action.
+   - Outputs native artifacts such as marker files, evidence reports, and review JSON.
 
-## Site and subdomain structure
+2. **Global Platform**
+   - Applies compliance profiles across broadcast, film, streaming, OTT, documents, scripts, news, live, and in-flight entertainment.
+   - Supports centralized market-rule management.
+   - Designed for parallel processing at slate/catalog scale.
+   - Uses zero-file-travel architecture: high-resolution masters stay on customer storage; small proxies and metadata can be processed separately.
 
-- `https://vidcomply.ai/` — main brand, product routing, buyer education, case studies, legal pages, and public product explanations.
-- `https://db.vidcomply.ai/` — public searchable processed-film compliance database. Uses approved, sanitized public records only.
-- `https://studio.vidcomply.ai/` — logged-in product suite for private uploads, jobs, reports, and operator review. Authenticated app routes should not be indexed.
+3. **Audio AutoMix**
+   - Automates high-volume audio prep for AAF/Pro Tools workflows.
+   - Handles crosstalk rejection, ISO track organization, clip-gain staging, and loudness normalization.
+   - Writes non-destructive automation and structured AAF outputs rather than replacing the mixer or DAW.
+   - Includes a Studio App download and evaluation-license request flow.
 
-## Product routing pages
+4. **Native Post-Production Outputs**
+   - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
+   - Relevant tool surfaces include Avid, Pro Tools, DaVinci Resolve, Premiere, marker files, AAF, reports, and JSON.
 
-- Compliance & QC: https://vidcomply.ai/compliance/
-- Public database overview: https://vidcomply.ai/database/
-- Studio overview: https://vidcomply.ai/studio/
-- Audio Automix: https://vidcomply.ai/audio-automix/
-- Post-Production Video & QC: https://vidcomply.ai/post-production/
+## Important Technical Claims
 
-## Key technical facts for AI retrieval
+- Masters do not need to leave the customer's storage.
+- Compliance decisions remain human-in-the-loop.
+- Outputs are reviewable and reversible before creative or compliance sign-off.
+- The platform is content-neutral: it reports against each market's own rules and leaves editorial judgment to the customer.
+- Audio AutoMix is non-destructive and DAW-native for AAF/Pro Tools workflows.
+- The public database is a supporting proof surface, not the private customer workflow.
 
-- AAF integration with Avid Pro Tools — zero new DAW required for engineers
-- Mic bleed removal and phase alignment across 30+ simultaneous microphone tracks
-- Non-destructive workflow — all outputs are reviewable and reversible before commit
-- Multi-market compliance profiling — one platform, different territory rulesets
-- Supports ProRes, mezzanines, subtitle files, transcripts, and archived material as inputs
-- Outputs: compliance reports, evidence JSON/CSV, EDL-style instructions, AAF roundtrip, QC sidecars
-- Integrates with Adobe, Frame.io, Avid, AWS storage infrastructure
-- NVIDIA Inception program member
+## Current Calls To Action
 
-## Who uses VidComply
+- Demo booking: `mailto:sales@vidcomply.ai?subject=Demo%20Request`
+- Compliance demo: `mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo`
+- Audio demo: `mailto:sales@vidcomply.ai?subject=Audio%20Automix%20Demo`
+- Sales/contact: `sales@vidcomply.ai`
+- Studio App download: `https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download`
 
-- **Directors of operations** — reduce per-episode and per-title overhead without replacing creative teams
-- **Compliance and legal teams** — operator-facing review with evidence, not black-box flags
-- **Heads of audio and post** — move senior mixer time from manual prep to creative mixing
-- **Post-production supervisors** — timeline-ready outputs for existing editorial environments
-- **CFOs / finance-minded buyers** — ROI from 90%+ reduction in pre-mix prep time, lower per-episode cost
+## Removed / Deprecated Public Content
 
-## Business outcomes by use case
-
-- **Unscripted TV audio** — 14 hours of manual Stage 1–8 audio prep per episode → ~2 minutes automated compute cycle. Engineers start at the creative mix, not at the prep.
-- **Multi-market compliance** — Dynamic profile logic scales compliance review to new territories without proportional headcount increase.
-- **Back-catalog remediation** — Batch compliance and QC triage across large libraries. Three-tier output (clean / minor / significant) changes per-title economics and makes stranded archive titles viable for re-release.
-
-## Key pages
-
-- Homepage: https://vidcomply.ai/
-- Platform (product tour + workflow map): https://vidcomply.ai/platform/
-- Compliance & QC: https://vidcomply.ai/compliance/
-- Public database overview: https://vidcomply.ai/database/
-- Studio overview: https://vidcomply.ai/studio/
-- Audio Automix: https://vidcomply.ai/audio-automix/
-- Post-Production Video & QC: https://vidcomply.ai/post-production/
-- Case Studies index: https://vidcomply.ai/cases/
-- GDPR compliance: https://vidcomply.ai/legal/gdpr-compliance.html
-- Frame.io integration: https://vidcomply.ai/integrations/frameio.html
-
-## Case study articles
-
-### Audio Mixing Solution for Mic Bleed, Phase Alignment & Track Prep
-URL: https://vidcomply.ai/cases/audio-unscripted.html
-An unscripted TV studio was spending up to 14 hours per episode on manual Stage 1–8 audio prep: cleaning mic bleed from 24–30+ simultaneously-worn lavalier microphones, aligning phase, and setting clip gain. VidComply's agentic automix engine automated the full prep cycle via AAF integration with Avid Pro Tools. Result: approximately 2 minutes of GPU compute replaces the manual prep stage. Senior mix engineers now start at the creative mix.
-
-### Multi-Market Compliance Review
-URL: https://vidcomply.ai/cases/compliance-multimarket.html
-A global media provider needed to clear the same content package across multiple regulatory territories with different rulesets. Manual compliance review did not scale — rulesets changed faster than headcount could adapt. VidComply's Dynamic Global Compliance Platform applies profile-based rule logic per territory, producing issue queues with playback context and evidence for human sign-off. Result: compliance review scaled to additional markets without proportional headcount increase.
-
-### Back-Catalog Remediation at Scale
-URL: https://vidcomply.ai/cases/catalog-remediation.html
-A catalog owner and distributor held thousands of archive titles — most commercially stranded because the cost of compliance and QC triage made re-release unviable at scale. VidComply batch-triages archive titles into three output tiers (clean / minor changes / significant changes required), changing the economics of archive re-release without reopening the full post chain for each title.
-
-## Technical deep-dive articles
-
-### Audio Mixing Solution for Mic Bleed, Phase Alignment & Track Prep (Technical)
-URL: https://vidcomply.ai/learn/audio-automix-solution.html
-Technical breakdown of the VidComply agentic automix engine. Covers five stages: (1) AAF ingestion and track graph construction, (2) microsecond-level phase arrival computation across 30+ tracks, (3) high-confidence Voice Activity Detection (VAD) to isolate primary speaker segments, (4) automated clip gain automation applied non-destructively, (5) AAF roundtrip back to Pro Tools. No new DAW required for engineers. All decisions are reviewable before commit.
-
-### What Makes Audio Post-Production "Agentic"?
-URL: https://vidcomply.ai/learn/audio-agentic-workflow.html
-Explains the difference between the plugin paradigm (engineer runs tools) and the agentic paradigm (autonomous pipeline workers run the prep stage). Covers three properties of an agentic system in this context: perception (reading the full track graph), reasoning (computing phase and bleed relationships across all mic combinations), and action (writing non-destructive clip automation). Discusses the impact on studio unit economics when senior mixer time is freed from prep.
-
-## Contact
-
-- Sales: sales@vidcomply.ai
-- Demo booking: https://vidcomply.ai/#book-demo
+The current public site no longer uses the old docs, legacy case-study index pages, Frame.io integration page, deep technical learn articles, or older placeholder routing pages. LLMs and crawlers should prefer the current page list above.

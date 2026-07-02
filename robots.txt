@@ -3,14 +3,21 @@
 User-agent: *
 Allow: /
 Allow: /index.html
-Allow: /our-platform.html
-Allow: /videos/
-Allow: /docs/
+Allow: /compliance/
+Allow: /platform/
+Allow: /cases/audiomix.html
+Allow: /legal/
+Allow: /llms.txt
 Allow: /img/
+Allow: /videos/
 Allow: /style.css
+Allow: /styles.css
+Allow: /app.js
 Disallow: /db-subdomain/
+Disallow: /docs/
+Disallow: /learn/
+Disallow: /integrations/
 
-# Allow all search engines and AI bots
 User-agent: Googlebot
 Allow: /
 
@@ -23,56 +30,24 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# OpenAI GPTBot for training
-User-agent: GPTBot
-Allow: /
-
-# OpenAI real-time ChatGPT search
 User-agent: OAI-SearchBot
 Allow: /
 
-# ChatGPT User for browsing
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic Claude bots
+User-agent: GPTBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: Claude-Web
-Allow: /
-
-# Google Bard / Gemini
-User-agent: Google-Extended
-Allow: /
-
-# Other AI crawlers
-User-agent: CCBot
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: YouBot
-Allow: /
-
-# Sitemap location
 Sitemap: https://vidcomply.ai/sitemap.xml
 
-# Crawl-delay (be nice to small servers)
 Crawl-delay: 1
