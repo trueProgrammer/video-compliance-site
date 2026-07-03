@@ -68,10 +68,11 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text);
+    color: #1f2937;
     text-decoration: none;
     transition: color 0.3s;
     white-space: nowrap;
+    font-weight: 600;
 }
 
 .nav-links a:hover {

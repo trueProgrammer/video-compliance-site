@@ -109,8 +109,8 @@ button{ font-family:inherit; }
 .brand-mark{ width:34px; height:34px; border-radius:9px; background:var(--ink); display:grid; place-items:center; flex:none; }
 .brand-mark svg{ width:20px; height:20px; }
 .nav-links{ display:flex; align-items:center; gap:6px; }
-.nav-links a{ padding:8px 13px; border-radius:8px; font-size:14.5px; font-weight:500; color:var(--ink-2); transition:color .15s, background .15s; }
-.nav-links a:hover{ color:var(--ink); background:color-mix(in srgb, var(--ink) 5%, transparent); }
+.nav-links a{ padding:8px 13px; border-radius:8px; font-size:14.5px; font-weight:650; color:color-mix(in srgb, var(--ink) 78%, var(--ink-2)); background:color-mix(in srgb, var(--ink) 2.5%, transparent); transition:color .15s, background .15s; }
+.nav-links a:hover{ color:var(--ink); background:color-mix(in srgb, var(--accent) 8%, transparent); }
 .nav-links a.nav-db{ color:var(--accent); background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 18%, var(--line)); font-weight:700; }
 .nav-links a.nav-db:hover{ color:var(--cream); background:var(--accent); border-color:var(--accent); }
 .nav-right{ display:flex; align-items:center; gap:14px; }
