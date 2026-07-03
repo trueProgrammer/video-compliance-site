@@ -137,4 +137,47 @@
       if (tab) setTimeout(function () { tab.click(); }, 350);
     });
   });
+
+  /* evaluation license requests */
+  var licenseApi = 'https://0op17ziqec.execute-api.eu-west-1.amazonaws.com/license/request';
+  document.querySelectorAll('[data-license-form]').forEach(function (form) {
+    var emailInput = form.querySelector('[data-license-email]');
+    var submit = form.querySelector('[data-license-submit]');
+    var msg = form.querySelector('[data-license-msg]');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!emailInput || !submit || !msg) return;
+
+      var email = emailInput.value.trim();
+      if (!email) return;
+
+      submit.disabled = true;
+      submit.textContent = 'Sending...';
+      msg.textContent = '';
+      msg.className = 'trial-msg';
+
+      fetch(licenseApi, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      }).then(function (response) {
+        if (response.ok) {
+          msg.textContent = 'Check your inbox. The key is on its way.';
+          msg.className = 'trial-msg ok';
+          emailInput.value = '';
+          submit.textContent = 'Sent';
+          return;
+        }
+        return response.json().catch(function () { return {}; }).then(function (data) {
+          throw new Error(data.error || 'Something went wrong. Try again.');
+        });
+      }).catch(function (error) {
+        msg.textContent = error.message || 'Could not connect. Check your connection and try again.';
+        msg.className = 'trial-msg err';
+        submit.disabled = false;
+        submit.textContent = 'Request key';
+      });
+    });
+  });
 })();

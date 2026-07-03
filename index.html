@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vidcomply — Automated technical post-production</title>
-<meta name="description" content="Vidcomply is compliance, remediation, audio, loudness, and cue-sheet infrastructure for global media teams. Masters stay on your storage while reviewable native artifacts return to your existing workflow." />
+<meta name="description" content="Vidcomply is compliance, remediation, audio, loudness, and cue-sheet infrastructure for global media teams. Request a Studio App license or contact sales for enterprise compliance and airline workflows." />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <link rel="canonical" href="https://vidcomply.ai/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://vidcomply.ai/" />
 <meta property="og:title" content="Vidcomply — Compliance and post-production infrastructure" />
-<meta property="og:description" content="Compliance, remediation, audio AutoMix, loudness, and cue sheets in one reviewable media workflow." />
+<meta property="og:description" content="Compliance, remediation, audio AutoMix, loudness, and cue sheets in reviewable media workflows. Request a Studio App license or contact sales." />
 <meta property="og:image" content="https://vidcomply.ai/img/icon_site_1024_v2.png" />
 <meta property="og:site_name" content="Vidcomply" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Vidcomply — Compliance and post-production infrastructure" />
-<meta name="twitter:description" content="Global media compliance and post-production workflows with native artifacts back into Avid, Resolve, Pro Tools, and Premiere." />
+<meta name="twitter:description" content="Global media compliance and post-production workflows with Studio App licensing and sales-led enterprise deployments." />
 <meta name="twitter:image" content="https://vidcomply.ai/img/icon_site_1024_v2.png" />
 <link rel="icon" type="image/png" href="img/icon_site_1024_v2.png" />
 <link rel="apple-touch-icon" href="img/icon_site_1024_v2.png" />
@@ -535,30 +535,36 @@
 <!-- ======================= DOWNLOAD ======================= -->
 <section class="section" id="download">
   <div class="wrap">
-    <span class="eyebrow reveal">Get the desktop hub</span>
-    <h2 class="kicker-head reveal">Download what your room actually needs.</h2>
-    <p class="lede reveal" style="margin-top:20px;">A single lightweight install in the machine room — headless FFmpeg packed inside, zero-file-travel by default. Take the full suite, or just the music tools.</p>
+    <span class="eyebrow reveal">Studio App access</span>
+    <h2 class="kicker-head reveal">Download the app. Request the license.</h2>
+    <p class="lede reveal" style="margin-top:20px;">The Studio App is available for local workstation workflows such as Audio AutoMix. Compliance, airline, catalog, and private scanning workflows are sales-led deployments.</p>
 
     <div class="dl-grid">
       <div class="dl-card full reveal">
-        <span class="dl-flag">Recommended</span>
+        <span class="dl-flag">Studio App</span>
         <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--cream)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>
-        <h3>Post Production Suite</h3>
-        <p class="dl-desc">All five workflows in one parallel pass — compliance, remediation, audio, LUFS, and cue sheets. Native artifacts back into Avid, Resolve, and Pro Tools.</p>
+        <h3>Vidcomply Studio App</h3>
+        <p class="dl-desc">Local desktop app for Audio AutoMix and workstation-based media workflows. Download the installer, then request an evaluation license key for activation.</p>
         <div class="dl-mods">
-          <span class="dl-mod"><span class="sw" style="background:var(--m-compliance);"></span>Compliance</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-remediation);"></span>Remediation</span>
           <span class="dl-mod"><span class="sw" style="background:var(--m-audio);"></span>AutoMix</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-lufs);"></span>LUFS</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-cue);"></span>Cue Sheets</span>
+          <span class="dl-mod"><span class="sw" style="background:var(--m-cue);"></span>AAF / Pro Tools</span>
+          <span class="dl-mod"><span class="sw" style="background:var(--m-compliance);"></span>Evaluation license</span>
         </div>
         <div class="dl-actions">
           <a class="btn btn--primary btn--lg" href="https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
             Download for macOS
           </a>
-          <a class="btn btn--ghost btn--lg" href="mailto:sales@vidcomply.ai?subject=Linux%20Studio%20App%20Request">Linux (.deb / .rpm)</a>
+          <a class="btn btn--ghost btn--lg" href="mailto:sales@vidcomply.ai?subject=Linux%20Studio%20App%20Request">Linux access</a>
         </div>
+        <form class="trial-form open" data-license-form>
+          <label for="download-license-email">Request evaluation license</label>
+          <div class="trial-form-row">
+            <input type="email" id="download-license-email" placeholder="your@email.com" required autocomplete="email" data-license-email>
+            <button type="submit" data-license-submit>Request key</button>
+          </div>
+          <span class="trial-msg" role="status" aria-live="polite" data-license-msg></span>
+        </form>
         <div class="dl-meta">
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4 10-11"/></svg>v3.2.1</span>
           <span>Universal · Apple Silicon + Intel</span>
@@ -567,25 +573,23 @@
       </div>
 
       <div class="dl-card lite reveal">
-        <span class="dl-flag">Music only</span>
-        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--m-cue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span>
-        <h3>Music Suite</h3>
-        <p class="dl-desc">Just the music tools — automated cue-sheet compilation from your timeline, mapped against your production library. Broadcast-ready PDF and Excel.</p>
+        <span class="dl-flag">Enterprise</span>
+        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--m-compliance)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>Compliance workflows</h3>
+        <p class="dl-desc">Compliance DB, private scans, airline source compliance, regional profiles, and catalog workflows are configured with sales. These deployments are scoped with the team before access is provisioned.</p>
         <div class="dl-mods">
-          <span class="dl-mod"><span class="sw" style="background:var(--m-cue);"></span>Cue Sheets</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-audio);"></span>Library mapping</span>
+          <span class="dl-mod"><span class="sw" style="background:var(--m-compliance);"></span>Compliance</span>
+          <span class="dl-mod"><span class="sw" style="background:var(--m-remediation);"></span>Airlines</span>
+          <span class="dl-mod"><span class="sw" style="background:var(--m-lufs);"></span>Private scanning</span>
         </div>
         <div class="dl-actions">
-          <a class="btn btn--primary btn--lg" href="https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
-            Download for macOS
-          </a>
-          <a class="btn btn--ghost btn--lg" href="mailto:sales@vidcomply.ai?subject=Linux%20Music%20Suite%20Request">Linux</a>
+          <a class="btn btn--primary btn--lg" href="mailto:sales@vidcomply.ai?subject=Enterprise%20Compliance%20Workflow">Contact sales</a>
+          <a class="btn btn--ghost btn--lg" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Open Compliance DB</a>
         </div>
         <div class="dl-meta">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4 10-11"/></svg>v3.2.1</span>
-          <span>Universal</span>
-          <span>96 MB</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4 10-11"/></svg>Sales-led setup</span>
+          <span>Security review</span>
+          <span>Workflow scoping</span>
         </div>
       </div>
     </div>

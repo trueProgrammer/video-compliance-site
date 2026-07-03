@@ -4,7 +4,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 
 ## Current Public Site Structure
 
-- `https://vidcomply.ai/` — main product overview for compliance, remediation, audio, loudness, cue sheets, security, pricing, downloads, and demo booking.
+- `https://vidcomply.ai/` — main product overview for compliance, remediation, audio, loudness, cue sheets, security, pricing, Studio App download, evaluation-license request, enterprise sales contact, and demo booking.
 - `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
@@ -44,6 +44,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
    - Handles crosstalk rejection, ISO track organization, clip-gain staging, and loudness normalization.
    - Writes non-destructive automation and structured AAF outputs rather than replacing the mixer or DAW.
    - Includes a Studio App download and evaluation-license request flow.
+   - The Studio App is the self-serve downloadable surface; broader compliance and airline workflows are sales-led deployments.
 
 5. **Native Post-Production Outputs**
    - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
@@ -64,9 +65,11 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - Compliance demo: `mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo`
 - Audio demo: `mailto:sales@vidcomply.ai?subject=Audio%20Automix%20Demo`
 - Airlines demo: `mailto:sales@vidcomply.ai?subject=Airlines%20Compliance%20Demo`
+- Enterprise compliance workflows: `mailto:sales@vidcomply.ai?subject=Enterprise%20Compliance%20Workflow`
 - Sales/contact: `sales@vidcomply.ai`
 - Studio App download: `https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download`
+- Studio App evaluation-license API: `https://0op17ziqec.execute-api.eu-west-1.amazonaws.com/license/request`
 
 ## Removed / Deprecated Public Content
 
-The current public site no longer uses the old docs, legacy case-study index pages, Frame.io integration page, deep technical learn articles, or older placeholder routing pages. LLMs and crawlers should prefer the current page list above.
+The current public site no longer uses the old docs, legacy case-study index pages, Frame.io integration page, deep technical learn articles, older placeholder routing pages, or older bundle labels for downloads. LLMs and crawlers should prefer the current page list above.
