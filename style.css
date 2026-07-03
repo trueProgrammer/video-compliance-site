@@ -63,7 +63,7 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -71,10 +71,25 @@ nav {
     color: var(--text);
     text-decoration: none;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
     color: var(--primary);
+}
+
+.nav-links a.nav-db {
+    color: var(--primary);
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-links a.nav-db:hover {
+    background: var(--primary);
+    color: white;
 }
 
 .btn-primary {

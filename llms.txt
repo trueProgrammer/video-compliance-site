@@ -6,15 +6,16 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 
 - `https://vidcomply.ai/` — main product overview for compliance, remediation, audio, loudness, cue sheets, security, pricing, downloads, and demo booking.
 - `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
-- `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, zero-file-travel architecture, and airline/in-flight workflows.
+- `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
+- `https://vidcomply.ai/cases/airlines.html` — Airline compliance page covering regional route profiles, carrier standards, documents/PDF compliance, images, video, news, games, metadata, link/feed intake, human review, and source-level delivery outputs.
 - `https://vidcomply.ai/legal/privacy-policy.html` — privacy policy.
 - `https://vidcomply.ai/legal/terms-of-service.html` — terms of service.
 - `https://vidcomply.ai/legal/gdpr-compliance.html` — GDPR compliance statement.
 
 ## External Product Surfaces
 
-- `https://db.vidcomply.ai/` — searchable public compliance and brand-safety database using processed, sanitized public records.
+- `https://db.vidcomply.ai/` — Compliance DB, a searchable public compliance and brand-safety database using processed, sanitized public records.
 - `https://studio.vidcomply.ai/` — authenticated product suite for private uploads, jobs, reports, review, and operator workflows. This is not intended for public indexing.
 
 ## Core Product Areas
@@ -26,18 +27,25 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
    - Outputs native artifacts such as marker files, evidence reports, and review JSON.
 
 2. **Global Platform**
-   - Applies compliance profiles across broadcast, film, streaming, OTT, documents, scripts, news, live, and in-flight entertainment.
+   - Applies compliance profiles across broadcast, film, streaming, OTT, documents, scripts, news, live, and other content workflows.
    - Supports centralized market-rule management.
    - Designed for parallel processing at slate/catalog scale.
    - Uses zero-file-travel architecture: high-resolution masters stay on customer storage; small proxies and metadata can be processed separately.
 
-3. **Audio AutoMix**
+3. **Airlines and In-Flight Entertainment**
+   - Clears airline and passenger-facing content against carrier policy, route packs, regional sensitivity profiles, and source-specific rules.
+   - Supports video, trailers, news, documents, PDFs, images, artwork, games, interactive metadata, app pages, partner links, manifests, and feeds.
+   - Supports route-level review for regions such as GCC, APAC, domestic US, EU, and local destination markets.
+   - Produces reviewable outputs for editorial, localization, compliance, vendor, and IFE loading teams.
+   - Keeps final decisions human-in-the-loop.
+
+4. **Audio AutoMix**
    - Automates high-volume audio prep for AAF/Pro Tools workflows.
    - Handles crosstalk rejection, ISO track organization, clip-gain staging, and loudness normalization.
    - Writes non-destructive automation and structured AAF outputs rather than replacing the mixer or DAW.
    - Includes a Studio App download and evaluation-license request flow.
 
-4. **Native Post-Production Outputs**
+5. **Native Post-Production Outputs**
    - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
    - Relevant tool surfaces include Avid, Pro Tools, DaVinci Resolve, Premiere, marker files, AAF, reports, and JSON.
 
@@ -55,6 +63,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - Demo booking: `mailto:sales@vidcomply.ai?subject=Demo%20Request`
 - Compliance demo: `mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo`
 - Audio demo: `mailto:sales@vidcomply.ai?subject=Audio%20Automix%20Demo`
+- Airlines demo: `mailto:sales@vidcomply.ai?subject=Airlines%20Compliance%20Demo`
 - Sales/contact: `sales@vidcomply.ai`
 - Studio App download: `https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download`
 
