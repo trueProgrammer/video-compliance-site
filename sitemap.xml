@@ -58,6 +58,12 @@
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <video:video>
+      <video:thumbnail_loc>https://vidcomply.ai/img/icon_site_1024_v2.png</video:thumbnail_loc>
+      <video:content_loc>https://vidcomply.ai/img/VICOMPLY_AI_marketing.mp4</video:content_loc>
+      <video:title>Vidcomply airline video compliance demo</video:title>
+      <video:description>Main Vidcomply compliance demo for airline review teams, regional source compliance, evidence queues, and human sign-off workflows.</video:description>
+    </video:video>
   </url>
 
   <url>

@@ -8,7 +8,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
-- `https://vidcomply.ai/cases/airlines.html` — Airline compliance page covering regional route profiles, carrier standards, documents/PDF compliance, images, video, news, games, metadata, link/feed intake, human review, and source-level delivery outputs.
+- `https://vidcomply.ai/cases/airlines.html` — Airline compliance page with the main Vidcomply video compliance demo, regional route profiles, carrier standards, documents/PDF compliance, images, video, news, games, metadata, link/feed intake, human review, and source-level delivery outputs.
 - `https://vidcomply.ai/legal/privacy-policy.html` — privacy policy.
 - `https://vidcomply.ai/legal/terms-of-service.html` — terms of service.
 - `https://vidcomply.ai/legal/gdpr-compliance.html` — GDPR compliance statement.
@@ -34,6 +34,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 
 3. **Airlines and In-Flight Entertainment**
    - Clears airline and passenger-facing content against carrier policy, route packs, regional sensitivity profiles, and source-specific rules.
+   - Embeds the main Vidcomply video compliance demo to show the review surface, timeline evidence, market-specific findings, and human sign-off workflow.
    - Supports video, trailers, news, documents, PDFs, images, artwork, games, interactive metadata, app pages, partner links, manifests, and feeds.
    - Supports route-level review for regions such as GCC, APAC, domestic US, EU, and local destination markets.
    - Produces reviewable outputs for editorial, localization, compliance, vendor, and IFE loading teams.
