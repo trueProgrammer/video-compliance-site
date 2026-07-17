@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://vidcomply.ai/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,7 +23,7 @@
 
   <url>
     <loc>https://vidcomply.ai/compliance/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <video:video>
@@ -35,14 +36,170 @@
 
   <url>
     <loc>https://vidcomply.ai/platform/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://vidcomply.ai/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/genre-assumption-trap-global-video-compliance.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/genre-assumption-trap-global-video-compliance.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/" />
+    <lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/" />
+    <lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/pressure-2026-compliance-fast-scheduling-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/pressure-2026-compliance-fast-scheduling-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/pressure-2026-compliance-fast-scheduling-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/billie-eilish-tour-live-3d-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/billie-eilish-tour-live-3d-compliance-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/billie-eilish-tour-live-3d-compliance-analysis.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/genre-assumption-trap-global-video-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/genre-assumption-trap-global-video-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/genre-assumption-trap-global-video-compliance.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/background-brand-exposure-fast-channel-monetization.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/background-brand-exposure-fast-channel-monetization.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/background-brand-exposure-fast-channel-monetization.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/ratings-watershed-scheduling-fast-channels.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" />
+    <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+
+  <url>
     <loc>https://vidcomply.ai/cases/audiomix.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <video:video>
@@ -55,7 +212,7 @@
 
   <url>
     <loc>https://vidcomply.ai/cases/airlines.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <video:video>

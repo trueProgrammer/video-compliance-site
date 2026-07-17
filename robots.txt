@@ -5,6 +5,11 @@ Allow: /
 Allow: /index.html
 Allow: /compliance/
 Allow: /platform/
+Allow: /articles/
+Allow: /zh/
+Allow: /hi/
+Allow: /zh/llms.txt
+Allow: /hi/llms.txt
 Allow: /cases/audiomix.html
 Allow: /cases/airlines.html
 Allow: /legal/
@@ -43,10 +48,22 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://vidcomply.ai/sitemap.xml
