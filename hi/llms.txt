@@ -13,6 +13,9 @@ Vidcomply वैश्विक मीडिया टीमों के लि
 - https://vidcomply.ai/hi/articles/genre-assumption-trap-global-video-compliance.html — जॉनर तथा आयु-रेटिंग सीन समीक्षा की जगह नहीं लेते।
 - https://vidcomply.ai/hi/articles/background-brand-exposure-fast-channel-monetization.html — बैकग्राउंड ब्रांड एक्सपोज़र, विज्ञापन उपयुक्तता और FAST मुद्रीकरण।
 - https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html — रेटिंग, वॉटरशेड और FAST शेड्यूलिंग वर्कफ़्लो।
+- https://vidcomply.ai/hi/articles/ott-content-compliance-scheduling-guide.html — OTT अनुपालन, स्ट्रीमिंग रेटिंग, एक्सेस नियंत्रण, क्षेत्रीय विंडो, विज्ञापन संदर्भ और शेड्यूलिंग।
+- https://vidcomply.ai/hi/articles/tv-broadcast-compliance-scheduling-guide.html — TV प्रसारण मानक, वॉटरशेड, EPG चेतावनी, संस्करण नियंत्रण और मानवीय स्वीकृति।
+- https://vidcomply.ai/hi/articles/post-production-compliance-workflow-film-tv-ott.html — ब्रॉडकास्ट और OTT पोस्ट-प्रोडक्शन, चित्र/ऑडियो QC, कैप्शन, PII, ब्रांड सुरक्षा और डिलीवरी वर्कफ़्लो।
 
 English master: https://vidcomply.ai/articles/
 VidComply Intelligence (टाइटल, ब्रांड, बाज़ार, रेटिंग, गोपनीयता, सबटाइटल, संगीत और एंटरप्राइज़ डेटा): https://db.vidcomply.ai/

@@ -121,6 +121,8 @@
   <url>
     <loc>https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/tv-broadcast-compliance-scheduling-guide.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/tv-broadcast-compliance-scheduling-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" />
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -130,6 +132,8 @@
   <url>
     <loc>https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ott-content-compliance-scheduling-guide.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ott-content-compliance-scheduling-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" />
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -139,6 +143,8 @@
   <url>
     <loc>https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/post-production-compliance-workflow-film-tv-ott.html" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/post-production-compliance-workflow-film-tv-ott.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" />
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,7 +157,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/" />
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/" />
-    <lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
   </url>
 
   <url>
@@ -160,7 +166,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/" />
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/" />
-    <lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
   </url>
 
   <url>
@@ -222,6 +228,37 @@
     <loc>https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ratings-watershed-scheduling-fast-channels.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html" />
     <lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/ott-content-compliance-scheduling-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/ott-content-compliance-scheduling-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/ott-content-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/tv-broadcast-compliance-scheduling-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/tv-broadcast-compliance-scheduling-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/tv-broadcast-compliance-scheduling-guide.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/zh/articles/post-production-compliance-workflow-film-tv-ott.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vidcomply.ai/hi/articles/post-production-compliance-workflow-film-tv-ott.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="zh-CN" href="https://vidcomply.ai/zh/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="hi-IN" href="https://vidcomply.ai/hi/articles/post-production-compliance-workflow-film-tv-ott.html" /><xhtml:link rel="alternate" hreflang="x-default" href="https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html" />
+    <lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
   </url>
 
   <url>
