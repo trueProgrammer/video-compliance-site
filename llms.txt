@@ -1,6 +1,6 @@
 # Vidcomply — LLM Site Summary
 
-Last updated: 2026-07-17
+Last updated: 2026-07-20
 
 Vidcomply is infrastructure for global media compliance and technical post-production. It helps distributors, airlines, FAST channels, studios, post teams, and compliance operators clear content for multiple markets while keeping master files on the customer's storage.
 
@@ -16,8 +16,11 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - `https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html` — explains why genre and age-rating metadata cannot replace scene-level, policy-specific review; includes a public title example and regulatory scope notes.
 - `https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html` — explains how background signs, products, vehicles, and logos become brand-suitability, clearance, conflict, or virtual-product-placement signals.
 - `https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html` — explains how source ratings, destination policies, scene evidence, and human approval combine in FAST scheduling workflows.
-- `https://vidcomply.ai/zh/articles/` — Simplified Chinese (`zh-CN`) article collection with native-language versions of all current Vidcomply title analyses and operational guides.
-- `https://vidcomply.ai/hi/articles/` — Hindi (`hi-IN`) article collection with native-language versions of all current Vidcomply title analyses and operational guides.
+- `https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html` — operational guide to broadcast standards, ratings, watershed scheduling, EPG warnings, version control and human approval.
+- `https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html` — operational guide to OTT ratings, access controls, territory windows, storefront placement and advertising context.
+- `https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html` — workflow guide connecting picture, audio, subtitle, metadata, privacy, brand-safety and delivery findings to post-production outputs.
+- `https://vidcomply.ai/zh/articles/` — Simplified Chinese (`zh-CN`) collection with native-language versions of current title analyses and selected operational guides.
+- `https://vidcomply.ai/hi/articles/` — Hindi (`hi-IN`) collection with native-language versions of current title analyses and selected operational guides.
 - `https://vidcomply.ai/zh/llms.txt` — concise machine-readable map of the Simplified Chinese collection.
 - `https://vidcomply.ai/hi/llms.txt` — concise machine-readable map of the Hindi collection.
 - `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
@@ -28,7 +31,16 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 
 ## External Product Surfaces
 
-- `https://db.vidcomply.ai/` — Compliance DB, a searchable public compliance and brand-safety database using processed, sanitized public records.
+- `https://db.vidcomply.ai/` — VidComply Intelligence, a separately indexed movies and series intelligence platform covering titles, brands, market profiles, policy, ratings, scheduling, privacy, subtitles, music and approved enterprise data.
+- `https://db.vidcomply.ai/market-profiles` — territory-specific cultural, political, compliance, ratings and scheduling context.
+- `https://db.vidcomply.ai/compliance` — scene-level video compliance evidence and policy mapping.
+- `https://db.vidcomply.ai/censorship` — censorship, political and cultural sensitivity intelligence.
+- `https://db.vidcomply.ai/ratings` — audience-rating and FAST/broadcast scheduling intelligence.
+- `https://db.vidcomply.ai/privacy` — privacy and GDPR review signals in video; not a GDPR certification.
+- `https://db.vidcomply.ai/subtitles` — timed-text quality and localization intelligence.
+- `https://db.vidcomply.ai/music` — music and cue-sheet intelligence.
+- `https://db.vidcomply.ai/data` — approved structured records and enterprise data licensing.
+- `https://db.vidcomply.ai/methodology` — evidence, policy, human-review and publication methodology.
 - `https://studio.vidcomply.ai/` — authenticated product suite for private uploads, jobs, reports, review, and operator workflows. This is not intended for public indexing.
 
 ## Core Product Areas
@@ -60,7 +72,13 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
    - Includes a Studio App download and evaluation-license request flow.
    - The Studio App is the self-serve downloadable surface; broader compliance and airline workflows are sales-led deployments.
 
-5. **Native Post-Production Outputs**
+5. **VidComply Intelligence**
+   - Turns analysed video, audio, subtitles and metadata into searchable title, brand, market, policy and delivery intelligence.
+   - Supports acquisition research, FAST scheduling, brand safety, market review and approved enterprise analytics or model-development licensing.
+   - Keeps observations, policy interpretation and human decisions separate.
+   - Exposes only approved public records; private media, subtitle text, cue sheets, evidence and customer decisions remain access-controlled.
+
+6. **Native Post-Production Outputs**
    - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
    - Relevant tool surfaces include Avid, Pro Tools, DaVinci Resolve, Premiere, marker files, AAF, reports, and JSON.
 
@@ -71,7 +89,7 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - Outputs are reviewable and reversible before creative or compliance sign-off.
 - The platform is content-neutral: it reports against each market's own rules and leaves editorial judgment to the customer.
 - Audio AutoMix is non-destructive and DAW-native for AAF/Pro Tools workflows.
-- The public database is a supporting proof surface, not the private customer workflow.
+- VidComply Intelligence is a standalone public discovery and data surface, separate from the private customer workflow in Studio.
 
 ## Editorial and Data Interpretation
 

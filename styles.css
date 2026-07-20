@@ -114,9 +114,12 @@ button{ font-family:inherit; }
 .nav-links a.nav-db{ color:var(--accent); background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 18%, var(--line)); font-weight:700; }
 .nav-links a.nav-db:hover{ color:var(--cream); background:var(--accent); border-color:var(--accent); }
 .nav-right{ display:flex; align-items:center; gap:14px; }
-.nav-signin{ font-size:14.5px; font-weight:600; color:var(--ink); white-space:nowrap; }
-.nav-signin:hover{ color:var(--accent); }
+.nav-signin,.nav-insights{ font-size:14.5px; font-weight:600; color:var(--ink); white-space:nowrap; }
+.nav-signin:hover,.nav-insights:hover{ color:var(--accent); }
+.nav-insights[aria-current="page"]{ color:var(--accent); }
 @media(max-width:880px){ .nav-links{ display:none; } }
+@media(max-width:560px){ .nav-right{ gap:6px; } .nav-signin,.nav-insights{ font-size:13px; } }
+@media(max-width:430px){ .nav > .brand{ gap:0; font-size:0; } }
 
 /* ============================================================
    HERO

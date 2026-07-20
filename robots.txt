@@ -1,71 +1,24 @@
 # robots.txt for vidcomply.ai
 
 User-agent: *
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Video
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
 Allow: /
-Allow: /index.html
-Allow: /compliance/
-Allow: /platform/
-Allow: /articles/
-Allow: /zh/
-Allow: /hi/
-Allow: /zh/llms.txt
-Allow: /hi/llms.txt
-Allow: /cases/audiomix.html
-Allow: /cases/airlines.html
-Allow: /legal/
-Allow: /llms.txt
-Allow: /img/
-Allow: /videos/
-Allow: /style.css
-Allow: /styles.css
-Allow: /app.js
 Disallow: /db-subdomain/
 Disallow: /docs/
 Disallow: /learn/
 Disallow: /integrations/
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot-Video
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
 Sitemap: https://vidcomply.ai/sitemap.xml
-
-Crawl-delay: 1
