@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vidcomply — Global Media Compliance Platform on AWS</title>
-  <meta name="description" content="Vidcomply is an AWS Marketplace media compliance platform for video, documents, subtitles and audio, with exact evidence, ratings and dynamic global rules." />
+  <meta name="description" content="Cloud-native media compliance infrastructure on AWS for video, documents, subtitles and audio, with APIs, dynamic global profiles, ratings and exact evidence." />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://www.vidcomply.ai/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.vidcomply.ai/" />
   <meta property="og:title" content="Vidcomply — Global Media Compliance Platform on AWS" />
-  <meta property="og:description" content="AWS Marketplace SaaS for evidence-backed media compliance, ratings and dynamic global rules." />
+  <meta property="og:description" content="Cloud-native compliance infrastructure with APIs, dynamic global profiles, exact evidence and ratings." />
   <meta property="og:image" content="https://www.vidcomply.ai/img/Vidcomply_title_intelligence_global_distribution.png" />
   <meta property="og:image:width" content="3024" />
   <meta property="og:image:height" content="1728" />
@@ -19,7 +19,7 @@
   <meta property="og:site_name" content="Vidcomply" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Vidcomply — Global Media Compliance Platform on AWS" />
-  <meta name="twitter:description" content="Available through AWS Marketplace for frame-accurate compliance, ratings and global media workflows." />
+  <meta name="twitter:description" content="Cloud-native compliance infrastructure on AWS with APIs, dynamic global profiles and frame-accurate evidence." />
   <meta name="twitter:image" content="https://www.vidcomply.ai/img/Vidcomply_title_intelligence_global_distribution.png" />
 
   <link rel="icon" type="image/png" href="img/icon_site_1024_v2.png" />
@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="compliance-home.css?v=20260812-3" />
+  <link rel="stylesheet" href="compliance-home.css?v=20260812-4" />
 
   <script type="application/ld+json">
   {
@@ -58,7 +58,7 @@
       "https://uk.linkedin.com/in/vladislav-isaev-5828b281",
       "https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424"
     ],
-    "description": "Global compliance infrastructure for media, documents, subtitles, audio, marketing assets, websites and enterprise content, with title intelligence, dynamic rules, OTT ratings and scheduling.",
+    "description": "Cloud-native global compliance infrastructure for media, documents, subtitles, audio, marketing assets, websites and enterprise content, with APIs, title intelligence, dynamic rules, global profiles, OTT ratings and scheduling.",
     "subjectOf": [
       {
         "@type": "NewsArticle",
@@ -89,7 +89,7 @@
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Media compliance, content ratings and global distribution",
     "operatingSystem": "Cloud / Software as a Service",
-    "description": "AWS-deployed SaaS for global media compliance and ratings across video, audio, subtitles, PDFs and scripts, using global and custom rules with timecoded, severity-ranked outputs.",
+    "description": "Cloud-native, API-first compliance infrastructure deployed on AWS for global media compliance and ratings across video, audio, subtitles, PDFs and scripts, using dynamic global and custom profiles with timecoded, severity-ranked outputs.",
     "provider": { "@id": "https://vidcomply.ai/#organization" },
     "featureList": [
       "Custom global compliance and age-rating profiles",
@@ -97,7 +97,9 @@
       "Video, audio, subtitles, PDFs and script analysis",
       "Native marker files, reports and review JSON",
       "Customer-controlled high-resolution masters",
-      "Elastic GPU processing on AWS"
+      "Elastic GPU processing on AWS",
+      "REST APIs, webhooks and storage connectors",
+      "Versioned dynamic rules and global profiles"
     ],
     "offers": {
       "@type": "Offer",
@@ -106,6 +108,79 @@
       "category": "Enterprise SaaS subscription",
       "seller": { "@id": "https://vidcomply.ai/#organization" }
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.vidcomply.ai/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Vidcomply a cloud-native platform or an infrastructure layer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. Use Vidcomply Studio as a self-serve platform or embed the AWS-deployed compliance layer through REST APIs, webhooks and customer-controlled storage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do dynamic rules and global compliance profiles work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vidcomply separates observable evidence from policy. Configure territory, platform, carrier, brand and house-rule profiles, adjust categories and severities, then re-evaluate affected assets without retraining the detection models."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Vidcomply integrate with an existing media supply chain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Submit assets or storage references through REST APIs, S3 and enterprise connectors. Receive job status by webhook and return evidence as JSON, reports, marker files or editorial outputs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What content types and enterprise sources are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The same evidence and policy model can review video, audio, subtitles, scripts, PDFs, images and other configured enterprise content. Authenticated websites, AEM packages and private cloud drives are scoped with the required access controls during onboarding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Vidcomply process large libraries and related files together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Run bulk independent jobs or evaluate related video, audio and subtitle assets together. Elastic AWS processing scales with the workload; turnaround depends on runtime, formats, ingress method and the agreed service level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a compliance result include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Results can include the exact timecode or file location, representative frame, category, severity, policy reason, confidence, proposed action and reviewer decision—delivered through reports, JSON and timeline-ready outputs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Vidcomply monitor accuracy and handle feedback?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Performance is reviewed with precision, recall, false-positive and false-negative measures, validation datasets and configured acceptance criteria. Reviewer feedback remains attached to the decision and can tune rules and thresholds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Vidcomply replace legal or editorial approval?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Vidcomply produces evidence-backed policy signals and operational outputs. Qualified customer teams retain final editorial, legal and release authority."
+        }
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -194,7 +269,7 @@
             Recent global premieres, indexed scene by scene <b aria-hidden="true">↗</b>
           </a>
           <h1 class="reveal">Global compliance, <em>ready for release.</em></h1>
-          <p class="vc-hero-lede reveal">Review video, documents, subtitles and audio against market and platform rules, then return exact evidence, ratings and approved actions through Studio or AWS APIs.</p>
+          <p class="vc-hero-lede reveal">Cloud-native compliance infrastructure for video, documents, subtitles and audio. Run dynamic global profiles in Studio or through AWS APIs, then return exact evidence, ratings and approved actions.</p>
           <div class="vc-hero-actions reveal">
             <a class="btn btn--primary" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Explore live database <span aria-hidden="true">↗</span></a>
             <a class="btn btn--ghost" href="mailto:sales@vidcomply.ai?subject=Private%20Compliance%20Scan">Run a private title</a>
@@ -222,7 +297,7 @@
     <section class="vc-signal-strip" aria-label="Enterprise compliance platform characteristics">
       <div class="wrap vc-signal-grid">
         <div><span>01</span><b>CONTROL</b><small>Masters remain on your storage</small></div>
-        <div><span>02</span><b>CONNECT</b><small>AWS API, webhooks, S3 and MAM</small></div>
+        <div><span>02</span><b>CONNECT</b><small>API-first infrastructure on AWS</small></div>
         <div><span>03</span><b>PROVE</b><small>Timecode, frame, rule and audit trail</small></div>
         <div><span>04</span><b>APPROVE</b><small>Your team keeps final authority</small></div>
       </div>
@@ -318,7 +393,7 @@
 
         <div class="vc-rules-band reveal">
           <div>
-            <span class="vc-mono-label">LANGUAGE-AGNOSTIC ORCHESTRATION</span>
+            <span class="vc-mono-label">DYNAMIC RULES · GLOBAL PROFILES</span>
             <h3>Change the rule. Not the model.</h3>
           </div>
           <p>Dynamic profiles separate what the system observes from how a territory, platform, carrier or house policy interprets it. Update a rule once, then re-evaluate the affected catalog without retraining the whole stack.</p>
@@ -486,10 +561,10 @@
       <div class="wrap">
         <div class="vc-section-head vc-section-head--split">
           <div>
-            <span class="eyebrow reveal">Available on AWS Marketplace</span>
-            <h2 class="reveal">Use the platform. Or make it part of yours.</h2>
+            <span class="eyebrow reveal">AWS Marketplace · API-first</span>
+            <h2 class="reveal">Cloud-native compliance infrastructure.</h2>
           </div>
-          <p class="reveal">Procure Vidcomply AI: Global Media Compliance Platform through AWS Marketplace, start in Studio, or integrate compliance through APIs, webhooks and customer-controlled storage.</p>
+          <p class="reveal">Use Vidcomply as a self-serve platform or a headless infrastructure layer. Procure through AWS Marketplace, then connect dynamic global profiles through APIs, webhooks and customer-controlled storage.</p>
         </div>
 
         <a class="vc-marketplace-banner reveal" href="https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424" target="_blank" rel="noopener" aria-label="View Vidcomply AI: Global Media Compliance Platform in AWS Marketplace">
@@ -508,12 +583,12 @@
           </article>
           <article class="vc-access-card vc-access-card--api reveal">
             <div class="vc-access-label"><span>MARKETPLACE + API</span><i>02</i></div>
-            <h3>AWS enterprise access</h3>
-            <p>Submit assets or customer-controlled storage references through REST APIs, receive status by webhook, and route evidence back to the systems teams already use.</p>
+            <h3>Embed the compliance layer</h3>
+            <p>Submit assets or customer-controlled storage references through REST APIs, apply versioned global profiles, receive status by webhook and route evidence back to the systems teams already use.</p>
             <div class="vc-api-flow" aria-label="AWS API integration flow">
               <span>S3 / MAM</span><b>→</b><span>API</span><b>→</b><span>Rules</span><b>→</b><span>JSON / EDL</span>
             </div>
-            <ul><li>Procurement through AWS Marketplace</li><li>REST API, event webhooks and AWS storage</li><li>Private, scalable enterprise deployment</li></ul>
+            <ul><li>Procurement through AWS Marketplace</li><li>REST API, event webhooks and AWS storage</li><li>Dynamic global rules and customer profiles</li><li>Private, elastically scalable enterprise deployment</li></ul>
             <div class="vc-access-actions">
               <a class="btn btn--primary" href="https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424" target="_blank" rel="noopener">View AWS Marketplace <span aria-hidden="true">↗</span></a>
               <a class="vc-text-link" href="mailto:sales@vidcomply.ai?subject=AWS%20Marketplace%20and%20API%20Integration">Discuss integration</a>
@@ -599,7 +674,7 @@
           <i>FOUNDER / CEO</i>
         </div>
         <div class="vc-founder-copy">
-          <span class="eyebrow reveal">Built by media and AI operators</span>
+          <span class="eyebrow reveal">Built by former Prime Video and media AI leaders</span>
           <h2 class="reveal">Operating principles for global compliance.</h2>
           <ul class="vc-founder-principles reveal">
             <li><b>Make evidence executable.</b><span>Attach every issue to its exact scene, timecode, frame or file location—not a spreadsheet row.</span></li>
@@ -613,8 +688,54 @@
           <div class="vc-founder-links reveal">
             <a href="https://uk.linkedin.com/in/vladislav-isaev-5828b281" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             <span>London · Founded 2025</span>
+            <span>Patent-pending architecture</span>
             <span>AGENTIC VISION LTD · 16720340</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vc-faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap vc-faq-grid">
+        <div class="vc-faq-intro reveal">
+          <span class="eyebrow">Enterprise FAQ</span>
+          <h2 id="faq-title">Questions compliance and operations teams ask.</h2>
+          <p>Answers abstracted from real enterprise evaluations, covering architecture, rules, integrations, scale, outputs and governance.</p>
+          <a class="vc-text-link" href="mailto:sales@vidcomply.ai?subject=Vidcomply%20Enterprise%20Question">Ask another question →</a>
+        </div>
+        <div class="vc-faq-list reveal">
+          <details open>
+            <summary>Is Vidcomply a cloud-native platform or an infrastructure layer?</summary>
+            <p>Both. Use Vidcomply Studio as a self-serve platform or embed the AWS-deployed compliance layer through REST APIs, webhooks and customer-controlled storage.</p>
+          </details>
+          <details>
+            <summary>How do dynamic rules and global compliance profiles work?</summary>
+            <p>Vidcomply separates observable evidence from policy. Configure territory, platform, carrier, brand and house-rule profiles, adjust categories and severities, then re-evaluate affected assets without retraining the detection models.</p>
+          </details>
+          <details>
+            <summary>How does Vidcomply integrate with an existing media supply chain?</summary>
+            <p>Submit assets or storage references through REST APIs, S3 and enterprise connectors. Receive job status by webhook and return evidence as JSON, reports, marker files or editorial outputs.</p>
+          </details>
+          <details>
+            <summary>What content types and enterprise sources are supported?</summary>
+            <p>The same evidence and policy model can review video, audio, subtitles, scripts, PDFs, images and other configured enterprise content. Authenticated websites, AEM packages and private cloud drives are scoped with the required access controls during onboarding.</p>
+          </details>
+          <details>
+            <summary>Can Vidcomply process large libraries and related files together?</summary>
+            <p>Yes. Run bulk independent jobs or evaluate related video, audio and subtitle assets together. Elastic AWS processing scales with the workload; turnaround depends on runtime, formats, ingress method and the agreed service level.</p>
+          </details>
+          <details>
+            <summary>What does a compliance result include?</summary>
+            <p>Results can include the exact timecode or file location, representative frame, category, severity, policy reason, confidence, proposed action and reviewer decision—delivered through reports, JSON and timeline-ready outputs.</p>
+          </details>
+          <details>
+            <summary>How does Vidcomply monitor accuracy and handle feedback?</summary>
+            <p>Performance is reviewed with precision, recall, false-positive and false-negative measures, validation datasets and configured acceptance criteria. Reviewer feedback remains attached to the decision and can tune rules and thresholds.</p>
+          </details>
+          <details>
+            <summary>Does Vidcomply replace legal or editorial approval?</summary>
+            <p>No. Vidcomply produces evidence-backed policy signals and operational outputs. Qualified customer teams retain final editorial, legal and release authority.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -632,11 +753,11 @@
           </div>
         </div>
         <div class="vc-insight-grid">
-          <a class="vc-insight-card reveal" href="articles/ratings-watershed-scheduling-fast-channels.html">
-            <span>RATINGS · FAST</span><h3>From ratings to watershed-aware scheduling</h3><p>Translate title evidence into candidate dayparts without treating a rating as a universal pass.</p><b>Read analysis →</b>
+          <a class="vc-insight-card reveal" href="articles/evidence-backed-content-passport-video-compliance.html">
+            <span>EVIDENCE · INFRASTRUCTURE</span><h3>Beyond detection: the content passport</h3><p>Connect exact scenes, dynamic rules, severity and human decisions in one reusable compliance record.</p><b>Read analysis →</b>
           </a>
-          <a class="vc-insight-card reveal" href="articles/ott-content-compliance-scheduling-guide.html">
-            <span>OTT · STREAMING</span><h3>OTT content compliance and scheduling</h3><p>Connect version, territory, audience controls, storefront placement and release approval.</p><b>Read guide →</b>
+          <a class="vc-insight-card reveal" href="articles/content-compliance-scheduling-programming-intelligence.html">
+            <span>PROGRAMMING · READINESS</span><h3>Schedule with compliance intelligence</h3><p>Turn scene evidence and global profiles into market-, audience- and version-specific readiness.</p><b>Read analysis →</b>
           </a>
           <a class="vc-insight-card reveal" href="articles/post-production-compliance-workflow-film-tv-ott.html">
             <span>OPERATIONS · DELIVERY</span><h3>From evidence to post-production</h3><p>Carry approved findings into markers, edit packs, reports, subtitle updates and delivery records.</p><b>Read workflow →</b>
@@ -691,6 +812,7 @@
         <div class="foot-col">
           <h5>Company</h5>
           <a href="#company">Founder &amp; CEO</a>
+          <a href="#faq">Enterprise FAQ</a>
           <a href="#partnerships">Partnerships &amp; ecosystem</a>
           <a href="articles/">Insights</a>
           <a href="legal/gdpr-compliance.html">Trust &amp; GDPR</a>

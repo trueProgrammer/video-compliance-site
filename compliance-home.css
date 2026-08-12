@@ -706,6 +706,22 @@
 .vc-founder-links a { color: var(--vc-blue); }
 .vc-founder-links a:hover { border-color: color-mix(in srgb, var(--vc-blue) 35%, var(--line)); }
 
+.vc-faq { color: var(--ink); background: var(--cream-2); }
+.vc-faq-grid { display: grid; grid-template-columns: minmax(260px, .38fr) 1fr; gap: clamp(48px, 8vw, 112px); align-items: start; }
+.vc-faq-intro { position: sticky; top: 116px; }
+.vc-faq-intro .eyebrow { color: var(--ink-2); }
+.vc-faq-intro h2 { max-width: 15ch; margin-top: 16px; font-size: clamp(28px, 2.4vw, 36px); line-height: 1.08; }
+.vc-faq-intro > p { max-width: 39ch; margin-top: 18px; color: var(--ink-2); font-size: 14px; line-height: 1.6; }
+.vc-faq-intro .vc-text-link { margin-top: 23px; }
+.vc-faq-list { border-top: 1px solid var(--line); }
+.vc-faq-list details { border-bottom: 1px solid var(--line); }
+.vc-faq-list summary { position: relative; padding: 23px 46px 23px 0; color: var(--ink); font-size: 16px; font-weight: 650; line-height: 1.35; cursor: pointer; list-style: none; }
+.vc-faq-list summary::-webkit-details-marker { display: none; }
+.vc-faq-list summary::after { content: "+"; position: absolute; top: 20px; right: 4px; display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid var(--line); border-radius: 50%; color: var(--vc-blue); font-family: var(--mono); font-size: 14px; font-weight: 400; }
+.vc-faq-list details[open] summary::after { content: "−"; }
+.vc-faq-list summary:focus-visible { outline: 2px solid var(--vc-blue); outline-offset: 5px; border-radius: 3px; }
+.vc-faq-list details > p { max-width: 72ch; padding: 0 46px 22px 0; color: var(--ink-2); font-size: 14px; line-height: 1.65; }
+
 .vc-insight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
 .vc-insight-card { display: flex; flex-direction: column; min-height: 310px; padding: 26px; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .vc-insight-card:hover { transform: translateY(-4px); border-color: #cbd6f1; box-shadow: 0 20px 50px rgba(25,40,70,.09); }
@@ -748,8 +764,11 @@
   .vc-section-head--split,
   .vc-access-grid,
   .vc-ecosystem-grid,
-  .vc-founder-grid { grid-template-columns: 1fr; }
+  .vc-founder-grid,
+  .vc-faq-grid { grid-template-columns: 1fr; }
   .vc-founder-grid { gap: 32px; }
+  .vc-faq-grid { gap: 35px; }
+  .vc-faq-intro { position: relative; top: 0; max-width: 680px; }
   .vc-section-head--split { gap: 24px; }
   .vc-press-ribbon-inner { grid-template-columns: auto 1fr; padding-block: 16px; }
   .vc-press-links { grid-column: 2; }
@@ -848,6 +867,8 @@
   .vc-founder-principles li { grid-template-columns: 1fr; gap: 6px; }
   .vc-founder-grid { gap: 26px; }
   .vc-founder-mark { width: 150px; }
+  .vc-faq-list summary { padding-right: 40px; font-size: 15px; }
+  .vc-faq-list details > p { padding-right: 8px; }
   .vc-cta-card { border-radius: 14px; }
 }
 

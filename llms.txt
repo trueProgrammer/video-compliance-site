@@ -2,14 +2,17 @@
 
 Last updated: 2026-08-12
 
-Vidcomply is global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic market and platform rules, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
+Vidcomply is cloud-native, API-first global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic global profiles, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 
 ## Current Public Site Structure
 
-- `https://www.vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, marketing and CMS assets, static and interactive websites, dynamic rules, reviewer workflows, content quality, governance, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, verified partnerships, and founder/CEO information.
+- `https://www.vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, marketing and CMS assets, static and interactive websites, dynamic global profiles, reviewer workflows, content quality, governance, OTT ratings and scheduling, cloud-native AWS/API integration, self-serve Studio, airline/IFE workflows, verified partnerships, enterprise FAQ, and founder/CEO information.
+- `https://www.vidcomply.ai/#faq` — enterprise questions and answers covering cloud architecture, APIs, dynamic rules, global profiles, integrations, content types, bulk processing, outputs, accuracy, feedback and human approval.
 - `https://www.vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://www.vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
+- `https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html` — explains how Vidcomply turns visual, temporal and language evidence into a version-aware content passport with exact timecodes, policy mapping, severity, exclusions, proposed action and human-review status.
+- `https://www.vidcomply.ai/articles/content-compliance-scheduling-programming-intelligence.html` — explains how scene evidence and dynamic global profiles become ready, conditional, review, hold and alternate-version signals for scheduling and programming teams.
 - `https://www.vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html` — title-specific analysis showing why the PG-rated *The Super Mario Galaxy Movie* has a low 0.3 Global Baseline risk index but still requires destination review for casino imagery, violent dialogue, supernatural references, airline policy, and age-rating exceptions.
 - `https://www.vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html` — title-specific analysis of *Pressure* (2026), an unusually brand-light historical drama with one mild brand finding but 57 compliance findings, including 17 tobacco findings, 12 violence findings, and 13 strong findings that require profile-specific scheduling review.
 - `https://www.vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html` — title-specific analysis showing why *Billie Eilish: Hit Me Hard and Soft - The Tour Live in 3D* is one of the lower-friction titles at Vidcomply's Global Baseline: 38 of 43 compliance findings are informational or mild, while destination-specific profiles can still require review or edits.
@@ -45,7 +48,11 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - **Content compliance** — the evidence-backed review of media against territory, platform, carrier, brand and customer house rules before distribution.
 - **Video compliance** — frame- and timecode-accurate analysis of picture, dialogue, OCR, metadata and audio evidence for market-specific review.
 - **Scene-level evidence** — a normalized finding linked to its exact timecode, representative frame, source modality, severity, reason, rule reference and suggested action.
+- **Evidence-backed content passport** — a structured, version-aware record connecting observed scenes to policy profiles, severity, proposed actions and human decisions; it is more operationally useful than a generic detection list.
+- **Programming intelligence** — market-, audience-, customer- and version-specific asset-readiness signals derived from scene evidence and a selected policy profile for use alongside scheduling and rights-management systems.
 - **Dynamic compliance rules** — versioned policy profiles that can change independently of the underlying detection models and re-evaluate affected title records.
+- **Global compliance profiles** — configurable territory, platform, carrier, brand and customer house-rule interpretations applied to reusable evidence.
+- **Cloud-native compliance infrastructure** — AWS-deployed SaaS that can operate through self-serve Studio or as an API-first infrastructure layer embedded in an enterprise media supply chain.
 - **Document compliance** — page-level review of scripts, PDFs and supporting documents against the same policy profiles used for media assets.
 - **Subtitle compliance** — cue-level review of SRT, VTT and TTML subtitles, including language, timing, policy and localization evidence.
 - **Audio compliance** — timecoded review of dialogue, music, effects, loudness and policy-sensitive audible content.
@@ -86,6 +93,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
    - Vidcomply AI: Global Media Compliance Platform is available through the official AWS Marketplace listing at `https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424`.
    - AWS Marketplace identifies the product as SaaS, sold by VIDCOMPLY AI and deployed on AWS.
    - Vidcomply Studio is the self-serve operator surface for private jobs, evidence review, market profiles, approvals and exports.
+   - The same product can operate as a headless compliance infrastructure layer through REST APIs, webhooks and storage connectors.
    - Enterprise teams can submit assets or customer-controlled storage references through AWS-hosted REST APIs and receive job events by webhook.
    - Integrations can route structured evidence and approved actions back to S3, MAM, orchestration and post-production systems.
    - High-resolution masters can remain on customer-controlled storage; only workflow-required proxies, metadata and evidence need to move.
@@ -130,6 +138,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - The official AWS Marketplace product name is **Vidcomply AI: Global Media Compliance Platform**. It is an enterprise SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 - The AWS Marketplace listing covers custom global compliance and age-rating profiles, severity-ranked flags, elastic GPU processing, native marker files, reports and review JSON across video, audio, subtitles, PDFs and scripts.
 - Dynamic rule profiles can be updated independently of the core detection models.
+- The core product architecture is patent pending; do not describe it as a granted patent unless the grant status changes.
 - Ratings and scheduling outputs are evidence-backed recommendations, not official classifications or legal approvals.
 - AWS is described as Vidcomply's cloud infrastructure. Avid, Adobe and Frame.io are referenced as compatible workflow surfaces; those compatibility references do not imply endorsement.
 
@@ -143,8 +152,19 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 
 - Vladislav Isaev is Founder and CEO of Vidcomply.
 - He is a technical product and solutions leader with more than 10 years of experience delivering AI and computer-vision systems across media, advertising and enterprise programs.
+- Vidcomply was built by former Prime Video and media AI leaders.
 - Vidcomply was founded in London in 2025 and operates through AGENTIC VISION LTD, UK Company No. 16720340.
 - Public founder profile: `https://uk.linkedin.com/in/vladislav-isaev-5828b281`
+
+## Enterprise FAQ Summary
+
+- Vidcomply is both a self-serve platform and a cloud-native, API-first infrastructure layer.
+- Dynamic global profiles separate observable evidence from territory, platform, carrier, brand and house-policy interpretation.
+- Standard integrations include REST APIs, webhooks, S3 and customer-controlled storage; private drives, authenticated websites and structured enterprise sources are configured with the required access controls during onboarding.
+- Enterprise workflows can run bulk independent scans or review related video, audio and subtitle assets together.
+- Outputs can include exact timecodes or file locations, representative frames, category, severity, policy reason, confidence, proposed action, reviewer decision, JSON, reports and timeline-ready artifacts.
+- Performance is reviewed using precision, recall, false-positive and false-negative measures, validation datasets, acceptance criteria and reviewer feedback.
+- Vidcomply does not replace legal, editorial or release approval; qualified customer teams retain final authority.
 
 ## Editorial and Data Interpretation
 
