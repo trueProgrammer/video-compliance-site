@@ -1,758 +1,484 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vidcomply — Global Media Intelligence &amp; Post-Production</title>
-<meta name="description" content="Vidcomply provides movies and series intelligence plus compliance, remediation, audio, subtitle, privacy, loudness and cue-sheet infrastructure for global media teams." />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<link rel="canonical" href="https://vidcomply.ai/" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://vidcomply.ai/" />
-<meta property="og:title" content="Vidcomply — Global Media Intelligence &amp; Post-Production" />
-<meta property="og:description" content="Movies and series intelligence with reviewable compliance, brand, market, privacy, subtitle, music and post-production workflows." />
-<meta property="og:image" content="https://vidcomply.ai/img/icon_site_1024_v2.png" />
-<meta property="og:site_name" content="Vidcomply" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Vidcomply — Global Media Intelligence &amp; Post-Production" />
-<meta name="twitter:description" content="Movies and series intelligence with global media compliance and post-production workflows." />
-<meta name="twitter:image" content="https://vidcomply.ai/img/icon_site_1024_v2.png" />
-<link rel="icon" type="image/png" href="img/icon_site_1024_v2.png" />
-<link rel="apple-touch-icon" href="img/icon_site_1024_v2.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://vidcomply.ai/#organization",
-  "name": "Vidcomply",
-  "alternateName": ["VIDCOMPLY AI", "VidComply"],
-  "url": "https://vidcomply.ai/",
-  "logo": "https://vidcomply.ai/img/icon_site_1024_v2.png",
-  "email": "sales@vidcomply.ai",
-  "sameAs": [
-    "https://www.linkedin.com/company/vidcomplyai"
-  ],
-  "description": "Movies and series intelligence plus compliance, remediation, audio, subtitle, privacy, loudness, and cue-sheet infrastructure for global media workflows.",
-  "knowsAbout": [
-    "global video compliance",
-    "media supply chain automation",
-    "FAST channel operations",
-    "in-flight entertainment compliance",
-    "post-production audio",
-    "movies and series intelligence",
-    "brand safety intelligence",
-    "subtitle and cue-sheet intelligence"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Vidcomply",
-  "url": "https://vidcomply.ai/",
-  "hasPart": {
-    "@type": "WebSite",
-    "name": "VidComply Intelligence",
-    "url": "https://db.vidcomply.ai/"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://db.vidcomply.ai/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidcomply — Global Content Compliance Infrastructure</title>
+  <meta name="description" content="Vidcomply turns video, documents, subtitles and audio into evidence-backed global compliance records with exact timecodes, frames, dynamic rules, OTT ratings and scheduling." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://vidcomply.ai/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vidcomply.ai/" />
+  <meta property="og:title" content="Vidcomply — Global Content Compliance Infrastructure" />
+  <meta property="og:description" content="One evidence layer for video, documents, subtitles and audio—mapped to every market, rating and schedule." />
+  <meta property="og:image" content="https://vidcomply.ai/img/Vidcomply_compliance_platform.png" />
+  <meta property="og:image:width" content="1916" />
+  <meta property="og:image:height" content="908" />
+  <meta property="og:image:alt" content="Vidcomply compliance platform review interface with exact timecodes and issue evidence" />
+  <meta property="og:site_name" content="Vidcomply" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vidcomply — Global Content Compliance Infrastructure" />
+  <meta name="twitter:description" content="Frame-accurate compliance intelligence and execution for every market." />
+  <meta name="twitter:image" content="https://vidcomply.ai/img/Vidcomply_compliance_platform.png" />
+
+  <link rel="icon" type="image/png" href="img/icon_site_1024_v2.png" />
+  <link rel="apple-touch-icon" href="img/icon_site_1024_v2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="compliance-home.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://vidcomply.ai/#organization",
+    "name": "Vidcomply",
+    "legalName": "AGENTIC VISION LTD",
+    "alternateName": ["VIDCOMPLY AI", "VidComply"],
+    "identifier": "UK Company No. 16720340",
+    "url": "https://vidcomply.ai/",
+    "logo": "https://vidcomply.ai/img/icon_site_1024_v2.png",
+    "email": "sales@vidcomply.ai",
+    "foundingDate": "2025",
+    "foundingLocation": "London, United Kingdom",
+    "founder": {
+      "@type": "Person",
+      "name": "Vladislav Isaev",
+      "jobTitle": "Founder & CEO",
+      "url": "https://uk.linkedin.com/in/vladislav-isaev-5828b281",
+      "knowsAbout": ["computer vision", "media technology", "AI product architecture", "global content compliance"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/vidcomplyai",
+      "https://uk.linkedin.com/in/vladislav-isaev-5828b281"
+    ],
+    "description": "Global compliance infrastructure for video, documents, subtitles and audio, with title intelligence, dynamic rules, OTT ratings and scheduling."
   }
-}
-</script>
-<script>
-  /* Arm entrance animations only when the page is actually visible. */
-  (function () {
-    function arm() {
-      if (document.visibilityState === 'visible') { document.documentElement.classList.add('anim-ready'); return true; }
-      return false;
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vidcomply",
+    "url": "https://vidcomply.ai/",
+    "hasPart": {
+      "@type": "WebSite",
+      "name": "VidComply Intelligence",
+      "url": "https://db.vidcomply.ai/"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://db.vidcomply.ai/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
-    if (!arm()) {
-      document.addEventListener('visibilitychange', function onv() {
-        if (arm()) { document.removeEventListener('visibilitychange', onv); if (window.__vcCheckReveal) window.__vcCheckReveal(); }
-      });
-    }
-  })();
-</script>
+  }
+  </script>
+  <script>
+    (function () {
+      function arm() {
+        if (document.visibilityState === 'visible') {
+          document.documentElement.classList.add('anim-ready');
+          return true;
+        }
+        return false;
+      }
+      if (!arm()) {
+        document.addEventListener('visibilitychange', function onVisibility() {
+          if (arm()) {
+            document.removeEventListener('visibilitychange', onVisibility);
+            if (window.__vcCheckReveal) window.__vcCheckReveal();
+          }
+        });
+      }
+    })();
+  </script>
 </head>
-<body>
+<body class="compliance-home">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============================ NAV ============================ -->
-<nav class="nav" id="nav">
-  <a class="brand" href="#top">
-    <span class="brand-mark">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg>
-    </span>
-    Vidcomply
-  </a>
-  <div class="nav-links">
-    <a class="nav-db" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Intelligence</a>
-    <a href="compliance/">Compliance</a>
-    <a href="cases/audiomix.html">Audio Mix</a>
-    <a href="cases/airlines.html">Airlines</a>
-    <a href="#download">Download</a>
-  </div>
-  <div class="nav-right">
-    <a class="nav-insights" href="articles/">Insights</a>
-    <a class="nav-signin" href="https://studio.vidcomply.ai/">Sign in</a>
-    <a class="btn btn--primary btn--sm" href="#cta">Book a demo</a>
-  </div>
-</nav>
-
-<main id="top">
-
-<!-- ============================ HERO ============================ -->
-<header class="section hero" id="hero">
-  <div class="wrap hero-inner">
-    <a class="hero-pill reveal" href="https://db.vidcomply.ai" target="_blank" rel="noopener"><span class="np">INTELLIGENCE</span> Explore movies and series across brands, markets, ratings and compliance
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Vidcomply home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg>
+      </span>
+      Vidcomply
     </a>
-    <h1 class="reveal">Infrastructure for <em>global media.</em></h1>
-    <div class="hero-caps reveal">
-      <span class="cap-chip"><span class="d" style="background:var(--m-compliance);"></span>Compliance</span>
-      <span class="cap-chip"><span class="d" style="background:var(--m-remediation);"></span>Remediation</span>
-      <span class="cap-chip"><span class="d" style="background:var(--m-audio);"></span>Audio</span>
-      <span class="cap-chip"><span class="d" style="background:var(--m-lufs);"></span>Privacy</span>
-      <span class="cap-chip"><span class="d" style="background:var(--m-cue);"></span>Cue Sheets</span>
+    <div class="nav-links">
+      <a class="nav-db" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Title database</a>
+      <a href="#coverage">Compliance</a>
+      <a href="#ott">OTT ratings</a>
+      <a href="#integration">AWS &amp; API</a>
+      <a href="cases/airlines.html">IFE</a>
     </div>
-    <p class="hero-audience reveal">Built for global distributors, airlines, and FAST channels — masters never leave your building.</p>
-    <div class="hero-cta reveal">
-      <a class="btn btn--primary" href="#cta">Book a demo
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="btn btn--ghost" href="#workflows">See the workflows</a>
+    <div class="nav-right">
+      <a class="nav-insights" href="articles/">Insights</a>
+      <a class="nav-signin" href="#integration">Self-serve</a>
+      <a class="btn btn--primary btn--sm" href="mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo">Book a demo</a>
     </div>
-    <div class="hero-trust reveal">
-      <div class="hero-partners">
-        <span class="partner">
-          <svg viewBox="0 0 48 24" fill="none"><text x="0" y="18" font-family="JetBrains Mono, monospace" font-size="17" font-weight="600" fill="currentColor" letter-spacing="1">AVID</text></svg>
-          <span class="partner-tag">Technology Partner</span>
-        </span>
-        <span class="partner">
-          <svg viewBox="0 0 26 26" fill="currentColor"><path d="M13 2 3 8v10l10 6 10-6V8L13 2Zm0 2.6 7.4 4.4-7.4 4.4-7.4-4.4L13 4.6Zm-8 6 7 4.2v8L5 18.6v-8Zm16 0v8l-7 4.2v-8l7-4.2Z"/></svg>
-          <span class="partner-tag">NVIDIA Inception</span>
-        </span>
-        <span class="partner">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
-          <span class="partner-tag">SOC 2 Type II</span>
-        </span>
-      </div>
-      <div class="hero-tools">
-        <span class="lbl">Runs inside</span>
-        <div class="tool-chips">
-          <span class="tool-chip">Avid</span>
-          <span class="tool-chip">DaVinci Resolve</span>
-          <span class="tool-chip">Pro Tools</span>
-          <span class="tool-chip">Premiere</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+  </nav>
 
-<!-- ======================= COMPLIANCE (flagship) ======================= -->
-<section class="section compliance" id="compliance">
-  <div class="wrap">
-    <span class="eyebrow reveal">Compliance · Global delivery</span>
-    <h2 class="kicker-head reveal">Clear one master for every market on earth.</h2>
-    <p class="cmp-lede reveal">Every territory draws the line in a different place — language, substances, faith, imagery. Vidcomply checks your master against each market's published broadcast standards and flags only what that market restricts, with the timecode and the reason.</p>
-
-    <div class="comp-teaser-grid">
-      <div class="comp-teaser reveal">
-        <span>01</span>
-        <h4>Market profiles</h4>
-        <p>Every standard is applied as its own territory profile, not one global moderation rule.</p>
-      </div>
-      <div class="comp-teaser reveal">
-        <span>02</span>
-        <h4>Evidence queues</h4>
-        <p>Operators see timecode, category, severity, and reason before anything is changed.</p>
-      </div>
-      <div class="comp-teaser reveal">
-        <span>03</span>
-        <h4>Native output</h4>
-        <p>Flags return as marker files, reports, and review JSON for the existing workflow.</p>
-      </div>
-    </div>
-
-    <div class="cmp-demo reveal">
-      <div class="cmp-demo-copy">
-        <span class="eyebrow">Main demo</span>
-        <h3>See the compliance platform in motion.</h3>
-        <p>A short walkthrough of the review surface, timeline evidence, and market-specific compliance workflow.</p>
-      </div>
-      <video controls playsinline preload="metadata" aria-label="Vidcomply compliance platform overview demo">
-        <source src="img/VICOMPLY_AI_marketing.mp4" type="video/mp4">
-      </video>
-      <a class="btn btn--primary cmp-demo-link" href="compliance/">Open compliance page</a>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= PLATFORM (teaser) ======================= -->
-<section class="section section--alt" id="platform">
-  <div class="wrap">
-    <span class="eyebrow reveal">The Platform</span>
-    <h2 class="kicker-head reveal">One compliance engine. Every content type you publish.</h2>
-    <p class="lede reveal" style="margin-top:20px;">Video is only the start. Vidcomply runs the same global-standards engine across news footage, scripts and documents, streaming libraries, airline passenger content, and in-flight entertainment — each with its own set of market profiles, kept current automatically.</p>
-
-    <div class="ctype-grid">
-      <div class="ctype-card reveal">
-        <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L19 8l-3-3L5 16z"/></svg></span>
-        <h5>Broadcast &amp; Film</h5>
-        <p>Episodic, feature, and long-form masters at delivery lock.</p>
-      </div>
-      <div class="ctype-card reveal">
-        <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M4 15h10M4 4h16v16H4z"/></svg></span>
-        <h5>News &amp; Live</h5>
-        <p>Fast-turn segments checked against same-day air deadlines.</p>
-      </div>
-      <div class="ctype-card reveal">
-        <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l5 5v13H7z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
-        <h5>Documents &amp; Scripts</h5>
-        <p>Shooting scripts, releases, and delivery paperwork, scanned as text.</p>
-      </div>
-      <div class="ctype-card reveal">
-        <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>
-        <h5>Streaming &amp; OTT</h5>
-        <p>Whole-catalog libraries, re-checked whenever a market's rules change.</p>
-      </div>
-      <a class="ctype-card reveal" href="cases/airlines.html">
-        <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l7-2 4-7 2 1-3 7 6-1 2 2-8 3-2 4-2-1 1-4-7-2z"/></svg></span>
-        <h5>Airlines &amp; In-Flight</h5>
-        <p>Video, news, PDFs, images, games, links, and passenger-facing content cleared by route.</p>
-      </a>
-    </div>
-
-    <div class="platform-cta reveal">
-      <p class="pc-txt"><b>Global rule profiles, managed in one place.</b> Update a market's standard once — every asset in the queue is re-checked against it immediately, fully secured end-to-end.</p>
-      <div class="pc-stats">
-        <div class="pc-stat"><div class="v">400h</div><div class="k">CONTENT / 24H</div></div>
-        <div class="pc-stat"><div class="v">Live</div><div class="k">RULE UPDATES</div></div>
-      </div>
-      <a class="btn btn--primary" href="platform/">See the full platform
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= SUITE / WORKFLOWS ======================= -->
-<section class="section suite" id="workflows">
-  <div class="wrap">
-    <span class="eyebrow reveal">The Vidcomply Suite</span>
-    <h2 class="reveal">Five workflows. One pass. Native files out.</h2>
-    <p class="lede reveal">Compliance, remediation, audio, loudness, and cue sheets — each intercepts the timeline and hands back a native artifact your team opens directly. No new player, no dashboard to learn.</p>
-
-    <div class="flow-rail reveal" id="flowRail">
-      <button class="flow-tab active" data-flow="0"><span class="ico" style="background:var(--chip-1);"><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-11"/></svg></span>Compliance Scan</button>
-      <button class="flow-tab" data-flow="1"><span class="ico" style="background:var(--chip-2);"><svg viewBox="0 0 24 24" fill="none" stroke="#9a6b3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L19 8l-3-3L5 16z"/></svg></span>Video Remediation</button>
-      <button class="flow-tab" data-flow="2"><span class="ico" style="background:var(--chip-3);"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l3-7 4 14 3-9 2 2h3"/></svg></span>Audio AutoMix</button>
-      <button class="flow-tab" data-flow="3"><span class="ico" style="background:var(--chip-4);"><svg viewBox="0 0 24 24" fill="none" stroke="#3f6f57" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#3f6f57"/></svg></span>LUFS Correction</button>
-      <button class="flow-tab" data-flow="4"><span class="ico" style="background:var(--chip-5);"><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span>Cue Sheets</button>
-    </div>
-
-    <div class="flow-deck reveal">
-      <!-- 0 — COMPLIANCE -->
-      <div class="flow-panel active" data-panel="0">
-        <div class="flow-text">
-          <span class="eyebrow">Compliance Scan</span>
-          <h3>Flag every violation before the cut leaves the room.</h3>
-          <p>Computer vision detects blurred faces, exposed PII, license plates, and ad-clashing logos — dropping colored flags onto the timeline ruler without touching a pixel of the cut.</p>
-          <div class="flow-stats">
-            <div class="flow-stat"><div class="k">Turnaround</div><div class="v accent">15 min</div></div>
-            <div class="flow-stat"><div class="k">Sits inside</div><div class="v" style="font-size:21px;">Avid · Premiere</div></div>
-          </div>
-          <span class="artifact-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>Avid / Premiere Marker TXT</span>
-        </div>
-        <div class="flow-mock">
-          <div class="mock-title"><span>Timeline · Marker Pass</span><span style="color:var(--accent);">4 flags</span></div>
-          <div class="timeline">
-            <div class="tl-ruler"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="tl-flag" data-l="PII" style="left:18%; background:var(--accent);"></span>
-            <span class="tl-flag" data-l="PLATE" style="left:42%; background:#c98a2e;"></span>
-            <span class="tl-flag" data-l="BRAND" style="left:63%; background:var(--accent);"></span>
-            <span class="tl-flag" data-l="FACE" style="left:84%; background:#c98a2e;"></span>
-          </div>
-          <div class="issue-list">
-            <div class="issue"><span class="sev" style="background:var(--accent);"></span><span class="cat">PII</span><span class="desc">Phone number on prop laptop</span><span class="tc">00:18:04</span></div>
-            <div class="issue"><span class="sev" style="background:#c98a2e;"></span><span class="cat">PLATE</span><span class="desc">License plate, background</span><span class="tc">00:42:11</span></div>
-            <div class="issue"><span class="sev" style="background:var(--accent);"></span><span class="cat">BRAND</span><span class="desc">Competitor logo on can</span><span class="tc">01:03:27</span></div>
-            <div class="issue"><span class="sev" style="background:#c98a2e;"></span><span class="cat">FACE</span><span class="desc">Unreleased bystander</span><span class="tc">01:24:50</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 1 — REMEDIATION -->
-      <div class="flow-panel" data-panel="1">
-        <div class="flow-text">
-          <span class="eyebrow">Video Remediation</span>
-          <h3>Live, editable blur nodes — independent of color.</h3>
-          <p>Automated object tracking deploys feathered masking overlays. The colorist opens a conformed DaVinci project with live Gaussian nodes and Power Windows — gradeable before or after, zero tracking drift.</p>
-          <div class="flow-stats">
-            <div class="flow-stat"><div class="k">Turnaround</div><div class="v accent">1 hour</div></div>
-            <div class="flow-stat"><div class="k">Sits inside</div><div class="v" style="font-size:21px;">DaVinci Resolve</div></div>
-          </div>
-          <span class="artifact-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>DaVinci .drp / Alpha AAF</span>
-        </div>
-        <div class="flow-mock">
-          <div class="mock-title"><span>Remediation Engine · Power Window</span><span style="color:var(--accent);">tracking</span></div>
-          <div class="frame">
-            <div class="grad"></div>
-            <div class="pw" style="top:24%; left:34%;"><span class="h tl"></span><span class="h tr"></span><span class="h bl"></span><span class="h br"></span></div>
-            <span class="tag">node_01 · gaussian · feather 12px · 0 drift</span>
-          </div>
-          <div class="node-row">
-            <div class="node"><div class="nk">Node type</div><div class="nv">Gaussian blur</div></div>
-            <div class="node"><div class="nk">Tracking</div><div class="nv">Vector · locked</div></div>
-            <div class="node"><div class="nk">Pixel-free</div><div class="nv">Grade either side</div></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 — AUDIO -->
-      <div class="flow-panel" data-panel="2">
-        <div class="flow-text">
-          <span class="eyebrow">Audio AutoMix</span>
-          <h3>Isolate dialogue, strip the bleed, normalize the mix.</h3>
-          <p>AutoMix isolates production dialogue, strips crosstalk, cleans lapel bleed, and corrects phase — handing a clean multi-track AAF stem back to the mixer in minutes.</p>
-          <div class="flow-stats">
-            <div class="flow-stat"><div class="k">Turnaround</div><div class="v accent">3–5 min</div></div>
-            <div class="flow-stat"><div class="k">Sits inside</div><div class="v" style="font-size:21px;">Pro Tools · Avid</div></div>
-          </div>
-          <span class="artifact-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>Multi-track AAF</span>
-        </div>
-        <div class="flow-mock">
-          <div class="mock-title"><span>AutoMix · Stem</span><span style="color:var(--green);">dialogue isolated</span></div>
-          <div class="tracks" id="audioTracks">
-            <div class="track lead"><span class="tname">DIALOG_A</span><div class="wave"></div></div>
-            <div class="track lead"><span class="tname">DIALOG_B</span><div class="wave"></div></div>
-            <div class="track muted"><span class="tname">CROSSTALK</span><div class="wave"></div></div>
-            <div class="track"><span class="tname">LAV_BLEED</span><div class="wave"></div></div>
-            <div class="track"><span class="tname">ROOM</span><div class="wave"></div></div>
-          </div>
-          <div class="node-row" style="margin-top:20px;">
-            <div class="node"><div class="nk">Crosstalk</div><div class="nv" style="color:var(--green);">Removed</div></div>
-            <div class="node"><div class="nk">Lapel bleed</div><div class="nv" style="color:var(--green);">Cleaned</div></div>
-            <div class="node"><div class="nk">Phase</div><div class="nv" style="color:var(--green);">Corrected</div></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3 — LUFS -->
-      <div class="flow-panel" data-panel="3">
-        <div class="flow-text">
-          <span class="eyebrow">LUFS Correction</span>
-          <h3>Normalized to strict broadcast loudness, every time.</h3>
-          <p>Vidcomply normalizes the full sequence to EBU R128 and ATSC A/85 integrated-loudness targets — taming peaks and lifting quiet passages so it passes QC the first time.</p>
-          <div class="flow-stats">
-            <div class="flow-stat"><div class="k">Standard</div><div class="v accent">R128 · A/85</div></div>
-            <div class="flow-stat"><div class="k">Target</div><div class="v" style="font-size:21px;">−24 LUFS</div></div>
-          </div>
-          <span class="artifact-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>Normalized AAF</span>
-        </div>
-        <div class="flow-mock">
-          <div class="mock-title"><span>Integrated loudness</span><span style="color:var(--green);">in spec</span></div>
-          <div class="meter">
-            <div class="meter-scale">
-              <div class="meter-target" style="bottom:46%;"><span>−24 LUFS</span></div>
-              <div class="meter-bar over" style="height:78%;"><span class="bl">IN</span></div>
-              <div class="meter-bar" style="height:46%;"><span class="bl">OUT</span></div>
-              <div class="meter-bar" style="height:30%;"><span class="bl">QUIET</span></div>
-              <div class="meter-bar" style="height:46%;"><span class="bl">CORR</span></div>
-              <div class="meter-bar" style="height:46%;"><span class="bl">PEAK</span></div>
-            </div>
-            <div class="meter-x"><span>−9</span><span>−24</span><span>−31</span><span>−24</span><span>−24</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4 — CUE -->
-      <div class="flow-panel" data-panel="4">
-        <div class="flow-text">
-          <span class="eyebrow">Cue Sheet Engine</span>
-          <h3>Delivery paperwork, compiled from the timeline.</h3>
-          <p>Timeline audio metadata is mapped against your production music library to compile broadcast-ready cue sheets — every track, in-point, duration, and usage, ready to deliver.</p>
-          <div class="flow-stats">
-            <div class="flow-stat"><div class="k">Turnaround</div><div class="v accent">&lt; 10 min</div></div>
-            <div class="flow-stat"><div class="k">Output</div><div class="v" style="font-size:21px;">PDF · Excel</div></div>
-          </div>
-          <span class="artifact-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>Broadcast PDF / XLS</span>
-        </div>
-        <div class="flow-mock">
-          <div class="mock-title"><span>Cue sheet · Ep. 104</span><span style="color:var(--accent);">PDF · XLS</span></div>
-          <div class="cue">
-            <div class="cue-row head"><span>Title</span><span>Library</span><span>In</span><span>Dur</span></div>
-            <div class="cue-row"><span class="t">Neon Drift</span><span class="m">APM / Cavendish</span><span class="m">00:01:12</span><span class="m">0:34</span></div>
-            <div class="cue-row"><span class="t">Slow Tide</span><span class="m">Extreme Music</span><span class="m">00:06:48</span><span class="m">1:02</span></div>
-            <div class="cue-row"><span class="t">Backroad Hum</span><span class="m">Universal PM</span><span class="m">00:11:30</span><span class="m">0:48</span></div>
-            <div class="cue-row"><span class="t">Closing Theme</span><span class="m">In-house</span><span class="m">00:21:05</span><span class="m">1:20</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= REEL STRIP (quiet proof) ======================= -->
-<section class="reel-strip" id="reel">
-  <div class="wrap">
-    <div class="reel-head">
-      <span class="eyebrow reveal">Watch it work</span>
-      <a class="reel-more" href="cases/audiomix.html">Full Audio Automix reel
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-    <div class="reel-row reveal">
-      <a class="reel-card" href="compliance/">
-        <div class="reel-thumb" style="--tint:color-mix(in srgb, var(--m-compliance) 55%, transparent);">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="img/VICOMPLY_AI_marketing.mp4" type="video/mp4">
-          </video>
-          <span class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-dur">Demo</span>
-        </div>
-        <div class="reel-cap"><span class="d" style="background:var(--m-compliance);"></span>Compliance in action</div>
-      </a>
-      <a class="reel-card" href="#workflows" data-jump-flow="1">
-        <div class="reel-thumb" style="--tint:color-mix(in srgb, var(--m-remediation) 55%, transparent);">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="videos/Timeline_intelligence_short.mp4" type="video/mp4">
-          </video>
-          <span class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-dur">Demo</span>
-        </div>
-        <div class="reel-cap"><span class="d" style="background:var(--m-remediation);"></span>Remediation tracking</div>
-      </a>
-      <a class="reel-card" href="cases/audiomix.html">
-        <div class="reel-thumb" style="--tint:color-mix(in srgb, var(--m-audio) 55%, transparent);">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="img/VidComply_Audio_Reel.mp4" type="video/mp4">
-          </video>
-          <span class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-dur">Demo</span>
-        </div>
-        <div class="reel-cap"><span class="d" style="background:var(--m-audio);"></span>Audio AutoMix reel</div>
-      </a>
-      <a class="reel-card" href="platform/">
-        <div class="reel-thumb" style="--tint:color-mix(in srgb, var(--m-cue) 55%, transparent);">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="videos/Localization_and_formats_short.mp4" type="video/mp4">
-          </video>
-          <span class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-dur">Demo</span>
-        </div>
-        <div class="reel-cap"><span class="d" style="background:var(--m-cue);"></span>Global delivery platform</div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= SECURITY ======================= -->
-<section class="section sec" id="security">
-  <div class="wrap">
-    <span class="eyebrow reveal">Zero-file-travel architecture</span>
-    <h2 class="kicker-head reveal">Your master files never leave the building.</h2>
-    <p class="lede reveal" style="margin-top:20px;">High-res masters stay on your local SAN. Only tiny proxies and metadata reach the cloud GPU — zero bandwidth strain, ironclad security.</p>
-
-    <div class="sec-diagram reveal">
-      <div class="sec-zone onprem">
-        <span class="zlbl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="7" rx="1"/><rect x="4" y="13" width="16" height="7" rx="1"/><circle cx="8" cy="7.5" r="1"/><circle cx="8" cy="16.5" r="1"/></svg>On-prem · macOS / Linux</span>
-        <h4>The Desktop Hub</h4>
-        <p>A lightweight app with a headless FFmpeg packed inside. It reads sequences from local storage and renders alpha overlays locally.</p>
-        <div class="sec-node"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>Master files on SAN / Nexus</div>
-        <div class="sec-node"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16l5-6 4 4 3-4 4 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>Generates 360p proxies locally</div>
-      </div>
-
-      <div class="sec-pipe">
-        <div class="sec-flow">
-          <span class="arr"><svg viewBox="0 0 90 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 9h82M76 4l8 5-8 5"/></svg></span>
-          <div class="fl">tiny proxies + metadata</div>
-        </div>
-        <div class="sec-flow back">
-          <span class="arr"><svg viewBox="0 0 90 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 9h82M76 4l8 5-8 5"/></svg></span>
-          <div class="fl">coordinate JSON</div>
-        </div>
-      </div>
-
-      <div class="sec-zone cloud">
-        <span class="zlbl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18a4 4 0 010-8 6 6 0 0111.5-1.5A3.5 3.5 0 0118 18z"/></svg>Cloud · Elastic GPU array</span>
-        <h4>The Compute Array</h4>
-        <p>The cloud executes the heavy tracking math and returns lightweight coordinate strings — never the media itself.</p>
-        <div class="sec-node"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>Runs tracking math at scale</div>
-        <div class="sec-node"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Returns coordinate JSON only</div>
-      </div>
-    </div>
-
-    <div class="sec-stats">
-      <div class="sec-stat reveal"><div class="v" data-count="10" data-suffix=" eps">10 eps</div><div class="k">An entire unscripted season, dumped in at once.</div></div>
-      <div class="sec-stat reveal"><div class="v" data-count="400" data-suffix=" min">400 min</div><div class="k">Crunched concurrently — not queued linearly.</div></div>
-      <div class="sec-stat reveal"><div class="v" data-count="6" data-suffix="h total">6h total</div><div class="k">The whole slate, back in one parallel window.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= SAVINGS / PRICING ======================= -->
-<section class="section section--alt" id="pricing">
-  <div class="wrap">
-    <span class="eyebrow reveal">Scale · Human-in-the-loop</span>
-    <h2 class="kicker-head reveal">Parallel processing at 100× human labor.</h2>
-    <p class="lede reveal" style="margin-top:20px;">Vidcomply scales with your slate, not your headcount — content-neutral, language-agnostic, and always with your team holding the final cut.</p>
-
-    <div class="scale-banner reveal">
-      <div class="num"><em>100×</em></div>
-      <div class="txt">
-        <h3>The throughput of a manual QC pass.</h3>
-        <p>An elastic GPU array runs your entire slate at once — not one episode after another. Throughput scales naturally with the work, on demand.</p>
-        <span class="hil"><span class="dotp"></span>Human in the loop</span>
-      </div>
-    </div>
-
-    <div class="scale-grid">
-      <div class="scale-card reveal">
-        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4-4 3 3 5-6 4 5"/><path d="M3 21h18"/><path d="M3 3v18"/></svg></span>
-        <h4>Natural scale</h4>
-        <p>Spin up compute on demand. A whole season processes in parallel — capacity follows the workload, not your roster.</p>
-      </div>
-      <div class="scale-card reveal">
-        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></span>
-        <h4>Content-neutral</h4>
-        <p>No editorial opinion baked in. Vidcomply reports against each market's published standards — and nothing more.</p>
-      </div>
-      <div class="scale-card reveal">
-        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M9 5v3c0 5-2 8-5 10M9 8c0 6 3 9 8 11"/><path d="M14 21l4-9 4 9M15.5 18h5"/></svg></span>
-        <h4>Language-agnostic</h4>
-        <p>Detection runs on meaning and imagery, not a single tongue. Deliver in any language, to any region.</p>
-      </div>
-      <div class="scale-card reveal">
-        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/><path d="M9.5 11.5l2 2 4-4"/></svg></span>
-        <h4>Human in the loop</h4>
-        <p>Every flag is a suggestion. Your team reviews, signs off, and owns the final cut — always.</p>
-      </div>
-    </div>
-
-    <div class="pricing-block">
-      <div class="rate reveal">
-        <div class="rate-row head"><span>Module</span><span>What you get</span><span class="price">Rate</span></div>
-        <div class="rate-row"><span class="name">Audio AutoMix</span><span class="det">Flat monthly fee — 2 local workstation seats</span><span class="price">$1,200<span class="per"> / mo</span></span></div>
-        <div class="rate-row"><span class="name">Compliance Scan</span><span class="det">Marker pass across timeline content</span><span class="price">$1.00<span class="per"> / min</span></span></div>
-        <div class="rate-row"><span class="name">Remediation Passes</span><span class="det">Blur nodes &amp; tracked masking</span><span class="price">$5.00<span class="per"> / min</span></span></div>
-        <div class="rate-row"><span class="name">Music Cue Sheets</span><span class="det">Compiled delivery paperwork</span><span class="price">$1.00<span class="per"> / min</span></span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= DOWNLOAD ======================= -->
-<section class="section" id="download">
-  <div class="wrap">
-    <span class="eyebrow reveal">Studio App access</span>
-    <h2 class="kicker-head reveal">Download the app. Request the license.</h2>
-    <p class="lede reveal" style="margin-top:20px;">The Studio App is available for local workstation workflows such as Audio AutoMix. Compliance, airline, catalog, and private scanning workflows are sales-led deployments.</p>
-
-    <div class="dl-grid">
-      <div class="dl-card full reveal">
-        <span class="dl-flag">Studio App</span>
-        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--cream)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>
-        <h3>Vidcomply Studio App</h3>
-        <p class="dl-desc">Local desktop app for Audio AutoMix and workstation-based media workflows. Download the installer, then request an evaluation license key for activation.</p>
-        <div class="dl-mods">
-          <span class="dl-mod"><span class="sw" style="background:var(--m-audio);"></span>AutoMix</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-cue);"></span>AAF / Pro Tools</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-compliance);"></span>Evaluation license</span>
-        </div>
-        <div class="dl-actions">
-          <a class="btn btn--primary btn--lg" href="https://4gj7kjwng1.execute-api.eu-west-1.amazonaws.com/download">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
-            Download for macOS
+  <main id="main">
+    <header class="vc-hero" id="top">
+      <div class="vc-hero-glow" aria-hidden="true"></div>
+      <div class="wrap vc-hero-grid">
+        <div class="vc-hero-copy">
+          <a class="vc-announcement reveal" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">
+            <span>LIVE TITLE INTELLIGENCE</span>
+            Recent global premieres, indexed scene by scene <b aria-hidden="true">↗</b>
           </a>
-          <a class="btn btn--ghost btn--lg" href="mailto:sales@vidcomply.ai?subject=Linux%20Studio%20App%20Request">Linux access</a>
-        </div>
-        <form class="trial-form open" data-license-form>
-          <label for="download-license-email">Request evaluation license</label>
-          <div class="trial-form-row">
-            <input type="email" id="download-license-email" placeholder="your@email.com" required autocomplete="email" data-license-email>
-            <button type="submit" data-license-submit>Request key</button>
+          <h1 class="reveal">Compliance infrastructure for <em>every frame, file and market.</em></h1>
+          <p class="vc-hero-lede reveal">Vidcomply turns video, documents, subtitles and audio into evidence-backed compliance records—mapped to dynamic rules, exact timecodes, representative frames and accountable actions.</p>
+          <div class="vc-hero-actions reveal">
+            <a class="btn btn--primary" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Explore the title database <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="mailto:sales@vidcomply.ai?subject=Private%20Compliance%20Scan">Run a private title</a>
           </div>
-          <span class="trial-msg" role="status" aria-live="polite" data-license-msg></span>
-        </form>
-        <div class="dl-meta">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4 10-11"/></svg>v3.2.1</span>
-          <span>Universal · Apple Silicon + Intel</span>
-          <span>248 MB</span>
+          <div class="vc-trust-row reveal" aria-label="Platform characteristics">
+            <span><i></i>AWS-native</span>
+            <span><i></i>API + webhooks</span>
+            <span><i></i>Language-agnostic</span>
+            <span><i></i>Human-approved</span>
+          </div>
+        </div>
+
+        <div class="vc-hero-media reveal">
+          <div class="vc-media-label">
+            <span>PRODUCT OVERVIEW</span>
+            <b>Exact timecode · evidence · rule mapping</b>
+          </div>
+          <video controls playsinline preload="metadata" poster="img/Vidcomply_compliance_platform.png" aria-label="Vidcomply compliance platform overview">
+            <source src="img/VICOMPLY_AI_marketing.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+          <div class="vc-media-proof">
+            <span><i></i>Timecoded findings</span>
+            <span><i></i>Representative frames</span>
+            <span><i></i>Market-specific rules</span>
+          </div>
         </div>
       </div>
+    </header>
 
-      <div class="dl-card lite reveal">
-        <span class="dl-flag">Enterprise</span>
-        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--m-compliance)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Compliance workflows</h3>
-        <p class="dl-desc">VidComply Intelligence, private scans, airline source compliance, market profiles, title data and catalog workflows are configured with sales. These deployments are scoped with the team before access is provisioned.</p>
-        <div class="dl-mods">
-          <span class="dl-mod"><span class="sw" style="background:var(--m-compliance);"></span>Compliance</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-remediation);"></span>Airlines</span>
-          <span class="dl-mod"><span class="sw" style="background:var(--m-lufs);"></span>Private scanning</span>
-        </div>
-        <div class="dl-actions">
-          <a class="btn btn--primary btn--lg" href="mailto:sales@vidcomply.ai?subject=Enterprise%20Compliance%20Workflow">Contact sales</a>
-          <a class="btn btn--ghost btn--lg" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Open VidComply Intelligence</a>
-        </div>
-        <div class="dl-meta">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4 10-11"/></svg>Sales-led setup</span>
-          <span>Security review</span>
-          <span>Workflow scoping</span>
-        </div>
+    <section class="vc-signal-strip" aria-label="Vidcomply compliance record model">
+      <div class="wrap vc-signal-grid">
+        <div><span>01</span><b>OBSERVE</b><small>What is in the asset?</small></div>
+        <div><span>02</span><b>INTERPRET</b><small>Which dynamic rule applies?</small></div>
+        <div><span>03</span><b>DECIDE</b><small>What should a reviewer do?</small></div>
+        <div><span>04</span><b>DELIVER</b><small>Where does the evidence go?</small></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ======================= INTELLIGENCE ======================= -->
-<section class="section section--dark" id="intelligence">
-  <div class="wrap">
-    <span class="eyebrow reveal">VidComply Intelligence</span>
-    <h2 class="kicker-head reveal">Movies and series intelligence for global distribution.</h2>
-    <p class="lede reveal" style="margin-top:20px;">Analysed video, audio, subtitles and metadata become searchable title, brand, market, policy and delivery intelligence for media companies—from acquisition research and FAST scheduling to localization, privacy and approved enterprise data.</p>
-    <div class="articles-preview-grid">
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/catalog">
-        <span class="ik">Titles</span><h3>Catalog and title intelligence</h3><p>Search approved public records with IMDb-matched metadata and evidence-backed review signals.</p><span class="read">Explore titles →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/brands">
-        <span class="ik">Brands</span><h3>Brand safety and brand intelligence</h3><p>Understand logo and product exposure, scene context, partner risk and placement opportunities.</p><span class="read">Explore brands →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/market-profiles">
-        <span class="ik">Markets</span><h3>Global market profiles</h3><p>Compare cultural, political, compliance, ratings and scheduling context by territory.</p><span class="read">Explore market profiles →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/ratings">
-        <span class="ik">Channels</span><h3>Ratings and scheduling</h3><p>Connect title evidence to audience suitability, broadcast dayparts and FAST programming review.</p><span class="read">Explore scheduling intelligence →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/privacy">
-        <span class="ik">Privacy</span><h3>Privacy and GDPR review signals</h3><p>Locate potential personal data in video for qualified, evidence-based privacy assessment.</p><span class="read">Explore privacy intelligence →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/subtitles">
-        <span class="ik">Localization</span><h3>Subtitle intelligence</h3><p>Assess timed-text quality, synchronization, reading experience, language and delivery status.</p><span class="read">Explore subtitle intelligence →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/music">
-        <span class="ik">Music</span><h3>Music and cue sheets</h3><p>Organize cue timing, usage, rights-readiness metadata and delivery completeness.</p><span class="read">Explore music intelligence →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="https://db.vidcomply.ai/data">
-        <span class="ik">Enterprise data</span><h3>Structured data and API</h3><p>License approved records for analytics, evaluation, model development and enterprise integration.</p><span class="read">Explore data access →</span>
-      </a>
-    </div>
-  </div>
-</section>
+    <section class="section vc-intelligence" id="intelligence">
+      <div class="wrap">
+        <div class="vc-section-head vc-section-head--split">
+          <div>
+            <span class="eyebrow reveal">db.vidcomply.ai · Public intelligence</span>
+            <h2 class="reveal">The title database for compliance teams.</h2>
+          </div>
+          <div class="reveal">
+            <p>Think IMDb for video compliance: recent global titles matched to familiar metadata, then extended with scene-level evidence, exact timecodes, frames, ratings, market context and operational naming.</p>
+            <a class="vc-text-link" href="https://db.vidcomply.ai/catalog" target="_blank" rel="noopener">Search the live catalog <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
 
-<!-- ======================= ARTICLES ======================= -->
-<section class="section section--alt" id="articles">
-  <div class="wrap">
-    <span class="eyebrow reveal">Vidcomply Articles</span>
-    <h2 class="kicker-head reveal">Evidence-led analysis for global media operations.</h2>
-    <p class="lede reveal" style="margin-top:20px;">Practical guidance on scene-level compliance, brand exposure, title intelligence, and FAST scheduling—written for content buyers, operators, and policy owners.</p>
-    <div class="articles-preview-grid">
-      <a class="articles-preview-card reveal" href="articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html">
-        <span class="ik">Recent title analysis</span>
-        <h3><em>The Super Mario Galaxy Movie</em>: Why PG Is Not a Global Pass</h3>
-        <p>How a low-risk family animation can still contain casino imagery and destination-specific exceptions.</p>
-        <span class="read">Read the title analysis →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="articles/pressure-2026-compliance-fast-scheduling-analysis.html">
-        <span class="ik">Recent title analysis</span>
-        <h3><em>Pressure</em> (2026): Brand-Clean, Scheduling-Complex</h3>
-        <p>Why one mild brand exposure does not make a film automatically advertiser-safe or daytime-ready.</p>
-        <span class="read">Read the title analysis →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="articles/billie-eilish-tour-live-3d-compliance-analysis.html">
-        <span class="ik">Recent title analysis</span>
-        <h3>Billie Eilish Tour Film: Low Global Friction, Specific Exceptions</h3>
-        <p>Why 88% low-severity findings make this one of the safer global-baseline titles without implying universal clearance.</p>
-        <span class="read">Read the title analysis →</span>
-      </a>
-      <a class="articles-preview-card reveal" href="articles/genre-assumption-trap-global-video-compliance.html">
-        <span class="ik">Scene intelligence</span>
-        <h3>The Genre Assumption Trap in Global Video Compliance</h3>
-        <p>Why genre and age-rating metadata cannot prove that every scene is ready for every market.</p>
-        <span class="read">Read the analysis →</span>
-      </a>
-    </div>
-    <div class="hero-cta reveal" style="margin-top:32px;"><a class="btn btn--ghost" href="articles/">View all articles</a></div>
-  </div>
-</section>
-
-<!-- ======================= CTA ======================= -->
-<span class="anchor-alias" id="book-demo" aria-hidden="true"></span>
-<section class="section section--alt cta" id="cta">
-  <div class="wrap">
-    <div class="cta-card reveal">
-      <h2>Stop paying editors to keyframe paint masks.</h2>
-      <p>See Vidcomply run a real season through compliance, remediation, audio, and cue sheets — in one parallel pass.</p>
-      <div class="hero-cta">
-        <a class="btn btn--primary" href="mailto:sales@vidcomply.ai?subject=Demo%20Request">Book a demo
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn--ghost" href="#workflows">Explore the workflows</a>
-      </div>
-      <div class="cta-ruler"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= FOOTER ======================= -->
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>
-          Vidcomply
-        </a>
-        <p>Automated, cloud-accelerated post-production infrastructure for unscripted television and film.</p>
-        <div class="foot-badges">
-          <span class="foot-badge">SOC 2</span>
-          <span class="foot-badge">ZERO-FILE-TRAVEL</span>
-          <span class="foot-badge">EBU R128</span>
+        <div class="vc-db-grid">
+          <div class="vc-db-browser reveal">
+            <div class="vc-db-nav">
+              <b>VIDCOMPLY / DB</b>
+              <span>CATALOG</span><span>MARKETS</span><span>RATINGS</span>
+            </div>
+            <div class="vc-search">Search titles, IMDb IDs, findings, brands or rules… <kbd>⌘ K</kbd></div>
+            <div class="vc-title-list">
+              <a href="articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html">
+                <div class="vc-poster vc-poster--blue"><span>SM</span></div>
+                <div><small>2026 · ANIMATION · GLOBAL PREMIERE</small><b>The Super Mario Galaxy Movie</b><p>Rating context · casino imagery · market exceptions</p></div>
+                <strong>OPEN →</strong>
+              </a>
+              <a href="articles/pressure-2026-compliance-fast-scheduling-analysis.html">
+                <div class="vc-poster vc-poster--red"><span>PR</span></div>
+                <div><small>2026 · DRAMA · FEATURE</small><b>Pressure</b><p>57 findings · scheduling-sensitive · brand-light</p></div>
+                <strong>OPEN →</strong>
+              </a>
+              <a href="articles/billie-eilish-tour-live-3d-compliance-analysis.html">
+                <div class="vc-poster vc-poster--green"><span>BE</span></div>
+                <div><small>2026 · MUSIC · LIVE EVENT</small><b>Billie Eilish: Tour Live in 3D</b><p>Brand exposure · low baseline friction · local review</p></div>
+                <strong>OPEN →</strong>
+              </a>
+            </div>
+          </div>
+          <aside class="vc-record-includes reveal">
+            <span class="vc-mono-label">EACH APPROVED RECORD CAN INCLUDE</span>
+            <ul>
+              <li><b>Matched title metadata</b><span>Title, version, IMDb ID and release context</span></li>
+              <li><b>Frame-accurate evidence</b><span>Start/end timecode, frame and source modality</span></li>
+              <li><b>Normalized issue names</b><span>Clear labels for editorial and compliance teams</span></li>
+              <li><b>Market and policy mapping</b><span>Rule reference, severity and profile-specific action</span></li>
+              <li><b>Ratings and scheduling</b><span>Audience guidance, watershed and OTT context</span></li>
+            </ul>
+            <p class="vc-note">Public records show approved intelligence only. Customer assets, evidence and decisions remain private.</p>
+          </aside>
         </div>
       </div>
-      <div class="foot-col">
-        <h5>Workflows</h5>
-        <a href="compliance/">Compliance Scan</a>
-        <a href="#workflows">Video Remediation</a>
-        <a href="cases/audiomix.html">Audio AutoMix</a>
-        <a href="cases/airlines.html">Airlines</a>
-        <a href="#workflows">LUFS Correction</a>
-        <a href="#workflows">Cue Sheets</a>
+    </section>
+
+    <section class="section vc-coverage" id="coverage">
+      <div class="wrap">
+        <div class="vc-section-head">
+          <span class="eyebrow reveal">Multimodal compliance</span>
+          <h2 class="reveal">One rule engine. Every content surface.</h2>
+          <p class="reveal">The same decision model follows evidence across picture, text and sound, so a title is reviewed as one release—not as disconnected files.</p>
+        </div>
+
+        <div class="vc-modality-grid">
+          <article class="vc-modality vc-modality--video reveal">
+            <div class="vc-modality-top"><span>01</span><b>VIDEO</b><i>FRAME</i></div>
+            <h3>Picture and on-screen text</h3>
+            <p>Violence, sex and nudity, substances, weapons, sensitive symbols, brands, faces, number plates, signs, screens and OCR.</p>
+            <div class="vc-output">Timecode · representative frame · bounding evidence · rule · action</div>
+          </article>
+          <article class="vc-modality vc-modality--document reveal">
+            <div class="vc-modality-top"><span>02</span><b>DOCUMENTS</b><i>PAGE</i></div>
+            <h3>Scripts, PDFs and delivery packs</h3>
+            <p>Screenplays, synopses, airline magazines, artwork, release forms and compliance documents, checked without losing page context.</p>
+            <div class="vc-output">Page · paragraph · phrase · policy match · review note</div>
+          </article>
+          <article class="vc-modality vc-modality--subtitle reveal">
+            <div class="vc-modality-top"><span>03</span><b>SUBTITLES</b><i>CUE</i></div>
+            <h3>Timed text and localization</h3>
+            <p>SRT, VTT and TTML reviewed for timing, reading experience, profanity, slurs, cultural terms and picture-dialogue consistency.</p>
+            <div class="vc-output">Cue ID · language · in/out · text class · suggested wording</div>
+          </article>
+          <article class="vc-modality vc-modality--audio reveal">
+            <div class="vc-modality-top"><span>04</span><b>AUDIO</b><i>SAMPLE</i></div>
+            <h3>Dialogue, context and loudness</h3>
+            <p>Spoken language, threats, profanity, substance references and technical audio checks, aligned to the same scene evidence.</p>
+            <div class="vc-output">Speaker · timecode · transcript signal · LUFS · action</div>
+          </article>
+        </div>
+
+        <div class="vc-rules-band reveal">
+          <div>
+            <span class="vc-mono-label">LANGUAGE-AGNOSTIC ORCHESTRATION</span>
+            <h3>Change the rule. Not the model.</h3>
+          </div>
+          <p>Dynamic profiles separate what the system observes from how a territory, platform, carrier or house policy interprets it. Update a rule once, then re-evaluate the affected catalog without retraining the whole stack.</p>
+          <div class="vc-rule-pills"><span>Territory</span><span>Platform</span><span>Carrier</span><span>Brand</span><span>House policy</span></div>
+        </div>
       </div>
-      <div class="foot-col">
-        <h5>Platform</h5>
-        <a href="platform/">Global platform</a>
-        <a href="#download">Download</a>
-        <a href="#security">Security architecture</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#cta">Book a demo</a>
+    </section>
+
+    <section class="section vc-ott" id="ott">
+      <div class="wrap vc-ott-grid">
+        <div class="vc-ott-copy">
+          <span class="eyebrow reveal">OTT ratings &amp; scheduling</span>
+          <h2 class="reveal">Move from “Can we publish it?” to “Where, when and for whom?”</h2>
+          <p class="reveal">Vidcomply develops explainable rating and scheduling intelligence from the exact asset version, scene evidence and destination profile—not from a genre label alone.</p>
+          <ul class="vc-check-list reveal">
+            <li>Territory-aware rating recommendations with rationale</li>
+            <li>Watershed and daypart guidance for linear and FAST channels</li>
+            <li>OTT audience controls, storefront placement and ad-suitability context</li>
+            <li>Version-aware release status with final human approval</li>
+          </ul>
+          <div class="vc-inline-actions reveal">
+            <a class="btn btn--primary" href="https://db.vidcomply.ai/catalog" target="_blank" rel="noopener">Explore title evidence</a>
+            <a class="vc-text-link" href="articles/ott-content-compliance-scheduling-guide.html">Read the OTT guide →</a>
+          </div>
+        </div>
+
+        <div class="vc-schedule reveal" aria-label="Example OTT ratings and scheduling recommendation">
+          <div class="vc-schedule-head"><span>DESTINATION PLAN</span><b>VERSION 7</b></div>
+          <div class="vc-rating-row">
+            <div><small>SOURCE</small><strong>PG-13</strong></div>
+            <span>→</span>
+            <div><small>UK PROFILE</small><strong>12</strong></div>
+            <span>→</span>
+            <div><small>OTT HOUSE</small><strong>13+</strong></div>
+          </div>
+          <div class="vc-schedule-line">
+            <div class="vc-hours"><span>06</span><span>09</span><span>12</span><span>15</span><span>18</span><span>21</span><span>00</span></div>
+            <div class="vc-track"><i class="vc-blocked"></i><i class="vc-review"></i><i class="vc-approved"></i></div>
+          </div>
+          <div class="vc-schedule-key"><span><i class="blocked"></i>Restrict</span><span><i class="review"></i>Review</span><span><i class="approved"></i>Candidate window</span></div>
+          <div class="vc-recommendation">
+            <span>RECOMMENDED OTT ACTION</span>
+            <h3>13+ profile · PIN control · tobacco descriptor</h3>
+            <p>Based on 14 scene findings, subtitle context and configured destination policy. Reviewer sign-off required.</p>
+          </div>
+        </div>
       </div>
-      <div class="foot-col">
-        <h5>Company</h5>
-        <a href="articles/">Articles</a>
-        <a href="mailto:sales@vidcomply.ai">Contact</a>
-        <a href="legal/gdpr-compliance.html">Trust center</a>
-        <a href="legal/privacy-policy.html">Privacy</a>
+    </section>
+
+    <section class="section vc-integration" id="integration">
+      <div class="wrap">
+        <div class="vc-section-head vc-section-head--split">
+          <div>
+            <span class="eyebrow reveal">AWS-native delivery</span>
+            <h2 class="reveal">Use the platform. Or make it part of yours.</h2>
+          </div>
+          <p class="reveal">Start in Vidcomply Studio or integrate compliance into the media supply chain through AWS-hosted APIs, webhooks and customer-controlled storage.</p>
+        </div>
+
+        <div class="vc-access-grid">
+          <article class="vc-access-card vc-access-card--self reveal">
+            <div class="vc-access-label"><span>SELF-SERVE</span><i>01</i></div>
+            <h3>Vidcomply Studio</h3>
+            <p>Upload or connect a title, choose markets and outcomes, review evidence, approve actions and export reports from one operator surface.</p>
+            <ul><li>Private jobs and review queues</li><li>Market and platform profiles</li><li>Reports, markers and structured outputs</li></ul>
+            <a class="btn btn--primary" href="mailto:sales@vidcomply.ai?subject=Vidcomply%20Studio%20Access">Request Studio access</a>
+          </article>
+          <article class="vc-access-card vc-access-card--api reveal">
+            <div class="vc-access-label"><span>ENTERPRISE API</span><i>02</i></div>
+            <h3>AWS integration</h3>
+            <p>Submit assets or customer-controlled storage references through REST APIs, receive status by webhook, and route evidence back to the systems teams already use.</p>
+            <div class="vc-api-flow" aria-label="AWS API integration flow">
+              <span>S3 / MAM</span><b>→</b><span>API</span><b>→</b><span>Rules</span><b>→</b><span>JSON / EDL</span>
+            </div>
+            <ul><li>REST API and event webhooks</li><li>AWS storage and workflow integration</li><li>Private, scalable enterprise deployment</li></ul>
+            <a class="btn btn--ghost" href="mailto:sales@vidcomply.ai?subject=AWS%20API%20Integration">Discuss API integration</a>
+          </article>
+        </div>
+
+        <div class="vc-security-row reveal">
+          <div><span>01</span><b>Customer-controlled masters</b><p>Keep high-resolution media on your storage and move only the evidence needed for the configured workflow.</p></div>
+          <div><span>02</span><b>Reviewable outputs</b><p>Every signal keeps its source, timecode, policy mapping, confidence and decision history.</p></div>
+          <div><span>03</span><b>Human authority</b><p>Vidcomply supports operational decisions; qualified teams retain final editorial, legal and release authority.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vc-ife" id="ife">
+      <div class="wrap vc-ife-grid">
+        <div class="vc-route-map reveal" aria-hidden="true">
+          <span class="vc-route vc-route--one"></span>
+          <span class="vc-route vc-route--two"></span>
+          <span class="vc-route vc-route--three"></span>
+          <i class="vc-node vc-node--london"></i>
+          <i class="vc-node vc-node--dubai"></i>
+          <i class="vc-node vc-node--singapore"></i>
+          <div class="vc-map-label vc-map-label--london">LHR<br><b>MASTER</b></div>
+          <div class="vc-map-label vc-map-label--dubai">DXB<br><b>ROUTE PROFILE</b></div>
+          <div class="vc-map-label vc-map-label--singapore">SIN<br><b>APPROVED</b></div>
+          <div class="vc-route-card"><small>PASSENGER CONTENT PACK</small><b>Video · PDFs · artwork · games · metadata</b><span>Route-aware review →</span></div>
+        </div>
+        <div class="vc-ife-copy">
+          <span class="eyebrow reveal">Airlines &amp; in-flight entertainment</span>
+          <h2 class="reveal">Compliance follows the route, not just the title.</h2>
+          <p class="reveal">Apply carrier policy and regional profiles across movies, trailers, news, documents, artwork, games and passenger-facing metadata—then keep every decision attached to the source and destination.</p>
+          <a class="btn btn--primary reveal" href="cases/airlines.html">Explore IFE compliance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vc-founder" id="company">
+      <div class="wrap vc-founder-grid">
+        <div class="vc-founder-mark reveal" aria-hidden="true">
+          <span>VI</span>
+          <i>FOUNDER / CEO</i>
+        </div>
+        <div class="vc-founder-copy">
+          <span class="eyebrow reveal">Built by media and AI operators</span>
+          <h2 class="reveal">Compliance should be executable, not buried in spreadsheets.</h2>
+          <p class="vc-founder-statement reveal">Global release teams do not need another generic AI verdict. They need the exact scene, the exact rule, a clear name for the issue and an action they can review.</p>
+          <div class="vc-founder-details reveal">
+            <div><h3>Vladislav Isaev</h3><span>Founder &amp; CEO, Vidcomply</span></div>
+            <p>A technical product and solutions leader with more than a decade of experience delivering AI and computer-vision systems across media, advertising and enterprise programs. Vladislav founded Vidcomply to turn evolving content policy into a practical execution layer for global video supply chains.</p>
+          </div>
+          <div class="vc-founder-links reveal">
+            <a href="https://uk.linkedin.com/in/vladislav-isaev-5828b281" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <span>London · Founded 2025</span>
+            <span>AGENTIC VISION LTD · 16720340</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vc-insights" id="insights">
+      <div class="wrap">
+        <div class="vc-section-head vc-section-head--split">
+          <div>
+            <span class="eyebrow reveal">Compliance intelligence</span>
+            <h2 class="reveal">Methodology teams can inspect.</h2>
+          </div>
+          <div class="reveal">
+            <p>Vidcomply separates observable evidence, configured policy and final human decisions—then publishes practical guidance on how those layers work together.</p>
+            <a class="vc-text-link" href="articles/">View all insights →</a>
+          </div>
+        </div>
+        <div class="vc-insight-grid">
+          <a class="vc-insight-card reveal" href="articles/ratings-watershed-scheduling-fast-channels.html">
+            <span>RATINGS · FAST</span><h3>From ratings to watershed-aware scheduling</h3><p>Translate title evidence into candidate dayparts without treating a rating as a universal pass.</p><b>Read analysis →</b>
+          </a>
+          <a class="vc-insight-card reveal" href="articles/ott-content-compliance-scheduling-guide.html">
+            <span>OTT · STREAMING</span><h3>OTT content compliance and scheduling</h3><p>Connect version, territory, audience controls, storefront placement and release approval.</p><b>Read guide →</b>
+          </a>
+          <a class="vc-insight-card reveal" href="articles/post-production-compliance-workflow-film-tv-ott.html">
+            <span>OPERATIONS · DELIVERY</span><h3>From evidence to post-production</h3><p>Carry approved findings into markers, edit packs, reports, subtitle updates and delivery records.</p><b>Read workflow →</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="vc-final-cta" id="cta">
+      <div class="wrap">
+        <div class="vc-cta-card reveal">
+          <span class="vc-mono-label">GLOBAL COMPLIANCE, ONE EVIDENCE LAYER</span>
+          <h2>Bring one title. Leave with a market-ready record.</h2>
+          <p>See your own video, document, subtitle or audio asset mapped to exact evidence, dynamic rules, ratings and next actions.</p>
+          <div class="vc-hero-actions">
+            <a class="btn btn--primary" href="mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo">Book a compliance demo</a>
+            <a class="btn btn--ghost" href="https://db.vidcomply.ai/" target="_blank" rel="noopener">Explore public title data <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a class="brand" href="#top">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>
+            Vidcomply
+          </a>
+          <p>Evidence-backed compliance infrastructure for video, documents, subtitles and audio.</p>
+          <div class="foot-badges"><span class="foot-badge">AWS-NATIVE</span><span class="foot-badge">API-FIRST</span><span class="foot-badge">HUMAN-APPROVED</span></div>
+        </div>
+        <div class="foot-col">
+          <h5>Product</h5>
+          <a href="https://db.vidcomply.ai/">Title database</a>
+          <a href="compliance/">Compliance platform</a>
+          <a href="#ott">OTT ratings &amp; scheduling</a>
+          <a href="#integration">AWS &amp; API</a>
+          <a href="#integration">Self-serve Studio</a>
+        </div>
+        <div class="foot-col">
+          <h5>Solutions</h5>
+          <a href="#coverage">Video compliance</a>
+          <a href="#coverage">Document compliance</a>
+          <a href="#coverage">Subtitle compliance</a>
+          <a href="#coverage">Audio compliance</a>
+          <a href="cases/airlines.html">Airlines &amp; IFE</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="#company">Founder &amp; CEO</a>
+          <a href="articles/">Insights</a>
+          <a href="legal/gdpr-compliance.html">Trust &amp; GDPR</a>
+          <a href="mailto:sales@vidcomply.ai">Contact</a>
+          <a href="legal/privacy-policy.html">Privacy</a>
+          <a href="legal/terms-of-service.html">Terms</a>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© 2026 AGENTIC VISION LTD, trading as Vidcomply.</span>
+        <span>Global content compliance · London</span>
       </div>
     </div>
-    <div class="foot-bot">
-      <span>© 2026 Vidcomply, Inc. All rights reserved.</span>
-      <span>macOS · Linux — Windows unsupported by design</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-</main>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

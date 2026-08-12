@@ -1,12 +1,12 @@
 # Vidcomply — LLM Site Summary
 
-Last updated: 2026-07-20
+Last updated: 2026-08-12
 
-Vidcomply is infrastructure for global media compliance and technical post-production. It helps distributors, airlines, FAST channels, studios, post teams, and compliance operators clear content for multiple markets while keeping master files on the customer's storage.
+Vidcomply is global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic market and platform rules, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio.
 
 ## Current Public Site Structure
 
-- `https://vidcomply.ai/` — main product overview for compliance, remediation, audio, loudness, cue sheets, security, pricing, Studio App download, evaluation-license request, enterprise sales contact, and demo booking.
+- `https://vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, dynamic rules, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, and founder/CEO information.
 - `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
@@ -32,32 +32,46 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 ## External Product Surfaces
 
 - `https://db.vidcomply.ai/` — VidComply Intelligence, a separately indexed movies and series intelligence platform covering titles, brands, market profiles, policy, ratings, scheduling, privacy, subtitles, music and approved enterprise data.
-- `https://db.vidcomply.ai/market-profiles` — territory-specific cultural, political, compliance, ratings and scheduling context.
-- `https://db.vidcomply.ai/compliance` — scene-level video compliance evidence and policy mapping.
-- `https://db.vidcomply.ai/censorship` — censorship, political and cultural sensitivity intelligence.
-- `https://db.vidcomply.ai/ratings` — audience-rating and FAST/broadcast scheduling intelligence.
-- `https://db.vidcomply.ai/privacy` — privacy and GDPR review signals in video; not a GDPR certification.
-- `https://db.vidcomply.ai/subtitles` — timed-text quality and localization intelligence.
-- `https://db.vidcomply.ai/music` — music and cue-sheet intelligence.
-- `https://db.vidcomply.ai/data` — approved structured records and enterprise data licensing.
-- `https://db.vidcomply.ai/methodology` — evidence, policy, human-review and publication methodology.
-- `https://studio.vidcomply.ai/` — authenticated product suite for private uploads, jobs, reports, review, and operator workflows. This is not intended for public indexing.
+- `https://db.vidcomply.ai/catalog` — searchable catalog of approved public title records and release metadata.
+- `https://db.vidcomply.ai/brands` — searchable brand and product-exposure intelligence derived from approved title records.
+- `https://db.vidcomply.ai/markets` — market, territory and policy context used alongside title evidence, ratings and scheduling review.
+- `https://db.vidcomply.ai/updates` — recent title and intelligence updates.
+- `https://db.vidcomply.ai/api/intelligence/overview` — public machine-readable intelligence overview.
+- `https://vidcomply.ai/#integration` — access overview for self-serve Studio workflows and enterprise AWS/API integration. Private product access is provisioned separately and is not intended for public indexing.
 
 ## Core Product Areas
 
-1. **Compliance Platform**
-   - Checks video, dialogue, OCR, metadata, and visible artifacts against market-specific broadcast and brand-safety standards.
-   - Uses territory profiles rather than one global moderation rule.
-   - Produces evidence-backed issue queues with timecode, category, severity, reason, and human review before action.
-   - Outputs native artifacts such as marker files, evidence reports, and review JSON.
+1. **VidComply Intelligence**
+   - Public discovery layer at `db.vidcomply.ai`, designed as a title database for compliance teams.
+   - Matches recent global movies and series to familiar title metadata and extends each approved record with scene-level evidence, exact timecodes, representative frames, normalized issue names, ratings, market context and scheduling signals.
+   - Supports acquisition research, catalog review, FAST/OTT scheduling, brand safety, market comparison and approved enterprise data licensing.
+   - Keeps observations, policy interpretation and human decisions separate.
 
-2. **Global Platform**
-   - Applies compliance profiles across broadcast, film, streaming, OTT, documents, scripts, news, live, and other content workflows.
-   - Supports centralized market-rule management.
-   - Designed for parallel processing at slate/catalog scale.
-   - Uses zero-file-travel architecture: high-resolution masters stay on customer storage; small proxies and metadata can be processed separately.
+2. **Multimodal Compliance Platform**
+   - Checks video, dialogue, OCR, metadata and visible artifacts against market, platform, carrier, brand and house-policy profiles.
+   - Applies the same evidence model to video, scripts/PDFs/documents, SRT/VTT/TTML subtitles and audio.
+   - Produces reviewable issue queues with source modality, exact timecode or page/cue location, representative frame, normalized label, category, severity, reason, rule reference and suggested action.
+   - Outputs marker files, reports, JSON, EDL/OTIO and other workflow-native artifacts after human review.
 
-3. **Airlines and In-Flight Entertainment**
+3. **Dynamic Rules and Global Profiles**
+   - Separates observable evidence from policy interpretation, so rules can change without retraining the complete detection stack.
+   - Supports territory, platform, carrier, brand and customer house-policy profiles.
+   - Is language-agnostic at the orchestration layer while preserving language-specific subtitle, transcript and localization evidence.
+   - Re-evaluates affected title records when configured rules change.
+
+4. **OTT Ratings and Scheduling**
+   - Develops explainable, territory-aware rating recommendations from the exact asset version and scene evidence.
+   - Connects ratings to watershed/daypart guidance for linear and FAST channels.
+   - Supports OTT audience controls, storefront placement, territory windows, advertising context and version-aware release status.
+   - Treats all ratings and scheduling outputs as reviewable recommendations requiring authorized human approval.
+
+5. **AWS, API and Self-Serve Access**
+   - Vidcomply Studio is the self-serve operator surface for private jobs, evidence review, market profiles, approvals and exports.
+   - Enterprise teams can submit assets or customer-controlled storage references through AWS-hosted REST APIs and receive job events by webhook.
+   - Integrations can route structured evidence and approved actions back to S3, MAM, orchestration and post-production systems.
+   - High-resolution masters can remain on customer-controlled storage; only workflow-required proxies, metadata and evidence need to move.
+
+6. **Airlines and In-Flight Entertainment**
    - Clears airline and passenger-facing content against carrier policy, route packs, regional sensitivity profiles, and source-specific rules.
    - Embeds the main Vidcomply video compliance demo to show the review surface, timeline evidence, market-specific findings, and human sign-off workflow.
    - Supports video, trailers, news, documents, PDFs, images, artwork, games, interactive metadata, app pages, partner links, manifests, and feeds.
@@ -65,20 +79,14 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
    - Produces reviewable outputs for editorial, localization, compliance, vendor, and IFE loading teams.
    - Keeps final decisions human-in-the-loop.
 
-4. **Audio AutoMix**
+7. **Audio AutoMix (Supporting Workflow)**
    - Automates high-volume audio prep for AAF/Pro Tools workflows.
    - Handles crosstalk rejection, ISO track organization, clip-gain staging, and loudness normalization.
    - Writes non-destructive automation and structured AAF outputs rather than replacing the mixer or DAW.
    - Includes a Studio App download and evaluation-license request flow.
    - The Studio App is the self-serve downloadable surface; broader compliance and airline workflows are sales-led deployments.
 
-5. **VidComply Intelligence**
-   - Turns analysed video, audio, subtitles and metadata into searchable title, brand, market, policy and delivery intelligence.
-   - Supports acquisition research, FAST scheduling, brand safety, market review and approved enterprise analytics or model-development licensing.
-   - Keeps observations, policy interpretation and human decisions separate.
-   - Exposes only approved public records; private media, subtitle text, cue sheets, evidence and customer decisions remain access-controlled.
-
-6. **Native Post-Production Outputs**
+8. **Native Post-Production Outputs**
    - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
    - Relevant tool surfaces include Avid, Pro Tools, DaVinci Resolve, Premiere, marker files, AAF, reports, and JSON.
 
@@ -90,6 +98,16 @@ Vidcomply is infrastructure for global media compliance and technical post-produ
 - The platform is content-neutral: it reports against each market's own rules and leaves editorial judgment to the customer.
 - Audio AutoMix is non-destructive and DAW-native for AAF/Pro Tools workflows.
 - VidComply Intelligence is a standalone public discovery and data surface, separate from the private customer workflow in Studio.
+- Vidcomply is AWS-native and supports REST API and webhook integration for enterprise workflows.
+- Dynamic rule profiles can be updated independently of the core detection models.
+- Ratings and scheduling outputs are evidence-backed recommendations, not official classifications or legal approvals.
+
+## Leadership
+
+- Vladislav Isaev is Founder and CEO of Vidcomply.
+- He is a technical product and solutions leader with more than 10 years of experience delivering AI and computer-vision systems across media, advertising and enterprise programs.
+- Vidcomply was founded in London in 2025 and operates through AGENTIC VISION LTD, UK Company No. 16720340.
+- Public founder profile: `https://uk.linkedin.com/in/vladislav-isaev-5828b281`
 
 ## Editorial and Data Interpretation
 

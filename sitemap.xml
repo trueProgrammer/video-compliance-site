@@ -5,25 +5,25 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://vidcomply.ai/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://vidcomply.ai/img/icon_site_1024_v2.png</image:loc>
-      <image:title>Vidcomply logo</image:title>
-      <image:caption>Vidcomply compliance and post-production infrastructure</image:caption>
+      <image:loc>https://vidcomply.ai/img/Vidcomply_compliance_platform.png</image:loc>
+      <image:title>Vidcomply global compliance infrastructure</image:title>
+      <image:caption>Vidcomply global content compliance infrastructure</image:caption>
     </image:image>
     <video:video>
       <video:thumbnail_loc>https://vidcomply.ai/img/icon_site_1024_v2.png</video:thumbnail_loc>
       <video:content_loc>https://vidcomply.ai/img/VICOMPLY_AI_marketing.mp4</video:content_loc>
       <video:title>Vidcomply compliance platform demo</video:title>
-      <video:description>Main Vidcomply product demo for compliance and global media workflows.</video:description>
+      <video:description>Vidcomply platform demo for frame-accurate, market-specific content compliance.</video:description>
     </video:video>
   </url>
 
   <url>
     <loc>https://vidcomply.ai/compliance/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <video:video>
