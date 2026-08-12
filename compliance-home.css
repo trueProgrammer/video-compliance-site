@@ -589,6 +589,14 @@
 .vc-founder .eyebrow { color: var(--ink-2); }
 .vc-integration .vc-section-head--split > p { color: var(--ink-2); }
 .vc-access-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 54px; }
+.vc-marketplace-banner { display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; margin-top: 38px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; color: var(--ink); background: #fff; box-shadow: 0 18px 45px rgba(28,42,73,.07); transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.vc-marketplace-banner:hover { transform: translateY(-2px); border-color: #c9d5ef; box-shadow: 0 24px 58px rgba(28,42,73,.11); }
+.vc-marketplace-banner > img { width: 58px; height: 38px; object-fit: contain; }
+.vc-marketplace-banner > span { display: grid; gap: 4px; }
+.vc-marketplace-banner b { font-size: 15px; }
+.vc-marketplace-banner small { color: var(--ink-3); font-size: 11px; }
+.vc-marketplace-banner strong { color: var(--vc-blue); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; white-space: nowrap; }
+.vc-marketplace-banner strong i { font-style: normal; }
 .vc-access-card { display: flex; flex-direction: column; min-height: 470px; padding: 30px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
 .vc-access-card--self { background: linear-gradient(145deg, var(--accent-soft), #fff 58%); }
 .vc-access-label { display: flex; justify-content: space-between; color: var(--vc-blue); font-family: var(--mono); font-size: 9px; letter-spacing: .1em; }
@@ -597,6 +605,8 @@
 .vc-access-card > ul { display: grid; gap: 10px; margin: 25px 0 30px; padding: 0; color: var(--ink-2); font-size: 13px; list-style: none; }
 .vc-access-card > ul li::before { content: "+"; margin-right: 9px; color: var(--vc-blue); font-family: var(--mono); }
 .vc-access-card > .btn { align-self: flex-start; margin-top: auto; }
+.vc-access-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: auto; }
+.vc-access-actions .vc-text-link { margin: 0; font-size: 12px; }
 .vc-access-card .btn--primary { color: #fff; background: var(--ink); }
 .vc-access-card .btn--ghost { color: var(--ink); border-color: var(--line); }
 .vc-api-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 24px; }
@@ -633,6 +643,8 @@
 .vc-workflow-card { display: flex; align-items: center; gap: 18px; min-height: 156px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream-2); }
 .vc-program-card > img { width: 118px; height: auto; }
 .vc-platform-card > img { width: 78px; height: auto; }
+.vc-platform-card { color: var(--ink); transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.vc-platform-card:hover { transform: translateY(-2px); border-color: #c9d5ef; box-shadow: 0 18px 45px rgba(28,42,73,.09); }
 .vc-program-card span,
 .vc-platform-card span,
 .vc-workflow-card > span { display: grid; gap: 4px; }
@@ -801,6 +813,8 @@
   .vc-rating-row > div { padding-inline: 6px; }
   .vc-rating-row strong { font-size: 18px; }
   .vc-access-card { min-height: 510px; padding: 23px; }
+  .vc-marketplace-banner { grid-template-columns: auto 1fr; }
+  .vc-marketplace-banner strong { grid-column: 1 / -1; padding-top: 12px; border-top: 1px solid var(--line); }
   .vc-api-flow b { display: none; }
   .vc-press-ribbon-inner { grid-template-columns: 1fr; gap: 10px; }
   .vc-press-links { grid-column: auto; flex-wrap: wrap; }

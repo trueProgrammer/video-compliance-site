@@ -2,7 +2,7 @@
 
 Last updated: 2026-08-12
 
-Vidcomply is global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic market and platform rules, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio.
+Vidcomply is global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic market and platform rules, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 
 ## Current Public Site Structure
 
@@ -37,6 +37,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - `https://db.vidcomply.ai/markets` — market, territory and policy context used alongside title evidence, ratings and scheduling review.
 - `https://db.vidcomply.ai/updates` — recent title and intelligence updates.
 - `https://db.vidcomply.ai/api/intelligence/overview` — public machine-readable intelligence overview.
+- `https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424` — official AWS Marketplace listing for **Vidcomply AI: Global Media Compliance Platform**, sold by VIDCOMPLY AI, delivered as Software as a Service and deployed on AWS.
 - `https://www.vidcomply.ai/#integration` — access overview for self-serve Studio workflows and enterprise AWS/API integration. Private product access is provisioned separately and is not intended for public indexing.
 
 ## Canonical Terminology and Search Concepts
@@ -82,6 +83,8 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
    - Treats all ratings and scheduling outputs as reviewable recommendations requiring authorized human approval.
 
 5. **AWS, API and Self-Serve Access**
+   - Vidcomply AI: Global Media Compliance Platform is available through the official AWS Marketplace listing at `https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424`.
+   - AWS Marketplace identifies the product as SaaS, sold by VIDCOMPLY AI and deployed on AWS.
    - Vidcomply Studio is the self-serve operator surface for private jobs, evidence review, market profiles, approvals and exports.
    - Enterprise teams can submit assets or customer-controlled storage references through AWS-hosted REST APIs and receive job events by webhook.
    - Integrations can route structured evidence and approved actions back to S3, MAM, orchestration and post-production systems.
@@ -124,6 +127,8 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - Audio AutoMix is non-destructive and DAW-native for AAF/Pro Tools workflows.
 - VidComply Intelligence is a standalone public discovery and data surface, separate from the private customer workflow in Studio.
 - Vidcomply is AWS-native and supports REST API and webhook integration for enterprise workflows.
+- The official AWS Marketplace product name is **Vidcomply AI: Global Media Compliance Platform**. It is an enterprise SaaS product sold by VIDCOMPLY AI and deployed on AWS.
+- The AWS Marketplace listing covers custom global compliance and age-rating profiles, severity-ranked flags, elastic GPU processing, native marker files, reports and review JSON across video, audio, subtitles, PDFs and scripts.
 - Dynamic rule profiles can be updated independently of the core detection models.
 - Ratings and scheduling outputs are evidence-backed recommendations, not official classifications or legal approvals.
 - AWS is described as Vidcomply's cloud infrastructure. Avid, Adobe and Frame.io are referenced as compatible workflow surfaces; those compatibility references do not imply endorsement.
@@ -153,6 +158,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 
 ## Current Calls To Action
 
+- AWS Marketplace listing: `https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424`
 - Demo booking: `mailto:sales@vidcomply.ai?subject=Demo%20Request`
 - Compliance demo: `mailto:sales@vidcomply.ai?subject=Compliance%20Platform%20Demo`
 - Audio demo: `mailto:sales@vidcomply.ai?subject=Audio%20Automix%20Demo`
