@@ -1,24 +1,12 @@
-# robots.txt for vidcomply.ai
+# robots.txt for www.vidcomply.ai
+# The wildcard record applies equally to Google, Bing, OAI-SearchBot,
+# GPTBot, ChatGPT-User, Claude, Perplexity, and other compliant crawlers.
 
 User-agent: *
-User-agent: Googlebot
-User-agent: Googlebot-Image
-User-agent: Googlebot-Video
-User-agent: Bingbot
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
-User-agent: GPTBot
-User-agent: ClaudeBot
-User-agent: Claude-SearchBot
-User-agent: Claude-User
-User-agent: anthropic-ai
-User-agent: PerplexityBot
-User-agent: Perplexity-User
-User-agent: Google-Extended
 Allow: /
 Disallow: /db-subdomain/
 Disallow: /docs/
 Disallow: /learn/
 Disallow: /integrations/
 
-Sitemap: https://vidcomply.ai/sitemap.xml
+Sitemap: https://www.vidcomply.ai/sitemap.xml

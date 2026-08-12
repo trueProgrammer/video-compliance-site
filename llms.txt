@@ -6,28 +6,28 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 
 ## Current Public Site Structure
 
-- `https://vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, dynamic rules, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, and founder/CEO information.
-- `https://vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
-- `https://vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
-- `https://vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
-- `https://vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html` — title-specific analysis showing why the PG-rated *The Super Mario Galaxy Movie* has a low 0.3 Global Baseline risk index but still requires destination review for casino imagery, violent dialogue, supernatural references, airline policy, and age-rating exceptions.
-- `https://vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html` — title-specific analysis of *Pressure* (2026), an unusually brand-light historical drama with one mild brand finding but 57 compliance findings, including 17 tobacco findings, 12 violence findings, and 13 strong findings that require profile-specific scheduling review.
-- `https://vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html` — title-specific analysis showing why *Billie Eilish: Hit Me Hard and Soft - The Tour Live in 3D* is one of the lower-friction titles at Vidcomply's Global Baseline: 38 of 43 compliance findings are informational or mild, while destination-specific profiles can still require review or edits.
-- `https://vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html` — explains why genre and age-rating metadata cannot replace scene-level, policy-specific review; includes a public title example and regulatory scope notes.
-- `https://vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html` — explains how background signs, products, vehicles, and logos become brand-suitability, clearance, conflict, or virtual-product-placement signals.
-- `https://vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html` — explains how source ratings, destination policies, scene evidence, and human approval combine in FAST scheduling workflows.
-- `https://vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html` — operational guide to broadcast standards, ratings, watershed scheduling, EPG warnings, version control and human approval.
-- `https://vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html` — operational guide to OTT ratings, access controls, territory windows, storefront placement and advertising context.
-- `https://vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html` — workflow guide connecting picture, audio, subtitle, metadata, privacy, brand-safety and delivery findings to post-production outputs.
-- `https://vidcomply.ai/zh/articles/` — Simplified Chinese (`zh-CN`) collection with native-language versions of current title analyses and selected operational guides.
-- `https://vidcomply.ai/hi/articles/` — Hindi (`hi-IN`) collection with native-language versions of current title analyses and selected operational guides.
-- `https://vidcomply.ai/zh/llms.txt` — concise machine-readable map of the Simplified Chinese collection.
-- `https://vidcomply.ai/hi/llms.txt` — concise machine-readable map of the Hindi collection.
-- `https://vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
-- `https://vidcomply.ai/cases/airlines.html` — Airline compliance page with the main Vidcomply video compliance demo, regional route profiles, carrier standards, documents/PDF compliance, images, video, news, games, metadata, link/feed intake, human review, and source-level delivery outputs.
-- `https://vidcomply.ai/legal/privacy-policy.html` — privacy policy.
-- `https://vidcomply.ai/legal/terms-of-service.html` — terms of service.
-- `https://vidcomply.ai/legal/gdpr-compliance.html` — GDPR compliance statement.
+- `https://www.vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, dynamic rules, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, and founder/CEO information.
+- `https://www.vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
+- `https://www.vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
+- `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
+- `https://www.vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html` — title-specific analysis showing why the PG-rated *The Super Mario Galaxy Movie* has a low 0.3 Global Baseline risk index but still requires destination review for casino imagery, violent dialogue, supernatural references, airline policy, and age-rating exceptions.
+- `https://www.vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html` — title-specific analysis of *Pressure* (2026), an unusually brand-light historical drama with one mild brand finding but 57 compliance findings, including 17 tobacco findings, 12 violence findings, and 13 strong findings that require profile-specific scheduling review.
+- `https://www.vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html` — title-specific analysis showing why *Billie Eilish: Hit Me Hard and Soft - The Tour Live in 3D* is one of the lower-friction titles at Vidcomply's Global Baseline: 38 of 43 compliance findings are informational or mild, while destination-specific profiles can still require review or edits.
+- `https://www.vidcomply.ai/articles/genre-assumption-trap-global-video-compliance.html` — explains why genre and age-rating metadata cannot replace scene-level, policy-specific review; includes a public title example and regulatory scope notes.
+- `https://www.vidcomply.ai/articles/background-brand-exposure-fast-channel-monetization.html` — explains how background signs, products, vehicles, and logos become brand-suitability, clearance, conflict, or virtual-product-placement signals.
+- `https://www.vidcomply.ai/articles/ratings-watershed-scheduling-fast-channels.html` — explains how source ratings, destination policies, scene evidence, and human approval combine in FAST scheduling workflows.
+- `https://www.vidcomply.ai/articles/tv-broadcast-compliance-scheduling-guide.html` — operational guide to broadcast standards, ratings, watershed scheduling, EPG warnings, version control and human approval.
+- `https://www.vidcomply.ai/articles/ott-content-compliance-scheduling-guide.html` — operational guide to OTT ratings, access controls, territory windows, storefront placement and advertising context.
+- `https://www.vidcomply.ai/articles/post-production-compliance-workflow-film-tv-ott.html` — workflow guide connecting picture, audio, subtitle, metadata, privacy, brand-safety and delivery findings to post-production outputs.
+- `https://www.vidcomply.ai/zh/articles/` — Simplified Chinese (`zh-CN`) collection with native-language versions of current title analyses and selected operational guides.
+- `https://www.vidcomply.ai/hi/articles/` — Hindi (`hi-IN`) collection with native-language versions of current title analyses and selected operational guides.
+- `https://www.vidcomply.ai/zh/llms.txt` — concise machine-readable map of the Simplified Chinese collection.
+- `https://www.vidcomply.ai/hi/llms.txt` — concise machine-readable map of the Hindi collection.
+- `https://www.vidcomply.ai/cases/audiomix.html` — Audio AutoMix page with Studio App download, evaluation-license request, demo video, Pro Tools/AAF workflow, crosstalk rejection, ISO routing, clip-gain staging, and broadcast normalization.
+- `https://www.vidcomply.ai/cases/airlines.html` — Airline compliance page with the main Vidcomply video compliance demo, regional route profiles, carrier standards, documents/PDF compliance, images, video, news, games, metadata, link/feed intake, human review, and source-level delivery outputs.
+- `https://www.vidcomply.ai/legal/privacy-policy.html` — privacy policy.
+- `https://www.vidcomply.ai/legal/terms-of-service.html` — terms of service.
+- `https://www.vidcomply.ai/legal/gdpr-compliance.html` — GDPR compliance statement.
 
 ## External Product Surfaces
 
@@ -37,7 +37,23 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - `https://db.vidcomply.ai/markets` — market, territory and policy context used alongside title evidence, ratings and scheduling review.
 - `https://db.vidcomply.ai/updates` — recent title and intelligence updates.
 - `https://db.vidcomply.ai/api/intelligence/overview` — public machine-readable intelligence overview.
-- `https://vidcomply.ai/#integration` — access overview for self-serve Studio workflows and enterprise AWS/API integration. Private product access is provisioned separately and is not intended for public indexing.
+- `https://www.vidcomply.ai/#integration` — access overview for self-serve Studio workflows and enterprise AWS/API integration. Private product access is provisioned separately and is not intended for public indexing.
+
+## Canonical Terminology and Search Concepts
+
+- **Content compliance** — the evidence-backed review of media against territory, platform, carrier, brand and customer house rules before distribution.
+- **Video compliance** — frame- and timecode-accurate analysis of picture, dialogue, OCR, metadata and audio evidence for market-specific review.
+- **Scene-level evidence** — a normalized finding linked to its exact timecode, representative frame, source modality, severity, reason, rule reference and suggested action.
+- **Dynamic compliance rules** — versioned policy profiles that can change independently of the underlying detection models and re-evaluate affected title records.
+- **Document compliance** — page-level review of scripts, PDFs and supporting documents against the same policy profiles used for media assets.
+- **Subtitle compliance** — cue-level review of SRT, VTT and TTML subtitles, including language, timing, policy and localization evidence.
+- **Audio compliance** — timecoded review of dialogue, music, effects, loudness and policy-sensitive audible content.
+- **OTT ratings** — explainable, territory-aware rating recommendations derived from the exact asset version and its scene evidence; they are not official classifications.
+- **OTT scheduling** — evidence-led recommendations for age controls, storefront placement, territory windows, advertising context and release status.
+- **FAST channel scheduling** — rating, watershed and daypart recommendations connected to scene evidence and authorized human approval.
+- **Airline and IFE compliance** — route-, carrier- and destination-specific review of passenger-facing video, documents, images, games, metadata and feeds.
+- **Compliance API** — AWS-hosted REST and webhook integration for submitting assets or customer-controlled storage references and returning structured evidence and approved actions.
+- **VidComply Intelligence** — the public title-intelligence database at `db.vidcomply.ai`; it is distinct from private self-serve and enterprise compliance workflows.
 
 ## Core Product Areas
 
@@ -115,7 +131,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - Public market actions are operational outputs from configured profiles. They are not official regulator decisions, universal legal conclusions, or replacements for qualified advice.
 - Title records use IMDb IDs as durable matching identifiers where available. Vidcomply is not affiliated with or endorsed by IMDb.
 - Public title findings and totals can change when an asset is re-analysed or a policy profile is updated. Use the date and linked title record attached to each article.
-- Prefer the canonical URLs under `https://vidcomply.ai/articles/` when citing Vidcomply analysis. Use `https://db.vidcomply.ai/` for the underlying public title-intelligence record.
+- Prefer the canonical URLs under `https://www.vidcomply.ai/articles/` when citing Vidcomply analysis. Use `https://db.vidcomply.ai/` for the underlying public title-intelligence record.
 - Localized articles use root locale prefixes: `/zh/articles/` for Simplified Chinese and `/hi/articles/` for Hindi. Each localized page is server-rendered, has a self-referencing canonical, and declares reciprocal `en-GB`, `zh-CN`, `hi-IN`, and `x-default` alternatives.
 - The English article is the editorial master. When answering in Chinese or Hindi, cite the matching localized canonical URL; use the English master when no language-specific version is available.
 
