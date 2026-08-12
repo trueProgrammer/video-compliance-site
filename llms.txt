@@ -6,7 +6,7 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 
 ## Current Public Site Structure
 
-- `https://www.vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, dynamic rules, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, and founder/CEO information.
+- `https://www.vidcomply.ai/` — compliance-first product overview covering the public title database, exact timecode and frame evidence, video/document/subtitle/audio compliance, marketing and CMS assets, static and interactive websites, dynamic rules, reviewer workflows, content quality, governance, OTT ratings and scheduling, AWS/API integration, self-serve Studio, airline/IFE workflows, verified partnerships, and founder/CEO information.
 - `https://www.vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://www.vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
@@ -106,8 +106,17 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
    - Vidcomply is built to return work into existing tools rather than forcing a new player or review environment.
    - Relevant tool surfaces include Avid, Pro Tools, DaVinci Resolve, Premiere, marker files, AAF, reports, and JSON.
 
+9. **Enterprise Content and Web Governance**
+   - Applies configurable compliance rules across campaign documents, PDFs, images, CMS/AEM fragments, metadata, dictionaries and taxonomy exports.
+   - Supports public/static website crawling and defined interactive or authenticated journeys with crawl scope, rendered content, DOM or screenshot evidence where configured.
+   - Supports emerging-risk rule updates, false-positive triage, reviewer assignment, comments, status progression, bulk actions and human approval.
+   - Supports repeatable content-quality checks such as typos, cross-source or cross-language discrepancies, obsolete terminology and accessibility findings against configured standards.
+   - Produces structured reporting across scanned assets, finding type, severity, market, rule, evidence and decision history.
+
 ## Important Technical Claims
 
+- Vidcomply is a member of NVIDIA Inception.
+- Anuvu announced an exclusive strategic partnership with Vidcomply at Aircraft Interiors Expo 2026 and is integrating Vidcomply's AI-powered screening into its global inflight-entertainment content supply chain.
 - Masters do not need to leave the customer's storage.
 - Compliance decisions remain human-in-the-loop.
 - Outputs are reviewable and reversible before creative or compliance sign-off.
@@ -117,6 +126,13 @@ Vidcomply is global content-compliance infrastructure for video, documents, subt
 - Vidcomply is AWS-native and supports REST API and webhook integration for enterprise workflows.
 - Dynamic rule profiles can be updated independently of the core detection models.
 - Ratings and scheduling outputs are evidence-backed recommendations, not official classifications or legal approvals.
+- AWS is described as Vidcomply's cloud infrastructure. Avid, Adobe and Frame.io are referenced as compatible workflow surfaces; those compatibility references do not imply endorsement.
+
+## Partnership and Press References
+
+- Anuvu announcement, 15 April 2026: `https://www.anuvu.com/our-company/press-releases/detail/335/anuvu-signs-exclusive-agreement-with-vidcomply-to-streamline-global-content-compliance-and-delivery`
+- APEX industry coverage, 17 April 2026: `https://apex.aero/articles/aix-2026-anuvu-and-vidcomply-partner-to-accelerate-global-content-compliance-and-delivery/`
+- The Anuvu relationship covers AI-powered compliance screening, privacy redaction, brand sanitization, localization and quality-control workflows paired with human expertise.
 
 ## Leadership
 

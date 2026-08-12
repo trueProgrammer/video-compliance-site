@@ -59,6 +59,36 @@
     });
   }
 
+  /* homepage compliance use cases */
+  var usecaseTabs = [].slice.call(document.querySelectorAll('.vc-usecase-tab'));
+  var usecasePanels = [].slice.call(document.querySelectorAll('[data-usecase-panel]'));
+  function activateUsecase(tab, moveFocus) {
+    var target = tab.getAttribute('data-usecase');
+    usecaseTabs.forEach(function (item) {
+      var active = item === tab;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-selected', active ? 'true' : 'false');
+      item.setAttribute('tabindex', active ? '0' : '-1');
+    });
+    usecasePanels.forEach(function (panel) {
+      panel.hidden = panel.getAttribute('data-usecase-panel') !== target;
+    });
+    if (moveFocus) tab.focus();
+  }
+  usecaseTabs.forEach(function (tab, index) {
+    tab.addEventListener('click', function () { activateUsecase(tab, false); });
+    tab.addEventListener('keydown', function (event) {
+      var nextIndex = index;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % usecaseTabs.length;
+      else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + usecaseTabs.length) % usecaseTabs.length;
+      else if (event.key === 'Home') nextIndex = 0;
+      else if (event.key === 'End') nextIndex = usecaseTabs.length - 1;
+      else return;
+      event.preventDefault();
+      activateUsecase(usecaseTabs[nextIndex], true);
+    });
+  });
+
   /* generate audio waveform bars */
   document.querySelectorAll('#audioTracks .wave').forEach(function (wave, wi) {
     var n = 56;
