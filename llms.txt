@@ -1,8 +1,8 @@
 # Vidcomply — LLM Site Summary
 
-Last updated: 2026-08-12
+Last updated: 2026-08-17
 
-Vidcomply is cloud-native, API-first global content-compliance infrastructure for video, documents, subtitles and audio. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic global profiles, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
+Vidcomply is cloud-native, API-first global content-compliance infrastructure for video, documents, subtitles, audio, websites and connected enterprise content. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic global profiles, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 
 ## Current Public Site Structure
 
@@ -10,9 +10,10 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 - `https://www.vidcomply.ai/#faq` — enterprise questions and answers covering cloud architecture, APIs, dynamic rules, global profiles, integrations, content types, bulk processing, outputs, accuracy, feedback and human approval.
 - `https://www.vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://www.vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
-- `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of global video compliance, title intelligence, brand exposure, and FAST channel operations.
+- `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of video and website compliance, multilingual content QA, title intelligence, programming and FAST channel operations.
 - `https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html` — explains how Vidcomply turns visual, temporal and language evidence into a version-aware content passport with exact timecodes, policy mapping, severity, exclusions, proposed action and human-review status.
 - `https://www.vidcomply.ai/articles/content-compliance-scheduling-programming-intelligence.html` — explains how scene evidence and dynamic global profiles become ready, conditional, review, hold and alternate-version signals for scheduling and programming teams.
+- `https://www.vidcomply.ai/articles/website-content-tree-compliance-scanning-multilingual-qa.html` — explains how Vidcomply applies the same evidence-and-rules model to authorised static pages, rendered dynamic journeys, CMS/AEM materials and language variants, including discrepancy and outdated-information review.
 - `https://www.vidcomply.ai/articles/super-mario-galaxy-movie-2026-global-compliance-analysis.html` — title-specific analysis showing why the PG-rated *The Super Mario Galaxy Movie* has a low 0.3 Global Baseline risk index but still requires destination review for casino imagery, violent dialogue, supernatural references, airline policy, and age-rating exceptions.
 - `https://www.vidcomply.ai/articles/pressure-2026-compliance-fast-scheduling-analysis.html` — title-specific analysis of *Pressure* (2026), an unusually brand-light historical drama with one mild brand finding but 57 compliance findings, including 17 tobacco findings, 12 violence findings, and 13 strong findings that require profile-specific scheduling review.
 - `https://www.vidcomply.ai/articles/billie-eilish-tour-live-3d-compliance-analysis.html` — title-specific analysis showing why *Billie Eilish: Hit Me Hard and Soft - The Tour Live in 3D* is one of the lower-friction titles at Vidcomply's Global Baseline: 38 of 43 compliance findings are informational or mild, while destination-specific profiles can still require review or edits.
@@ -54,6 +55,9 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 - **Global compliance profiles** — configurable territory, platform, carrier, brand and customer house-rule interpretations applied to reusable evidence.
 - **Cloud-native compliance infrastructure** — AWS-deployed SaaS that can operate through self-serve Studio or as an API-first infrastructure layer embedded in an enterprise media supply chain.
 - **Document compliance** — page-level review of scripts, PDFs and supporting documents against the same policy profiles used for media assets.
+- **Website compliance scanning** — authorised review of public or private pages using static crawling or defined rendered journeys, with evidence attached to the URL, route, component, field, DOM location or screenshot.
+- **Content-tree compliance** — review that preserves the relationships between domains, routes, locale variants, CMS components and linked materials so source issues and affected descendants can be traced together.
+- **Multilingual content QA** — comparison of aligned language variants for missing claims, conflicting dates or numbers, untranslated text, obsolete terminology and other configured differences.
 - **Subtitle compliance** — cue-level review of SRT, VTT and TTML subtitles, including language, timing, policy and localization evidence.
 - **Audio compliance** — timecoded review of dialogue, music, effects, loudness and policy-sensitive audible content.
 - **OTT ratings** — explainable, territory-aware rating recommendations derived from the exact asset version and its scene evidence; they are not official classifications.
@@ -120,8 +124,10 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 9. **Enterprise Content and Web Governance**
    - Applies configurable compliance rules across campaign documents, PDFs, images, CMS/AEM fragments, metadata, dictionaries and taxonomy exports.
    - Supports public/static website crawling and defined interactive or authenticated journeys with crawl scope, rendered content, DOM or screenshot evidence where configured.
+   - Preserves the authorised content tree across domains, routes, locale variants, components, fields and linked materials so teams can locate a source issue and identify affected descendants.
    - Supports emerging-risk rule updates, false-positive triage, reviewer assignment, comments, status progression, bulk actions and human approval.
    - Supports repeatable content-quality checks such as typos, cross-source or cross-language discrepancies, obsolete terminology and accessibility findings against configured standards.
+   - Flags outdated information only against configured authoritative sources, effective dates, approved terminology or other customer-defined comparison rules.
    - Produces structured reporting across scanned assets, finding type, severity, market, rule, evidence and decision history.
 
 ## Important Technical Claims

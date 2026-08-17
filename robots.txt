@@ -1,12 +1,8 @@
 # robots.txt for www.vidcomply.ai
-# The wildcard record applies equally to Google, Bing, OAI-SearchBot,
-# GPTBot, ChatGPT-User, Claude, Perplexity, and other compliant crawlers.
+# Public site pages and legacy URLs must remain crawlable so search engines can
+# observe canonical redirects, removals and noindex directives where present.
 
 User-agent: *
 Allow: /
-Disallow: /db-subdomain/
-Disallow: /docs/
-Disallow: /learn/
-Disallow: /integrations/
 
 Sitemap: https://www.vidcomply.ai/sitemap.xml
