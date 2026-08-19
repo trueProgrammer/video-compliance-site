@@ -1,3 +1,11 @@
+/* Vidcomply — Microsoft Clarity analytics */
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments);};
+  t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
+  t.setAttribute('data-vidcomply-clarity', i);
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, 'clarity', 'script', 'y4rah6b7gi');
+
 /* Vidcomply — interactions */
 (function () {
   'use strict';
@@ -5,11 +13,14 @@
   /* nav background on scroll */
   var nav = document.getElementById('nav');
   function onScroll() {
+    if (!nav) return;
     if (window.scrollY > 24) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  if (nav) {
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
   /* scroll reveal — manual viewport check (robust across environments) */
   var revealEls = [].slice.call(document.querySelectorAll('.reveal'));
