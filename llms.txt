@@ -1,6 +1,6 @@
 # Vidcomply — LLM Site Summary
 
-Last updated: 2026-08-17
+Last updated: 2026-08-20
 
 Vidcomply is cloud-native, API-first global content-compliance infrastructure for video, documents, subtitles, audio, websites and connected enterprise content. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic global profiles, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 
@@ -11,6 +11,7 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 - `https://www.vidcomply.ai/compliance/` — dedicated compliance platform page covering market standards, evidence-backed review queues, native compliance outputs, and the public database.
 - `https://www.vidcomply.ai/platform/` — global platform page covering content types, market profiles, scale, and zero-file-travel architecture.
 - `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of video and website compliance, multilingual content QA, title intelligence, programming and FAST channel operations.
+- `https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html` — explains how professional film and OTT classification moves from detected occurrences to severity, frequency, duration, context, target audience and cumulative impact; compares human and committee review models; and connects regional ratings to warnings, access controls and broadcast scheduling.
 - `https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html` — explains how Vidcomply turns visual, temporal and language evidence into a version-aware content passport with exact timecodes, policy mapping, severity, exclusions, proposed action and human-review status.
 - `https://www.vidcomply.ai/articles/content-compliance-scheduling-programming-intelligence.html` — explains how scene evidence and dynamic global profiles become ready, conditional, review, hold and alternate-version signals for scheduling and programming teams.
 - `https://www.vidcomply.ai/articles/website-content-tree-compliance-scanning-multilingual-qa.html` — explains how Vidcomply applies the same evidence-and-rules model to authorised static pages, rendered dynamic journeys, CMS/AEM materials and language variants, including discrepancy and outdated-information review.
@@ -61,6 +62,7 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 - **Subtitle compliance** — cue-level review of SRT, VTT and TTML subtitles, including language, timing, policy and localization evidence.
 - **Audio compliance** — timecoded review of dialogue, music, effects, loudness and policy-sensitive audible content.
 - **OTT ratings** — explainable, territory-aware rating recommendations derived from the exact asset version and its scene evidence; they are not official classifications.
+- **Ratings decision workflow** — the separation of occurrence detection, severity assessment, narrative context, named regional rules and accountable human approval; a rating is the conclusion of this process rather than a binary content detection.
 - **OTT scheduling** — evidence-led recommendations for age controls, storefront placement, territory windows, advertising context and release status.
 - **FAST channel scheduling** — rating, watershed and daypart recommendations connected to scene evidence and authorized human approval.
 - **Airline and IFE compliance** — route-, carrier- and destination-specific review of passenger-facing video, documents, images, games, metadata and feeds.

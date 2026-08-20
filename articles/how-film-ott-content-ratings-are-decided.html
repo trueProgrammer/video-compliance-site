@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Film and OTT Ratings Are Really Decided | Vidcomply</title>
+  <meta name="description" content="How classifiers turn detected scenes into age ratings, advisories and scheduling decisions using severity, frequency, context, committees and regional rules." />
+  <meta name="author" content="Vidcomply Editorial Team" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html" />
+  <meta property="og:title" content="How Film and OTT Ratings Are Really Decided" />
+  <meta property="og:description" content="Detection is only the first layer. Real classification evaluates severity, frequency, context, audience, jurisdiction and cumulative impact." />
+  <meta property="og:image" content="https://www.vidcomply.ai/img/Vidcomply_compliance_platform.png" />
+  <meta property="og:site_name" content="Vidcomply" />
+  <meta property="article:published_time" content="2026-08-20T00:00:00+01:00" />
+  <meta property="article:modified_time" content="2026-08-20T00:00:00+01:00" />
+  <meta property="article:section" content="Ratings and scheduling intelligence" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Film and OTT Ratings Are Really Decided" />
+  <meta name="twitter:description" content="From occurrence detection to contextual, regional and human-reviewed classification decisions." />
+  <meta name="twitter:image" content="https://www.vidcomply.ai/img/Vidcomply_compliance_platform.png" />
+  <link rel="icon" type="image/png" href="../img/icon_site_1024_v2.png" />
+  <link rel="apple-touch-icon" href="../img/icon_site_1024_v2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="articles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Film and OTT Ratings Are Really Decided",
+    "description": "How classifiers turn detected scenes into age ratings, advisories and scheduling decisions using severity, frequency, context, committees and regional rules.",
+    "datePublished": "2026-08-20",
+    "dateModified": "2026-08-20",
+    "inLanguage": "en-GB",
+    "mainEntityOfPage": "https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html",
+    "image": "https://www.vidcomply.ai/img/Vidcomply_compliance_platform.png",
+    "author": { "@type": "Organization", "name": "Vidcomply Editorial Team", "url": "https://www.vidcomply.ai/articles/" },
+    "publisher": { "@type": "Organization", "name": "Vidcomply", "url": "https://www.vidcomply.ai/", "logo": { "@type": "ImageObject", "url": "https://www.vidcomply.ai/img/icon_site_1024_v2.png" } },
+    "about": ["film ratings", "OTT content ratings", "age classification", "classification committees", "regional content compliance", "broadcast scheduling", "watershed", "AI content compliance"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is an age rating based on counting content occurrences?", "acceptedAnswer": { "@type": "Answer", "text": "No. Occurrence detection is only the evidence layer. Classifiers also consider intensity, frequency, duration, detail, realism, tone, narrative context, target audience and cumulative impact under the applicable classification system." } },
+      { "@type": "Question", "name": "Can AI issue an official film or OTT rating?", "acceptedAnswer": { "@type": "Answer", "text": "AI can locate evidence, propose severity and apply configured rules, but an output should not be represented as an official classification unless it is issued or accepted through the authorised system for that market and service." } },
+      { "@type": "Question", "name": "Why can the same title receive different ratings in different countries?", "acceptedAnswer": { "@type": "Answer", "text": "Each jurisdiction or platform applies its own categories, social standards, legal duties, audience protections and decision process to a particular version of the title. The same evidence can therefore lead to different ratings, warnings, edits or access controls." } },
+      { "@type": "Question", "name": "Does a film rating determine its broadcast or OTT schedule?", "acceptedAnswer": { "@type": "Answer", "text": "Not by itself. Linear services may need watershed and daypart controls, while OTT services may use maturity profiles, parental locks, age verification, release windows, storefront rules and advertising restrictions." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Vidcomply", "item": "https://www.vidcomply.ai/" },
+      { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://www.vidcomply.ai/articles/" },
+      { "@type": "ListItem", "position": 3, "name": "How Film and OTT Ratings Are Really Decided", "item": "https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav" aria-label="Main navigation">
+    <a class="brand" href="../"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" aria-hidden="true"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>Vidcomply</a>
+    <div class="nav-links"><a class="nav-db" href="https://db.vidcomply.ai/">Intelligence</a><a href="../compliance/">Compliance</a><a href="../cases/audiomix.html">Audio Mix</a><a href="../cases/airlines.html">Airlines</a></div>
+    <div class="nav-right"><a class="nav-insights" href="./" aria-current="page">Insights</a><a class="nav-signin" href="https://studio.vidcomply.ai/">Sign in</a><a class="btn btn--primary btn--sm" href="../#cta">Book a demo</a></div>
+  </nav>
+
+  <main class="article-shell">
+    <header class="article-header article-header--compact">
+      <div class="wrap article-header-inner">
+        <span class="article-label">Ratings intelligence · Human-reviewed classification</span>
+        <h1>How Film and OTT Ratings Are Really Decided</h1>
+        <p class="article-deck">Detection finds what occurs. Classification evaluates severity, frequency, context, audience and cumulative impact. Only then can a market-specific rating, warning, edit or scheduling action be considered.</p>
+        <div class="article-meta"><span>Vidcomply Editorial Team</span><span><time datetime="2026-08-20">20 August 2026</time></span><span>12 min read</span></div>
+      </div>
+    </header>
+
+    <div class="wrap article-layout">
+      <article class="article-body">
+        <div class="direct-answer">
+          <strong>Direct answer</strong>
+          <p>A real rating is not produced by spotting one swear word, cigarette or violent frame. It is a reasoned decision over the whole work: what occurs, how strongly and how often it appears, why it appears in the story, who may watch it, which version is being assessed and which market’s rules apply.</p>
+        </div>
+
+        <p>People sometimes evaluate an AI compliance output as if it should be a single, infallible yes-or-no answer. That is not how recognised human classification systems operate. Human classifiers work from evidence, published standards and context; difficult cases can be escalated, reviewed by additional people or appealed. The final label is the end of a process, not the first observation.</p>
+        <p>The fair comparison is therefore not “AI verdict versus human truth.” It is whether an AI-assisted workflow finds the relevant evidence, measures it consistently, applies the correct regional profile, explains the proposed action and leaves an accountable decision with the authorised reviewer.</p>
+
+        <h2>A rating has at least four distinct layers</h2>
+        <table class="signal-table">
+          <thead><tr><th>Layer</th><th>Question</th><th>Example output</th></tr></thead>
+          <tbody>
+            <tr><td>Observation</td><td>What is visibly or audibly present, and where?</td><td>Seven smoking occurrences with exact timecodes and frames.</td></tr>
+            <tr><td>Assessment</td><td>What are the intensity, frequency, duration, detail, tone and cumulative impact?</td><td>Repeated but brief; two close-ups; no product placement; one scene involves a minor.</td></tr>
+            <tr><td>Context</td><td>How does the work frame it?</td><td>Condemned, comic, historical, instructional, glamorised, incidental or central to the plot.</td></tr>
+            <tr><td>Decision</td><td>What does the applicable market and service require?</td><td>Rating, content advice, warning, edit, age control, schedule window, escalation or approval.</td></tr>
+          </tbody>
+        </table>
+
+        <p>A system that jumps from observation directly to a global “pass” or “fail” has collapsed several different professional judgements into one field. It also makes disagreement impossible to diagnose. A reviewable system preserves each layer separately.</p>
+
+        <h2>What human classifiers actually consider</h2>
+        <p>Terminology differs by organisation, but published frameworks repeatedly return to the same decision dimensions:</p>
+        <ul>
+          <li><strong>Nature of the issue:</strong> violence, language, threat, sex, nudity, discrimination, drugs, self-harm, horror, imitable behaviour or another defined concern.</li>
+          <li><strong>Intensity and detail:</strong> whether the depiction is mild, moderate or strong; implied or explicit; distant or shown through close-ups, slow motion, blood, injury detail or sustained audio.</li>
+          <li><strong>Frequency and duration:</strong> one isolated occurrence can have a different impact from repeated, prolonged or cumulative treatment.</li>
+          <li><strong>Tone and realism:</strong> comic, fantastical and stylised treatment can affect viewers differently from realistic, threatening or instructional presentation.</li>
+          <li><strong>Narrative treatment:</strong> whether behaviour is endorsed, rewarded, challenged, condemned or essential to a serious historical, documentary or educational purpose.</li>
+          <li><strong>Audience and service:</strong> children, family co-viewing, cinema audiences, scheduled television, on-demand viewers, airline passengers or a platform’s child profile.</li>
+          <li><strong>Overall and cumulative impact:</strong> how the work feels as a whole, not merely its strongest keyword or most easily detected frame.</li>
+        </ul>
+
+        <div class="evidence-card">
+          <h3>Context does not erase evidence</h3>
+          <p>Plot relevance can mitigate or aggravate a finding, but it should not make the underlying occurrence disappear. The durable record keeps both: “what happened” and “why the reviewer decided it was acceptable, restricted or actionable.”</p>
+        </div>
+
+        <h2>“The committee” is real—but systems use different structures</h2>
+        <p>There is no single global committee model. The UK, India and Singapore illustrate three different ways expert and community judgement enter the process.</p>
+
+        <h3>United Kingdom: trained classifiers, approval and escalation</h3>
+        <p>The BBFC explains that two Compliance Officers view cinema content together, while home-entertainment and streaming submissions may be viewed individually. Officers tag issues, consider context, tone and impact, write a report, recommend an age rating and draft content advice. Reports move through approval, and particularly difficult material can be referred to Statutory Classifiers.</p>
+        <p>This is also an unusually clear example of the proper role for automation. In June 2026, the BBFC reported using a bespoke AI tool to generate detailed metadata highlighting issues such as violence, nudity and language for human review. It explicitly retained final age ratings and content advice as the responsibility of BBFC Compliance Officers.</p>
+
+        <h3>India: examining and revising committees</h3>
+        <p>India’s CBFC describes a two-tier jury structure. An Examining Committee views the submitted film and each member records written recommendations about the certificate and any deletions or modifications. A Revising Committee can review the same version when there is disagreement or the applicant challenges the outcome. That is plainly not a one-detection, one-rating process.</p>
+
+        <h3>Singapore: standards informed by consultative panels</h3>
+        <p>Singapore’s IMDA classifies films under published guidelines and can consult its Films Consultative Panel when broader views are needed. Its guidance evaluates theme and the frequency and intensity of classifiable elements, while its committee structure brings community perspectives into difficult classification and policy questions.</p>
+
+        <div class="scope-note">
+          <strong>An official decision is not the same as an infallible universal truth</strong>
+          <p>An authorised classification is the controlling decision for its system, market, service and submitted version. Another jurisdiction can reasonably reach a different result because its categories, audience expectations, laws and public standards differ.</p>
+        </div>
+
+        <h2>Why the same detected scene changes meaning by market</h2>
+        <p>“Regional” must mean a named jurisdiction and service profile—not a generic Asian, European or global rule. These examples show why.</p>
+        <table class="signal-table">
+          <thead><tr><th>Example</th><th>What detection can establish</th><th>What the regional profile must decide</th></tr></thead>
+          <tbody>
+            <tr><td>Tattoo</td><td>Design, body location, prominence, duration, text or symbol, character and possible affiliation.</td><td>Whether it has any relevance at all; whether a specific broadcaster, carrier or brand profile treats the symbol, gang association or presentation as sensitive. A tattoo is not an automatic “Asia” failure.</td></tr>
+            <tr><td>Smoking</td><td>Every visible use, product, speaker, minor, duration and exact placement.</td><td>Rating impact, glamorisation, product-placement concerns and required warnings. In India, specified OTT tobacco depictions trigger health spots, static warnings and audiovisual disclaimers under the applicable rules.</td></tr>
+            <tr><td>Animal scene</td><td>Species, apparent distress, contact, stunt, injury depiction and whether the image is real or simulated.</td><td>Content severity plus production documentation. India’s Animal Welfare Board provides pre-shoot and post-shoot/NOC processes for performing animals—an operational requirement distinct from an age rating.</td></tr>
+            <tr><td>Violence against women</td><td>Action, victim, threat, injury, sexual context, detail, duration and dialogue.</td><td>Severity, whether the depiction is exploitative or condemned, plot necessity and jurisdiction-specific standards. India’s CBFC guidance specifically addresses denigration of women and detailed sexual violence.</td></tr>
+            <tr><td>Mockery or satire</td><td>Target, wording, gesture, speaker, audience reaction, language and surrounding scene.</td><td>Whether it is criticism, comedy, harassment, religious denigration, hate, political commentary or protected editorial context. The answer changes with genre, service and local law.</td></tr>
+            <tr><td>Political content</td><td>Named people, parties, symbols, claims, election references and the balance of speakers.</td><td>Classification, accuracy, impartiality, national-interest or election obligations. For example, UK scheduled news has Ofcom due-accuracy and due-impartiality duties, while India and Singapore identify separate national, public-order and political-film considerations.</td></tr>
+          </tbody>
+        </table>
+
+        <p>This is why Vidcomply’s data model should preserve a finding once and evaluate it through multiple named profiles. The tattoo, line of dialogue or animal scene remains the same evidence; its relevance and required action can differ by country, broadcaster, airline, platform, advertiser and version.</p>
+
+        <h2>OTT ratings add product controls, not just a label</h2>
+        <p>India’s rules for online curated content make the layered model explicit. Publishers classify content using context, theme, tone, impact and target audience; display the rating and descriptors before access; provide parental locks for U/A 13+ or higher; and use age verification for adult content. That turns classification into a product and release workflow.</p>
+        <p>A robust OTT record should therefore connect the proposed rating to:</p>
+        <ul>
+          <li>the exact picture, audio, subtitle and language version;</li>
+          <li>territory, service type and current policy version;</li>
+          <li>consumer advice and local-language descriptors;</li>
+          <li>child-profile eligibility, PIN, parental lock or age verification;</li>
+          <li>storefront artwork, trailers, autoplay and recommendation placement;</li>
+          <li>advertising adjacency and restricted-product rules;</li>
+          <li>release window, rights, timezone and takedown controls; and</li>
+          <li>the final human approval, override and rationale.</li>
+        </ul>
+
+        <h2>Broadcast scheduling is another decision layer</h2>
+        <p>An age rating does not automatically produce a broadcast slot. In the UK, Ofcom’s watershed begins at 9pm: material unsuitable for children should not generally be shown before 9pm or after 5:30am, the transition to stronger material should not be abrupt, and even post-watershed content remains subject to harm and offence rules. Violence, language, sexual material and distressing imagery are evaluated with context.</p>
+        <p>For global linear, FAST and airline channels, the scheduling output should be a candidate decision containing the territory, service, audience, start and finish time, local timezone, rating source, scene evidence, warnings, edit state and approval status. “Post-watershed” without those fields is not executable compliance.</p>
+
+        <h2>A fair way to evaluate AI-assisted ratings</h2>
+        <p>Do not benchmark the system only by asking whether one final label exactly matched one reviewer’s first reaction. Evaluate each layer:</p>
+        <ol>
+          <li><strong>Evidence coverage:</strong> did it locate all material occurrences across picture, speech, text, subtitles and metadata?</li>
+          <li><strong>Evidence precision:</strong> are timecodes, frames, transcripts, objects and speakers correct?</li>
+          <li><strong>Severity consistency:</strong> does it distinguish a fleeting background event from detailed, repeated or impactful treatment?</li>
+          <li><strong>Context quality:</strong> does it surface plot role, tone, endorsement, condemnation, target and cumulative impact for review?</li>
+          <li><strong>Rule provenance:</strong> is every recommendation tied to a named market, service, policy source and effective version?</li>
+          <li><strong>Decision transparency:</strong> can a reviewer see why the proposed rating, warning, edit or schedule was generated and change it?</li>
+          <li><strong>Operational outcome:</strong> did the approved decision reach the EPG, OTT controls, edit list, subtitle workflow or delivery package correctly?</li>
+        </ol>
+
+        <p>This removes the asymmetry. Human classification is allowed to use guidelines, context, multiple reviewers and escalation; responsible AI should be assessed as an evidence and decision-support system with the same visible stages—not as an unexplained oracle.</p>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+          <div class="faq-item"><h3>Is an age rating based on counting content occurrences?</h3><p>No. Counts help establish frequency, but classifiers also examine intensity, duration, detail, realism, tone, target audience, narrative context and cumulative impact.</p></div>
+          <div class="faq-item"><h3>Can AI issue an official film or OTT rating?</h3><p>AI can identify evidence and produce a reasoned recommendation. It should not be described as an official classification unless it is issued or accepted through the authorised process for that market and service.</p></div>
+          <div class="faq-item"><h3>Why can the same title receive different ratings?</h3><p>Different systems apply different categories, community standards, laws and audience protections to a specific version. A rating must always retain its issuing system, territory, date and provenance.</p></div>
+          <div class="faq-item"><h3>Does a film rating determine its broadcast or OTT schedule?</h3><p>No. Scheduled television can add watershed and daypart rules; OTT adds release windows, maturity controls, age verification, storefront treatment and advertising policies.</p></div>
+        </div>
+
+        <h2>Sources and methodology</h2>
+        <ul class="source-list">
+          <li><span class="source-type">UK classification process</span><a href="https://www.bbfc.co.uk/film-media-resources/student-faqs">BBFC: Guide for students</a> — how Compliance Officers tag issues, assess context, recommend ratings and escalate difficult submissions.</li>
+          <li><span class="source-type">AI-assisted classification</span><a href="https://www.bbfc.co.uk/press-releases/bbfc-classifies-highest-number-of-cinema-films-in-its-113-year-history">BBFC 2026 Annual Report announcement</a> — AI-generated issue metadata supports human review; final ratings remain with Compliance Officers.</li>
+          <li><span class="source-type">UK standards</span><a href="https://www.bbfc.co.uk/what-we-do/classification-guidelines">BBFC Classification Guidelines</a> and <a href="https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-standards/what-is-the-watershed">Ofcom watershed guidance</a>.</li>
+          <li><span class="source-type">India film certification</span><a href="https://cbfcindia.gov.in/cbfcAdmin/certification.php">Central Board of Film Certification: Certification process and guidelines</a> — examining and revising committees, written recommendations and contextual standards.</li>
+          <li><span class="source-type">India OTT classification</span><a href="https://www.mib.gov.in/sites/default/files/2026-05/it-rules-2021-2.pdf">Ministry of Information and Broadcasting: IT Rules and Code of Ethics</a> — context, theme, tone, impact, target audience, ratings, descriptors and access controls.</li>
+          <li><span class="source-type">India tobacco requirements</span><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1942710&amp;lang=2&amp;reg=48">Government of India: Anti-tobacco warnings on OTT</a>.</li>
+          <li><span class="source-type">India animal production compliance</span><a href="https://www.awbi.gov.in/PerformingAnimal">Animal Welfare Board of India: Performing Animal permissions and NOC resources</a>.</li>
+          <li><span class="source-type">Singapore classification</span><a href="https://www.imda.gov.sg/regulations-and-licensing-listing/content-standards-and-classification/standards-and-classification/films">IMDA film classification process</a>, <a href="https://www.imda.gov.sg/-/media/imda/files/regulations-and-licensing/regulations/codes-of-practice/codes-of-practice-media/film-classification-guidelines-29_apr_2019.pdf">Film Classification Guidelines</a> and <a href="https://www.imda.gov.sg/regulations-and-licensing-listing/content-standards-and-classification/consultation-with-committees">consultative committees</a>.</li>
+          <li><span class="source-type">Scope</span>Sources were reviewed on 20 August 2026. Requirements change; confirm the exact jurisdiction, service and current policy with authorised legal or standards owners.</li>
+        </ul>
+
+        <div class="article-cta">
+          <h2>Turn evidence into a reviewable regional decision.</h2>
+          <p>Vidcomply connects exact occurrences, severity, context, dynamic market profiles and human approval across ratings, OTT controls and scheduling.</p>
+          <a class="btn" href="../#cta">Book a compliance workflow demo</a>
+        </div>
+      </article>
+
+      <aside class="article-aside" aria-label="Related resources">
+        <div class="aside-card"><h2>The key distinction</h2><p>AI finds and structures evidence. The authorised classifier, publisher or standards owner controls the final decision.</p><a href="evidence-backed-content-passport-video-compliance.html">Evidence-backed content passports →</a></div>
+        <div class="aside-card"><h2>OTT operations</h2><p>Connect ratings to maturity controls, territories, releases and storefront treatment.</p><a href="ott-content-compliance-scheduling-guide.html">OTT scheduling guide →</a></div>
+        <div class="aside-card"><h2>Linear and FAST</h2><p>Translate approved evidence into service-specific dayparts and warnings.</p><a href="ratings-watershed-scheduling-fast-channels.html">Watershed-aware scheduling →</a><a href="tv-broadcast-compliance-scheduling-guide.html">TV broadcast guide →</a></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand"><a class="brand" href="../"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#f4f0e7" stroke-width="2" aria-hidden="true"><path d="M2 12h3l2.5-7 4 16 3-9 2 4h5.5"/></svg></span>Vidcomply</a><p>Evidence-backed compliance intelligence for global media workflows.</p></div>
+        <div class="foot-col"><h5>Insights</h5><a href="./">All articles</a><a href="ott-content-compliance-scheduling-guide.html">OTT compliance</a><a href="ratings-watershed-scheduling-fast-channels.html">Ratings and scheduling</a></div>
+        <div class="foot-col"><h5>Platform</h5><a href="../compliance/">Compliance</a><a href="https://db.vidcomply.ai/">VidComply Intelligence</a><a href="../platform/">Global platform</a></div>
+        <div class="foot-col"><h5>Company</h5><a href="mailto:sales@vidcomply.ai">Contact</a><a href="../#cta">Book a demo</a><a href="../legal/privacy-policy.html">Privacy</a></div>
+      </div>
+      <div class="foot-bot"><span>© 2026 Vidcomply, Inc. All rights reserved.</span><span>Published 20 August 2026.</span></div>
+    </div>
+  </footer>
+  <script src="../app.js"></script>
+</body>
+</html>
