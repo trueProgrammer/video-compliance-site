@@ -110,6 +110,11 @@
 .article-body ol { display: grid; gap: 12px; margin: 20px 0 0; padding-left: 24px; }
 .article-body a { color: #244fb6; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
+.article-figure { margin: 0 0 44px; }
+.article-figure a { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--ink); }
+.article-figure img { display: block; width: 100%; height: auto; }
+.article-figure figcaption { margin-top: 10px; color: var(--ink-3); font-size: 13px; line-height: 1.5; }
+
 .direct-answer {
   margin-bottom: 42px;
   padding: 28px 30px;

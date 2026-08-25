@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.vidcomply.ai/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <image:image>
       <image:loc>https://www.vidcomply.ai/img/Vidcomply_title_intelligence_global_distribution.png</image:loc>
       <image:title>Vidcomply Movies and Series Intelligence catalog</image:title>
@@ -45,7 +45,19 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.vidcomply.ai/zh/articles/" />
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.vidcomply.ai/hi/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vidcomply.ai/articles/" />
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.vidcomply.ai/articles/title-compliance-database-brand-regional-intelligence.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.vidcomply.ai/articles/title-compliance-database-brand-regional-intelligence.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vidcomply.ai/articles/title-compliance-database-brand-regional-intelligence.html" />
+    <lastmod>2026-08-25</lastmod>
+    <image:image>
+      <image:loc>https://www.vidcomply.ai/img/Vidcomply_title_intelligence_global_distribution.png</image:loc>
+      <image:title>VidComply Intelligence title compliance database</image:title>
+      <image:caption>Public title intelligence with scene-level compliance, brand, rating and regional distribution evidence</image:caption>
+    </image:image>
   </url>
 
   <url>
@@ -59,7 +71,7 @@
     <loc>https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html" />
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
 
   <url>
