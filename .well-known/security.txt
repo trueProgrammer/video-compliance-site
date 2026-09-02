@@ -1,4 +1,5 @@
-Contact: mailto:sales@vidcomply.ai
-Expires: 2026-12-31T23:59:59.000Z
+Contact: mailto:support@vidcomply.ai
+Expires: 2027-08-31T23:59:59.000Z
 Preferred-Languages: en
 Canonical: https://www.vidcomply.ai/.well-known/security.txt
+Policy: https://www.vidcomply.ai/security/

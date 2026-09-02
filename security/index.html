@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security &amp; Trust Center — Vidcomply</title>
+  <meta name="description" content="Vidcomply security, architecture, data protection, AI governance, AWS assurance, subprocessors and customer due-diligence resources." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://www.vidcomply.ai/security/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vidcomply.ai/security/" />
+  <meta property="og:title" content="Security &amp; Trust Center — Vidcomply" />
+  <meta property="og:description" content="Public security documentation and enterprise due-diligence resources for Vidcomply." />
+  <meta property="og:image" content="https://www.vidcomply.ai/security/assets/aws-marketplace-deployment-architecture.png" />
+  <link rel="icon" type="image/png" href="../img/icon_site_1024_v2.png" />
+  <link rel="apple-touch-icon" href="../img/icon_site_1024_v2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Schibsted+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="security.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Vidcomply Security & Trust Center",
+    "url": "https://www.vidcomply.ai/security/",
+    "description": "Public security documentation and enterprise due-diligence resources for Vidcomply.",
+    "isPartOf": { "@type": "WebSite", "url": "https://www.vidcomply.ai/" },
+    "about": { "@type": "Organization", "name": "AGENTIC VISION LTD", "alternateName": "Vidcomply" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="trust-nav" aria-label="Main navigation">
+    <a class="brand" href="../" aria-label="Vidcomply home">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span>Vidcomply</span>
+    </a>
+    <div class="nav-links">
+      <a href="#controls">Controls</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#documents">Documents</a>
+      <a href="subprocessors.html">Subprocessors</a>
+    </div>
+    <a class="nav-cta" href="mailto:support@vidcomply.ai?subject=Security%20due%20diligence">Contact security</a>
+  </nav>
+
+  <main id="main">
+    <header class="trust-hero">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow"><i></i> Security &amp; Trust Center</span>
+          <h1>Your content stays under your control.</h1>
+          <p class="hero-copy">Buyer-owned source storage, dedicated processing, agreed data residency, auditable access, no model training, and contractual deletion form the baseline for Vidcomply enterprise deployments.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#documents">View documents</a>
+            <a class="button button-secondary" href="https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424" target="_blank" rel="noopener">View on AWS Marketplace <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="assurance-card" aria-label="Security assurance summary">
+          <span class="card-kicker">PUBLIC ASSURANCE</span>
+          <div class="assurance-row"><b>Source storage</b><span>Customer-controlled</span></div>
+          <div class="assurance-row"><b>Deployment</b><span>AWS-hosted</span></div>
+          <div class="assurance-row"><b>Marketplace</b><span>Sold by Vidcomply AI</span></div>
+          <div class="assurance-row"><b>Architecture review</b><span>Completed 5 June 2026</span></div>
+          <div class="assurance-row"><b>Security contact</b><span>support@vidcomply.ai</span></div>
+          <p>Customer-specific commitments are defined in the Order Form, DPA, and Security Schedule.</p>
+        </aside>
+      </div>
+    </header>
+
+    <section class="signal-strip" aria-label="Core security commitments">
+      <div><span>01</span><b>BUYER-OWNED</b><small>Source and reports remain yours</small></div>
+      <div><span>02</span><b>ISOLATED</b><small>Dedicated processing resources</small></div>
+      <div><span>03</span><b>REGION-AGREED</b><small>Residency decided before onboarding</small></div>
+      <div><span>04</span><b>NO TRAINING</b><small>Content serves only your workflow</small></div>
+    </section>
+
+    <section class="section" id="controls">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Customer security promises</span>
+          <h2>The questions that matter, answered first.</h2>
+        </div>
+        <p>These commitments describe the standard enterprise deployment model. The precise architecture, region, services, access, and retention settings are agreed with each customer.</p>
+      </div>
+
+      <div class="control-grid">
+        <article><span>01</span><h3>Your source stays under your control</h3><p>Media can remain in buyer-owned Amazon S3 or other agreed isolated storage. Vidcomply receives only the minimum permissions required to process the asset and return results.</p></article>
+        <article><span>02</span><h3>Customer workloads are isolated</h3><p>Each customer receives dedicated processing resources and separate queues, protected through least-privilege IAM and network controls. Dedicated AWS account deployment is available where stricter isolation is required.</p></article>
+        <article><span>03</span><h3>You choose the region</h3><p>Deployment region is agreed before onboarding based on data-residency, security, and latency requirements—not automatically assigned as the “nearest” region.</p></article>
+        <article><span>04</span><h3>Your content is never used for AI training</h3><p>Customer content is processed solely for the contracted service. It is not used to train, retrain, or improve Vidcomply models, and approved AI subprocessors are subject to equivalent no-training controls.</p></article>
+        <article><span>05</span><h3>Everything is auditable</h3><p>Processing activity, infrastructure actions, and access are logged. Customers can receive outputs, processing records, and relevant audit logs under the agreed access model.</p></article>
+        <article><span>06</span><h3>You control retention</h3><p>Processing files are temporary and lifecycle-controlled. Retention periods, return, and deletion procedures are contractually agreed, with deletion available on request and at contract termination.</p></article>
+      </div>
+    </section>
+
+    <section class="section architecture-section" id="architecture">
+      <div class="section-head architecture-head">
+        <div>
+          <span class="eyebrow">Reference architecture</span>
+          <h2>Customer-controlled media. Isolated processing.</h2>
+        </div>
+        <p>The AWS Marketplace deployment pattern can read from buyer-controlled Amazon S3, process inside an isolated seller environment, and write results back to the customer workflow.</p>
+      </div>
+
+      <figure class="architecture-figure">
+        <img src="assets/aws-marketplace-deployment-architecture.png" width="1920" height="1080" decoding="async" alt="Reference AWS Marketplace deployment architecture showing buyer-controlled S3, event-driven processing in a dedicated Amazon VPC, controlled optional enterprise AI services, and reports returned to buyer storage" />
+        <figcaption>Reference AWS Marketplace deployment. Region, enabled services, storage arrangement, and integration boundaries vary by customer and are agreed during onboarding.</figcaption>
+      </figure>
+
+      <div class="customer-control-band" aria-label="Customer control summary">
+        <span>Customer control</span>
+        <p>Buyer-owned source storage <i>·</i> Dedicated processing <i>·</i> Agreed data residency <i>·</i> Auditable access <i>·</i> No model training <i>·</i> Contractual deletion</p>
+      </div>
+
+      <div class="flow-steps" aria-label="Reference processing flow">
+        <div><span>1</span><b>Customer storage</b><p>Source media remains in an agreed customer-controlled location.</p></div>
+        <div><span>2</span><b>Controlled trigger</b><p>An event starts a job through encrypted, policy-scoped access.</p></div>
+        <div><span>3</span><b>Isolated compute</b><p>Processing runs inside a dedicated Amazon VPC boundary.</p></div>
+        <div><span>4</span><b>Results returned</b><p>Reports are written back to the customer's approved destination.</p></div>
+      </div>
+
+      <div class="audit-note">
+        <div><span class="card-kicker">CUSTOMER VISIBILITY &amp; AUDIT</span><h3>Control without broad administrative access.</h3></div>
+        <p>Customers retain control of source storage and receive their outputs. Processing records and relevant audit logs can be provided, with read-only infrastructure visibility or dedicated-account deployment available where required and agreed.</p>
+      </div>
+    </section>
+
+    <section class="section aws-section" id="assurance">
+      <div class="aws-grid">
+        <div>
+          <span class="eyebrow eyebrow-light">AWS assurance</span>
+          <h2>Available through AWS Marketplace.</h2>
+          <p>Vidcomply AI is listed as a seller-operated SaaS product on AWS Marketplace and is marked “Deployed on AWS.” Customers can procure the platform through their established AWS purchasing workflow.</p>
+          <a class="text-link-light" href="https://aws.amazon.com/marketplace/pp/prodview-xpic6755k4424" target="_blank" rel="noopener">Open the official AWS Marketplace listing <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="wafr-card">
+          <span class="card-kicker">AWS WELL-ARCHITECTED TOOL</span>
+          <h3>Review completed</h3>
+          <div class="wafr-stat"><strong>4</strong><span>assessed pillars</span></div>
+          <div class="wafr-stat"><strong>0</strong><span>high-risk items recorded</span></div>
+          <p>The June 2026 review covered Operational Excellence, Security, Reliability, and Performance Efficiency. Medium-risk improvement opportunities were recorded and tracked. Cost Optimization and Sustainability were not assessed.</p>
+          <small>This architecture review is not an AWS certification. The complete 75-page report is available to qualified customer security teams under appropriate confidentiality terms.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="documents">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Public documents</span>
+          <h2>Start the review here.</h2>
+        </div>
+        <p>Customer-specific architecture, contractual schedules, questionnaires, and the complete AWS review are supplied separately during technical due diligence.</p>
+      </div>
+
+      <div class="document-grid">
+        <article class="document-card featured">
+          <span class="document-type">PDF · 4 PAGES</span>
+          <h3>Security &amp; Architecture Overview</h3>
+          <p>Customer-neutral architecture, security controls, content governance, and AWS assurance.</p>
+          <a href="../output/pdf/VidComply_Security_Architecture_Overview.pdf" download>Download PDF <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="document-card">
+          <span class="document-type">PDF · SAMPLE</span>
+          <h3>Sample Data Processing Agreement</h3>
+          <p>A non-binding customer-neutral template with deployment details assigned to the Order Form or Security Schedule.</p>
+          <a href="../output/pdf/VidComply_Sample_Data_Processing_Agreement.pdf" download>Download PDF <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="document-card">
+          <span class="document-type">LIVE OVERVIEW</span>
+          <h3>Subprocessors &amp; Data Residency</h3>
+          <p>Service categories, purposes, deployment choices, and customer-specific transfer controls.</p>
+          <a href="subprocessors.html">View overview <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="document-card">
+          <span class="document-type">POLICY</span>
+          <h3>Privacy Policy</h3>
+          <p>How Vidcomply collects, uses, shares, protects, retains, and deletes personal information.</p>
+          <a href="../legal/privacy-policy.html">View policy <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="document-card restricted">
+          <span class="document-type">AVAILABLE ON REQUEST</span>
+          <h3>Detailed AWS Review</h3>
+          <p>The full AWS Well-Architected Tool report is shared with qualified security teams during due diligence.</p>
+          <a href="mailto:support@vidcomply.ai?subject=AWS%20Well-Architected%20review%20request">Request access <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="document-card">
+          <span class="document-type">LEGAL</span>
+          <h3>GDPR Compliance Statement</h3>
+          <p>Public commitments covering processing boundaries, security measures, subprocessors, and incident notification.</p>
+          <a href="../legal/gdpr-compliance.html">View statement <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section diligence-section" id="due-diligence">
+      <div class="diligence-card">
+        <div>
+          <span class="eyebrow">Customer due diligence</span>
+          <h2>Need the deeper technical material?</h2>
+          <p>Qualified customer security teams can request the full AWS review, detailed network diagrams, customer-specific architecture, security questionnaires, and contractual security schedules.</p>
+        </div>
+        <a class="button button-primary" href="mailto:support@vidcomply.ai?subject=Enterprise%20security%20due%20diligence">Start a security review</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">V</span><span>Vidcomply</span></a><p>Global content compliance infrastructure.</p></div>
+      <div><b>Trust</b><a href="#controls">Security controls</a><a href="subprocessors.html">Subprocessors</a><a href="../legal/gdpr-compliance.html">GDPR</a><a href="../legal/privacy-policy.html">Privacy</a></div>
+      <div><b>Company</b><a href="../">Home</a><a href="../platform/">Platform</a><a href="../articles/">Insights</a><a href="mailto:support@vidcomply.ai">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 AGENTIC VISION LTD, trading as Vidcomply.</span><span>Last reviewed 2 September 2026</span></div>
+  </footer>
+</body>
+</html>

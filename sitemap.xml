@@ -40,6 +40,16 @@
   </url>
 
   <url>
+    <loc>https://www.vidcomply.ai/security/</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.vidcomply.ai/security/subprocessors.html</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+
+  <url>
     <loc>https://www.vidcomply.ai/articles/</loc>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.vidcomply.ai/articles/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.vidcomply.ai/zh/articles/" />

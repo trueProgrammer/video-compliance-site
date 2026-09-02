@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subprocessors &amp; Data Residency — Vidcomply</title>
+  <meta name="description" content="Vidcomply subprocessor categories, purposes, data residency approach and customer-specific deployment controls." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.vidcomply.ai/security/subprocessors.html" />
+  <link rel="icon" type="image/png" href="../img/icon_site_1024_v2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Schibsted+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="security.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="trust-nav" aria-label="Main navigation">
+    <a class="brand" href="../" aria-label="Vidcomply home"><span class="brand-mark" aria-hidden="true">V</span><span>Vidcomply</span></a>
+    <div class="nav-links"><a href="index.html">Trust Center</a><a href="index.html#documents">Documents</a><a href="../legal/privacy-policy.html">Privacy</a></div>
+    <a class="nav-cta" href="mailto:support@vidcomply.ai?subject=Subprocessor%20enquiry">Contact security</a>
+  </nav>
+
+  <main id="main">
+    <header class="subprocessor-hero">
+      <div>
+        <span class="eyebrow"><i></i> Trust Center</span>
+        <h1>Subprocessors &amp; data residency</h1>
+        <p>Vidcomply uses service providers only for defined operational purposes. The services, regions, transfer mechanisms, and subprocessors enabled for a customer are confirmed in the applicable Order Form, DPA, or Security Schedule.</p>
+      </div>
+      <aside><span>LAST REVIEWED</span><b>2 September 2026</b><p>For a customer-specific schedule, contact support@vidcomply.ai.</p></aside>
+    </header>
+
+    <section class="section compact-section">
+      <div class="notice">
+        <b>Customer-specific configuration controls the final list.</b>
+        <p>Not every service below processes every customer's data. Optional providers are enabled only for approved workflows and contracted purposes.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="subprocessor-table">
+          <thead><tr><th>Provider / category</th><th>Purpose</th><th>Data and residency approach</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><b>Amazon Web Services (AWS)</b><small>Cloud infrastructure</small></td><td>Hosting, storage, compute, queues, networking, keys, logs, and monitoring.</td><td>The AWS region and storage model are specified for the customer deployment.</td><td><span class="status required">Core</span></td></tr>
+            <tr><td><b>Identity provider</b><small>Authentication and access</small></td><td>User authentication, MFA, session management, and identity administration. Clerk may be used where configured.</td><td>Account and authentication processing follows the selected provider and customer agreement.</td><td><span class="status configured">Configured</span></td></tr>
+            <tr><td><b>Enterprise AI/API providers</b><small>Approved advanced processing</small></td><td>Optional transcription, translation, natural-language, metadata, or visual-analysis tasks. OpenAI may be used where configured.</td><td>Only approved data segments are sent. Provider, location, purpose, and safeguards are defined in customer documentation.</td><td><span class="status optional">Optional</span></td></tr>
+            <tr><td><b>Website analytics</b><small>Public website only</small></td><td>Public-site usability analytics and masked interaction analysis. Microsoft Clarity is identified in the Privacy Policy.</td><td>Applies to the public website, not customer media-processing workflows.</td><td><span class="status web">Website</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="residency-grid">
+        <article><span>01</span><h2>Hosting region</h2><p>Selected during onboarding and recorded in the Order Form or Security Schedule. The reference AWS Marketplace diagram shows one deployment pattern, not a universal location commitment.</p></article>
+        <article><span>02</span><h2>International transfers</h2><p>Where a transfer is required, the applicable customer documents identify the processing context and relevant legal safeguard.</p></article>
+        <article><span>03</span><h2>Change management</h2><p>Material subprocessor changes are handled according to the executed DPA, including notice and objection rights where agreed.</p></article>
+      </div>
+
+      <div class="diligence-card subprocessor-cta">
+        <div><span class="eyebrow">Need the contractual list?</span><h2>Request your deployment schedule.</h2><p>We can provide the services, purposes, locations, and transfer safeguards that apply to a proposed or active customer deployment.</p></div>
+        <a class="button button-primary" href="mailto:support@vidcomply.ai?subject=Customer-specific%20subprocessor%20schedule">Request schedule</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid"><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">V</span><span>Vidcomply</span></a><p>Global content compliance infrastructure.</p></div><div><b>Trust</b><a href="index.html">Security Center</a><a href="../legal/gdpr-compliance.html">GDPR</a><a href="../legal/privacy-policy.html">Privacy</a></div><div><b>Company</b><a href="../">Home</a><a href="../platform/">Platform</a><a href="mailto:support@vidcomply.ai">Contact</a></div></div>
+    <div class="footer-bottom"><span>© 2026 AGENTIC VISION LTD, trading as Vidcomply.</span><span>Last reviewed 2 September 2026</span></div>
+  </footer>
+</body>
+</html>
