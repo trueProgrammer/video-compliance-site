@@ -1,6 +1,6 @@
 # Vidcomply — LLM Site Summary
 
-Last updated: 2026-08-25
+Last updated: 2026-10-05
 
 Vidcomply is cloud-native, API-first global content-compliance infrastructure for video, documents, subtitles, audio, websites and connected enterprise content. It connects a public title-intelligence database with private, evidence-backed compliance workflows, dynamic global profiles, OTT ratings and scheduling, AWS-native APIs, and self-serve review in Vidcomply Studio. The enterprise product is available through AWS Marketplace as **Vidcomply AI: Global Media Compliance Platform**, a SaaS product sold by VIDCOMPLY AI and deployed on AWS.
 
@@ -13,6 +13,7 @@ Vidcomply is cloud-native, API-first global content-compliance infrastructure fo
 - `https://www.vidcomply.ai/articles/` — editorial hub for evidence-led analysis of video and website compliance, multilingual content QA, title intelligence, programming and FAST channel operations.
 - `https://www.vidcomply.ai/articles/title-compliance-database-brand-regional-intelligence.html` — explains how buyers, producers, studios, distributors, OTT/FAST teams, airlines, brands and data teams can use the public title database before acquisition or scheduling; covers exact timecodes, representative frames, dialogue and subtitle context, regional profiles, ratings, brand intelligence, catalogue queries, aggregations and approved API access.
 - `https://www.vidcomply.ai/articles/how-film-ott-content-ratings-are-decided.html` — explains how professional film and OTT classification moves from detected occurrences to severity, frequency, duration, context, target audience and cumulative impact; compares human and committee review models; and connects regional ratings to warnings, access controls and broadcast scheduling.
+- `https://www.vidcomply.ai/articles/office-romance-2026-age-rating-broadcast-suitability.html` — explains the R source rating and preliminary Mature advisory for *Office Romance* (2026), with published scene evidence and limits of the assessment.
 - `https://www.vidcomply.ai/articles/evidence-backed-content-passport-video-compliance.html` — explains how Vidcomply turns visual, temporal and language evidence into a version-aware content passport with exact timecodes, policy mapping, severity, exclusions, proposed action and human-review status.
 - `https://www.vidcomply.ai/articles/content-compliance-scheduling-programming-intelligence.html` — explains how scene evidence and dynamic global profiles become ready, conditional, review, hold and alternate-version signals for scheduling and programming teams.
 - `https://www.vidcomply.ai/articles/website-content-tree-compliance-scanning-multilingual-qa.html` — explains how Vidcomply applies the same evidence-and-rules model to authorised static pages, rendered dynamic journeys, CMS/AEM materials and language variants, including discrepancy and outdated-information review.
